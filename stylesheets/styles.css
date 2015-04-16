@@ -2,6 +2,18 @@ body {
   background-color: #99FFCC;
 }
 
+nav {
+  z-index: 10;
+  position: fixed;
+}
+
+.top-bar {
+  background: #000;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #000;
+}
 
 .slide-img {
   height: 100vh;
@@ -15,7 +27,8 @@ body {
 
 ul.cb-slideshow {
   list-style-type: none;
-  margin-top: 0; 
+  margin-top: 0;
+  margin-left: 0 
 }
 
 .black-layer {
@@ -30,7 +43,6 @@ ul.cb-slideshow {
 }
 
 .text-layer {
-  color: white;
   z-index: 5;
   position: absolute;
   height: 100vh;
@@ -41,6 +53,7 @@ ul.cb-slideshow {
 h1 {
   font-family: 'Poiret One';
   font-weight: 100;
-  font-size: 7em;
+  color: white;
+  font-size: 500%;
   margin-top: 18%;
 }

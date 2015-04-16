@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <title>WhereTO</title>
   <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/modernizr.css">
-  <link rel="stylesheet" href="stylesheets/animate.min.css">
+  <link rel="stylesheet" href="stylesheets/lib/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/lib/modernizr.css">
+  <link rel="stylesheet" href="stylesheets/lib/animate.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
+  
+  <!-- TOPBAR SECTION -->
+  <nav class="top-bar important-class" data-topbar>       
+    <!-- TITLE AREA & LOGO -->
+    <ul class="title-area">
+      <li class="name">
+        <a href="#landing-page">WhereTO</a>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul> <!-- END TITLE AREA & LOGO -->
+
+    <!-- MENU ITEMS -->
+    <section class="top-bar-section">
+        <ul class="right">
+            <li class="active"><a href="#food">food</a></li>
+            <li><a href="#beverages">beverages</a></li>
+            <li><a href="#museums">museums</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </section> <!-- END MENU ITEMS -->
+  </nav> <!-- END TOPBAR SECTION -->
   
   <div id="landing-page">
     <div class="photo-layer">
@@ -30,6 +52,7 @@
 
   </div>
   
+  <script src="js/lib/foundation.min.js"></script>
   <script src="js/lib/modernizr.js"></script>
   <script src="js/lib/wow.js"></script>
   <script src="js/main.js"></script>
