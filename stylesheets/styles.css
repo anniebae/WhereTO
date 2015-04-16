@@ -2,11 +2,32 @@ body {
   background-color: #99FFCC;
 }
 
+#landing-page {
+/*  position: relative;*/
+}
+
 .slide-img {
   height: 100vh;
   width: 100vw;
 }
 
+.photo-layer {
+  z-index: 1;
+  position: absolute;
+}
+
 ul.cb-slideshow {
-  list-style-type: none; 
+  list-style-type: none;
+  margin-top: 0; 
+}
+
+.black-layer {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  top:0;
+  left:0;
 }
