@@ -4,19 +4,24 @@ body {
 
 
 /********************** NAVBAR **********************/
-nav {
-  z-index: 10;
+.navbar-inverse {
+  background-color: #000;
+}
+.navbar-inverse .navbar-brand {
+  font-family: 'Poiret One';
+  color: #fff;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #99FFCC;
+}
+.navbar-inverse .navbar-nav > li > a {
+  font-family: 'Poiret One';
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #99FFCC;
 }
 
-.top-bar {
-  position: fixed;
-  background: #000;
-  width: 100%;
-}
-
-.top-bar-section li:not(.has-form) a:not(.button) {
-  background: #000;
-}
 
 #food {
   height: 100vh;
