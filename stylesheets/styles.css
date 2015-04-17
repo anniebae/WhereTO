@@ -1,5 +1,5 @@
 body {
-  background-color: #99FFCC;
+  background-color: lightgrey;
 }
 
 
@@ -29,32 +29,31 @@ font-family: 'Josefin Sans';
 #home {
   height: 100vh;
   width: 100vw;
+  background-color: #99FFCC;
 }
-
 #food {
   height: 100vh;
   width: 100vw;
   z-index: 5;
-  background-color: red;
+/*  background-color: red;*/
 }
-
 #beverages {
   height: 100vh;
   width: 100vw;
   z-index: 5;
-  background-color: orange;
+/*  background-color: orange;*/
 }
-
-#museums {
+#attractions {
   height: 100vh;
   width: 100vw;
   z-index: 5;
-  background-color: pink;
+/*  background-color: pink;*/
 }
 
 
 /********************** NAVBAR **********************/
 
+/********************** LANDING PAGE **********************/
 .slide-img {
   height: 100vh;
   width: 100vw;
@@ -96,4 +95,16 @@ font-family: 'Josefin Sans';
   color: white;
   font-size: 500%;
   margin-top: 18%;
+}
+/********************** LANDING PAGE **********************/
+
+.row {
+  text-align: center;
+  padding-top: 15%;
+}
+
+h3 {
+  font-family: 'Josefin Sans';
+  font-weight: 100;
+  color: #99FFCC;
 }
