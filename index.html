@@ -4,43 +4,46 @@
   <meta charset="UTF-8">
   <title>WhereTO</title>
   <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/lib/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/lib/modernizr.css">
+  <link rel="stylesheet" href="stylesheets/lib/bootstrap.css">
   <link rel="stylesheet" href="stylesheets/lib/animate.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
   
-  <!-- TOPBAR SECTION -->
-  <nav class="top-bar important-class" data-topbar>       
-    <!-- TITLE AREA & LOGO -->
-    <ul class="title-area">
-      <li class="name">
-        <a href="#landing-page">WhereTO</a>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-    </ul> <!-- END TITLE AREA & LOGO -->
 
-    <!-- MENU ITEMS -->
-    <section class="top-bar-section">
-        <ul class="right">
-            <li class="active"><a href="#food">food</a></li>
-            <li><a href="#beverages">beverages</a></li>
-            <li><a href="#museums">museums</a></li>
-            <li><a href="#contact">contact</a></li>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      
+      <a href="/" class="navbar-brand">WhereTO</a>
+
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#food">food</a></li>
+          <li><a href="#beverages">beverages</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-    </section> <!-- END MENU ITEMS -->
-  </nav> <!-- END TOPBAR SECTION -->
-  
+      </div>
+
+    </div>
+  </div>
+
+
   <div id="landing-page">
     <div class="photo-layer">
       <ul class="cb-slideshow">
-        <li><span><img src="images/IMG_1512.JPG" class="slide-img"></span></li>
-        <li><span><img src="images/IMG_3589.JPG" class="slide-img"></span></li>
-        <li><span><img src="images/IMG_7070.JPG" class="slide-img"></span></li>
-        <li><span><img src="images/IMG_7396.JPG" class="slide-img"></span></li>
-        <li><span><img src="images/IMG_7672.JPG" class="slide-img"></span></li>
-        <li><span><img src="images/IMG_8471.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_1512.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_3589.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_7070.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_7396.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_7672.JPG" class="slide-img"></span></li>
+        <li><span><img src="stylesheets/images/IMG_8471.JPG" class="slide-img"></span></li>
       </ul>
     </div>
     <div class="black-layer">
@@ -58,9 +61,9 @@
 
   <div id="contact"></div>
   
-  <script src="js/lib/foundation.min.js"></script>
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/modernizr.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/wow.js"></script>
   <script src="js/main.js"></script>
 </body>
