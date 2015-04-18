@@ -98,9 +98,14 @@ font-family: 'Josefin Sans';
 }
 /********************** LANDING PAGE **********************/
 
+.tab-title {
+  padding-top: 10%;
+  text-align: center;
+}
+
 .row {
   text-align: center;
-  padding-top: 15%;
+  padding-top: 3%;
 }
 
 h3 {
