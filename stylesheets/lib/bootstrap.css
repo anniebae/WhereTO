@@ -4887,10 +4887,10 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
-.list-group {
+/*.list-group {
   padding-left: 0;
   margin-bottom: 20px;
-}
+}*/
 .list-group-item {
   position: relative;
   display: block;
