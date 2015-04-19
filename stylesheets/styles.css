@@ -113,3 +113,21 @@ h3 {
   font-weight: 100;
   color: #99FFCC;
 }
+
+.list-group-item {
+  position: relative;
+}
+
+.list-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.arrow-img {
+  height: 18px;
+}
+
+.list-group>.list-group-item:nth-child(odd){
+    background-color: #F0FFF0;
+}​
