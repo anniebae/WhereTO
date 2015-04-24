@@ -112,10 +112,8 @@ button {
 }
 
 button:hover {
-  color: #99FFCC;
-  border: 2.5px solid black;
-/*  background: black;
-  border: none;*/
+  color: black;
+  background-color: white;
 }
 /********************** LANDING PAGE **********************/
 
