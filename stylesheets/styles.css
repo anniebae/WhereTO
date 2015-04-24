@@ -109,7 +109,13 @@ button {
   height: 42px;
   font-family: 'Josefin Sans';
   margin: 0 25px 0 0;
+}
 
+button:hover {
+  color: #99FFCC;
+  border: 2.5px solid black;
+/*  background: black;
+  border: none;*/
 }
 /********************** LANDING PAGE **********************/
 
