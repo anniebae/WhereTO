@@ -94,7 +94,22 @@ font-family: 'Josefin Sans';
   font-weight: 100;
   color: white;
   font-size: 500%;
-  margin-top: 18%;
+  margin-top: 280px;
+}
+
+ul.authenticate li {
+  display: inline-block;
+}
+
+button {
+  background: none;
+  border: 2.5px solid white;
+  color: white;
+  width: 100px;
+  height: 42px;
+  font-family: 'Josefin Sans';
+  margin: 0 25px 0 0;
+
 }
 /********************** LANDING PAGE **********************/
 
