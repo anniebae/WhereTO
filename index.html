@@ -12,20 +12,20 @@
 <body>
   
 
+  <div id="home"></div>
+
+
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      
       <a href="#" class="navbar-brand">
         <img src="stylesheets/images/footprint.png" class="brand-img" onmouseover="this.src='stylesheets/images/pawprint.png'" onmouseout="this.src='stylesheets/images/footprint.png'">
       </a>
-
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
       <div class="collapse navbar-collapse navHeaderCollapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="menu-item"><a href="#home">home</a></li>
@@ -34,34 +34,36 @@
           <li class="menu-item"><a href="#attractions">attraction</a></li>
         </ul>
       </div>
-
     </div>
   </div>
 
 
-  <div id="landing-page">
-    <div class="photo-layer">
-      <ul class="cb-slideshow">
-        <li><span><img src="stylesheets/images/IMG_1512.JPG" class="slide-img"></span></li>
-        <li><span><img src="stylesheets/images/IMG_3589.JPG" class="slide-img"></span></li>
-        <li><span><img src="stylesheets/images/IMG_7070.JPG" class="slide-img"></span></li>
-        <li><span><img src="stylesheets/images/IMG_7396.JPG" class="slide-img"></span></li>
-        <li><span><img src="stylesheets/images/IMG_7672.JPG" class="slide-img"></span></li>
-        <li><span><img src="stylesheets/images/IMG_8471.JPG" class="slide-img"></span></li>
-      </ul>
-    </div>
-    <div class="black-layer">
-    </div>
-    <div class="text-layer wow fadeIn">
-      <h1>WhereTO</h1>
-      <ul class="authenticate">
-        <li><button>LOG IN</button></li>
-        <li><button>SIGN UP</button></li>
-      </ul>
-    </div>
-  </div>
 
-  <div id="home">HOME</div>
+
+  <script type="text/template" id="home-template">
+    // <div id="home">
+      <div class="photo-layer">
+        <ul class="cb-slideshow">
+          <li><span><img src="stylesheets/images/IMG_1512.JPG" class="slide-img"></span></li>
+          <li><span><img src="stylesheets/images/IMG_3589.JPG" class="slide-img"></span></li>
+          <li><span><img src="stylesheets/images/IMG_7070.JPG" class="slide-img"></span></li>
+          <li><span><img src="stylesheets/images/IMG_7396.JPG" class="slide-img"></span></li>
+          <li><span><img src="stylesheets/images/IMG_7672.JPG" class="slide-img"></span></li>
+          <li><span><img src="stylesheets/images/IMG_8471.JPG" class="slide-img"></span></li>
+        </ul>
+      </div>
+      <div class="black-layer">
+      </div>
+      <div class="text-layer wow fadeIn">
+        <h1>WhereTO</h1>
+        <ul class="authenticate">
+          <li><button>LOG IN</button></li>
+          <li><button>SIGN UP</button></li>
+        </ul>
+      </div>
+    // </div>
+  </script>
+
 
 
 <!-- FOOD PAGE -->
@@ -245,9 +247,12 @@
 <!-- ATTRACTIONS PAGE -->
   
   <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
   <script src="js/lib/modernizr.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/wow.js"></script>
+  <script src="js/backbone/views/homeView.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

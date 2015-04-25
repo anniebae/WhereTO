@@ -1,8 +1,6 @@
-new WOW().init();
-
 $(function(){
-  // $('.menu-item').on('click', function(){
-  //   $.remove('navbarHeaderCollapse');
-
-  // })
+  
 });
+
+new HomeView();
+new WOW().init();
