@@ -2,6 +2,8 @@ $(function(){
   
 });
 
+
+new NavView();
 new HomeView();
 new FoodView();
 new BeveragesView();

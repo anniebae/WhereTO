@@ -11,12 +11,13 @@
 </head>
 <body>
   
-
+  <div id="nav"></div>
   <div id="home"></div>
   <div id="food"></div>
   <div id="beverages"></div>
   <div id="attractions"></div>
 
+<script type="text/template" id="nav-template">
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">
@@ -38,7 +39,7 @@
       </div>
     </div>
   </div>
-
+</script>
 
 
 
@@ -251,6 +252,7 @@
   <script src="js/lib/modernizr.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/wow.js"></script>
+  <script src="js/backbone/views/navView.js"></script>
   <script src="js/backbone/views/homeView.js"></script>
   <script src="js/backbone/views/foodView.js"></script>
   <script src="js/backbone/views/beveragesView.js"></script>
