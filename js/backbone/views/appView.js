@@ -10,7 +10,8 @@ var AppView = Backbone.View.extend({
     this.showHome();
   },
   events: {
-    'click #home' : 'showHome',
+    'click #home-tab' : 'showHome',
+    'click #food-tab' : 'showFood'
   },
   renderNav: function() {
     this.$el.html(this.navTemplate());
@@ -19,5 +20,10 @@ var AppView = Backbone.View.extend({
   showHome: function() {
     this.renderNav();
     $('#body').html(this.homeTemplate());
-  }
+  },
+  showFood: function() {
+    this.renderNav();
+    $('#body').html(this.foodTemplate());
+    return this;
+  },
 });
