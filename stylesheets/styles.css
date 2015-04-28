@@ -156,6 +156,10 @@ h3 {
   height: 18px;
 }
 
+.btn-default {
+  height: 34px;
+}
+
 .list-group>.list-group-item:nth-child(odd){
     background-color: #F0FFF0;
 }​
