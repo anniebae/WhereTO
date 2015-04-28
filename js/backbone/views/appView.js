@@ -10,20 +10,24 @@ var AppView = Backbone.View.extend({
     this.showHome();
   },
   events: {
-    'click #home-tab' : 'showHome',
-    'click #food-tab' : 'showFood'
+    'click #home-tab'         : 'showHome',
+    'click #food-tab'         : 'showFood',
+    'click #beverages-tab'    : 'showBeverages',
+    'click #attractions-tab'  : 'showAttractions'
   },
   renderNav: function() {
     this.$el.html(this.navTemplate());
     return this;
   },
   showHome: function() {
-    this.renderNav();
     $('#body').html(this.homeTemplate());
   },
   showFood: function() {
-    this.renderNav();
-    $('#body').html(this.foodTemplate());
-    return this;
+    $('#body').html(this.foodTemplate());  },
+  showBeverages: function() {
+    $("#body").html(this.beveragesTemplate());
   },
+  showAttractions: function() {
+    $("#body").html(this.attractionsTemplate());
+  }
 });
