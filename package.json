@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anniebae/WhereTO/issues"
   },
-  "homepage": "https://github.com/anniebae/WhereTO"
+  "homepage": "https://github.com/anniebae/WhereTO",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
