@@ -19,6 +19,7 @@
   "homepage": "https://github.com/anniebae/WhereTO",
   "dependencies": {
     "express": "^4.12.3",
-    "request": "^2.55.0"
+    "request": "^2.55.0",
+    "yelp": "^0.2.0"
   }
 }
