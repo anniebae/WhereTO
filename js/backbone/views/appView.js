@@ -7,28 +7,36 @@ var AppView = Backbone.View.extend({
   attractionsTemplate: _.template($("#attractions-template").html()),
   initialize: function() {
     this.renderNav();
-    this.showHome();
+    this.templateHandler();
   },
   events: {
-    'click #logo-tab'         : 'showHome',
-    'click #home-tab'         : 'showHome',
-    'click #food-tab'         : 'showFood',
-    'click #beverages-tab'    : 'showBeverages',
-    'click #attractions-tab'  : 'showAttractions'
+    'click #logo-tab'  : 'showHome',
+    'click .menu-item' : 'change'
   },
   renderNav: function() {
     this.$el.html(this.navTemplate());
     return this;
   },
-  showHome: function() {
-    $('#body').html(this.homeTemplate());
+  change: function(e) {
+    var id = $(e.currentTarget).data('id');
+    this.templateHandler(id);
   },
-  showFood: function() {
-    $('#body').html(this.foodTemplate());  },
-  showBeverages: function() {
-    $("#body").html(this.beveragesTemplate());
+  templateHandler: function(id) {
+    var id = id || 1;
+    switch (true) {
+      case (id === 1): template = this.homeTemplate;
+      break
+      case (id === 2): template = this.foodTemplate;
+      break
+      case (id === 3): template = this.beveragesTemplate;
+      break
+      case (id === 4): template = this.attractionsTemplate;
+      break
+    }
+    this.setView(template);
   },
-  showAttractions: function() {
-    $("#body").html(this.attractionsTemplate());
-  }
+  setView: function(template) {
+    $('#body').html(template());
+    return this;
+  },
 });
