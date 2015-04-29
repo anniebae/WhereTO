@@ -8,7 +8,6 @@ var yelp = require("yelp").createClient({
   token_secret: process.env.YELP_TOKEN_SECRET
 });
 
-
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'html');
 
@@ -16,16 +15,12 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/search', function(req, res) {
-	
-
-	var request = require('request');
-	request('http://api.yelp.com/v2/search/?location=New%20York,%20NY', function (error, response, body) {
-	  if (!error && response.statusCode == 200) {
-	    console.log(body) // Show the HTML for the Google homepage. 
-	  }
-	});
-
+app.get('/api', function(req, res) {
+  yelp.business("yelp-san-francisco", function(error, data) {
+    console.log(error);
+    console.log(data);
+    res.json(data);
+  });
 });
 
 app.listen(8000, function(){
