@@ -10,6 +10,7 @@ var AppView = Backbone.View.extend({
     this.showHome();
   },
   events: {
+    'click #logo-tab'         : 'showHome',
     'click #home-tab'         : 'showHome',
     'click #food-tab'         : 'showFood',
     'click #beverages-tab'    : 'showBeverages',
