@@ -28,6 +28,8 @@ app.get('/api', function(req, res) {
 
 
 app.post('/api/search', urlencodedParser, function(req, res) {
+	var request = req.body; // to be the params from search filed
+	console.log(request);
 	var location = "Montreal";
 	var food = "food";
 	yelp.search({term: food, location: location}, function(error, data) {
