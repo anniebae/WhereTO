@@ -18,6 +18,14 @@ app.get('/', function(req, res){
 });
 
 
+app.get('/api', function(req, res) {
+  yelp.business("yelp-san-francisco", function(error, data) {
+    console.log(error);
+    console.log(data);
+    res.json(data);
+  });
+});
+
 app.post('/api', urlencodedParser, function (req, res) {
   if (!req.body) return res.sendStatus(400)
   var request = req.body;
