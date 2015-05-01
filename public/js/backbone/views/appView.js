@@ -11,7 +11,8 @@ var AppView = Backbone.View.extend({
   },
   events: {
     'click #logo-tab'  : 'showHome',
-    'click .menu-item' : 'change'
+    'click .menu-item' : 'change',
+    'click #btn-brunch': 'post'
   },
   renderNav: function() {
     this.$el.html(this.navTemplate());
@@ -39,4 +40,8 @@ var AppView = Backbone.View.extend({
     $('#body').html(template());
     return this;
   },
+  post: function(e) {
+    e.preventDefault();
+    console.log('me been clicked');
+  }
 });
