@@ -26,18 +26,31 @@ app.get('/api', function(req, res) {
   });
 });
 
+
+app.post('/api/search', urlencodedParser, function(req, res) {
+	var location = "Montreal";
+	var food = "food";
+	yelp.search({term: food, location: location}, function(error, data) {
+  	console.log(error);
+  	console.log(data);
+  	res.json(data);
+	});
+});
+
+
 app.post('/api', urlencodedParser, function (req, res) {
   if (!req.body) return res.sendStatus(400)
   var request = req.body;
   var cityInput = request.city;
   var location = cityInput.split(' ').join('-');
   var city = 'yelp-' + location;
+  console.log(city);
   yelp.business(city, function(error, data) {
     console.log(error);
     console.log(data);
     res.json(data);
     
-    console.log(data.name);
+    console.log(data);
   });
 });
 
