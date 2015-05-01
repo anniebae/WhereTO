@@ -6,14 +6,14 @@ $(function(){
 	$('#btn-brunch').on('click', function(e) {
 		e.preventDefault();
 		console.log('me been clicked');
-		var input = $('#brunchInput').val();
-		console.log(input);
+		var location = $('#brunchInput').val();
+		console.log(location);
 		$.ajax({
 			url: '/api/search',
 			type: 'POST',
 			dataType: 'json',
 			data: {
-				input
+				location: location
 			},
 			success: function(data){
 				console.log(data);
