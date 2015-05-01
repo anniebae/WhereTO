@@ -17,16 +17,6 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-
-app.get('/api', function(req, res) {
-  yelp.business("yelp-san-francisco", function(error, data) {
-    console.log(error);
-    console.log(data);
-    res.json(data);
-  });
-});
-
-
 app.post('/api/search', urlencodedParser, function(req, res) {
 	var request = req.body; // to be the params from search filed
 	console.log(request);
