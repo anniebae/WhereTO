@@ -134,11 +134,6 @@ h3 {
   color: #99FFCC;
 }
 
-#list {
-  overflow-y: auto;
-  height: 400px;
-}
-
 .list-group {
   width: 85%;
 }
