@@ -20,13 +20,12 @@ app.get('/', function(req, res){
 app.post('/api/search', urlencodedParser, function(req, res) {
   if (!req.body) return res.sendStatus(400)
 	var request = req.body; // to be the params from search filed
-	console.log('WHAT YOU WROTE: ', request);
-	var location = "Montreal";
+	var location = request.input;
 	var food = "food";
 	yelp.search({term: food, location: location}, function(error, data) {
   	console.log(error);
-  	// console.log(data);
-  	// res.json(data);
+  	console.log(data);
+  	res.json(data);
 	});
 });
 
