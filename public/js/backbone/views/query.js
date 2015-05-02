@@ -33,9 +33,14 @@ var Query = Backbone.View.extend({
 			},
 			success: function(data){
 				console.log(data);
-				var view	= new Response();
-    		$('.list-group').append(view.el);
-  			view.render();
+				var businesses = data.businesses; 
+				for (var i = 0; i < businesses.length; i++) {
+					var model = businesses[i];
+					var yelpData = new YelpData(model);
+					var view	= new Response({model: yelpData});
+    			$('.list-group').append(view.el);
+  				view.render();
+				};
 			}
 		});
 	},

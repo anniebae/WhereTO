@@ -4,7 +4,7 @@ var Response = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		this.$el.html(this.responseTemplate());
+		this.$el.html(this.responseTemplate(this.model.toJSON()));
 		return this;
 	},
 });
