@@ -40,6 +40,7 @@ var Query = Backbone.View.extend({
 					var view	= new Response({model: yelpData});
     			$('.list-group').append(view.el);
   				view.render();
+  				$('#input-location').val('');
 				};
 			}
 		});
