@@ -33,6 +33,9 @@ var Query = Backbone.View.extend({
 			},
 			success: function(data){
 				console.log(data);
+				var view	= new Response();
+    		$('.list-group').append(view.el);
+  			view.render();
 			}
 		});
 	},
