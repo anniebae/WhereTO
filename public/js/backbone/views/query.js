@@ -21,19 +21,19 @@ var Query = Backbone.View.extend({
 		this.sendData();
  	},
  	sendData: function() {
-	console.log('me been clicked');
-	var location = $('#input-location').val();
-	console.log(location);
-	$.ajax({
-		url: '/api/search',
-		type: 'POST',
-		dataType: 'json',
-		data: {
-			location: location
-		},
-		success: function(data){
-			console.log(data);
-		}
-	});
-}
+		console.log('me been clicked');
+		var location = $('#input-location').val();
+		console.log(location);
+		$.ajax({
+			url: '/api/search',
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				location: location
+			},
+			success: function(data){
+				console.log(data);
+			}
+		});
+	},
 });
