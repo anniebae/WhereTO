@@ -7,14 +7,13 @@ $(function(){
   });
 
 
-
- 	$('#brunchInput').on('keypress', function(e) {
+ 	$('#input-location').on('keypress', function(e) {
  		if (e.which === 13) {
  			sendData();
  		}
  	});
 
-	$('#btn-brunch').on('click', function(e) {
+	$('#btn-location').on('click', function(e) {
 		e.preventDefault();
 		sendData();
 	});
@@ -26,7 +25,7 @@ $(function(){
 
 function sendData() {
 	console.log('me been clicked');
-	var location = $('#brunchInput').val();
+	var location = $('#input-location').val();
 	console.log(location);
 	$.ajax({
 		url: '/api/search',
