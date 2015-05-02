@@ -13,11 +13,23 @@
   
   <div id="nav"></div>
   <div id="body"></div>
+  
 
-  <div id="location-form-group">
-    <input id="input-location" type="text" class="form-control" placeholder="Location">
-    <button id="btn-location" name="location" class="btn btn-default">Submit</button>
+  
+
+<script type="text/template" id="query-template">
+  <div id="query" class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-3">
+        <div class="form-group">
+          <input id="input-location" type="text" class="form-control" placeholder="Location">
+          <button id="btn-location" name="location" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </div>
   </div>
+</script>
+
 
 <script type="text/template" id="nav-template">
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -37,6 +49,7 @@
           <li data-id="2" class="menu-item"><a href="#" id="food-tab">food</a></li>
           <li data-id="3" class="menu-item"><a href="#" id="beverages-tab">beverages</a></li>
           <li data-id="4" class="menu-item"><a href="#" id="attractions-tab">attractions</a></li>
+          <li data-id="5" class="menu-item"><a href="#" id="query-tab">query</a></li>
         </ul>
       </div>
     </div>
@@ -79,8 +92,6 @@
               <h3>brunch</h3>
               <input type="text" class="form-control" id="brunchInput" placeholder="venue">
               <button id="btn-brunch" class="btn btn-default">Submit</button>
-
-
               <div id="list">
                 <ul class="list-group">
                   <li class="list-group-item">
@@ -150,8 +161,6 @@
                 </ul>
               </div>
 
-
-=======
               <button type="submit" class="btn btn-default" id="btn-submit">Submit</button>
               <ul class="list-group">
                 <li class="list-group-item">
@@ -219,7 +228,6 @@
                   NAME <br> ADDRESS
                 </li>
               </ul>
->>>>>>> 0bf29ad86845fa714dd2c8f41f172f975ce7671d
             </div>
           </form>
         </div>
@@ -456,6 +464,7 @@
   <script src="js/lib/modernizr.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/wow.js"></script>
+  <script src="js/backbone/views/query.js"></script>
   <script src="js/backbone/views/appView.js"></script>
   <script src="js/main.js"></script>
 </body>

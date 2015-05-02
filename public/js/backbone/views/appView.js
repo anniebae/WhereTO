@@ -12,7 +12,7 @@ var AppView = Backbone.View.extend({
   events: {
     'click #logo-tab'  : 'showHome',
     'click .menu-item' : 'change',
-    'click #btn-brunch': 'post'
+    'click query-tab'  : 'query'
   },
   renderNav: function() {
     this.$el.html(this.navTemplate());
@@ -35,6 +35,10 @@ var AppView = Backbone.View.extend({
       break
     }
     this.setView(template);
+  },
+  query: function() {
+    var view = new Query();
+    $('#body').html(view.el);
   },
   setView: function(template) {
     $('#body').html(template());
