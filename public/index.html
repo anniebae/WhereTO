@@ -42,7 +42,11 @@
         <img src="stylesheets/images/arrow.png" class="arrow-img">
       </a>
     </span>
-    <%= name %>
+    <%= name %> 
+    <% var address = location.display_address %>
+    <% for (var i = 0; i < address.length; i++) { %>
+    <br> <%= address[i] %>
+    <% } %>
   </li>
 </script>
 
