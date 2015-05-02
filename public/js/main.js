@@ -17,9 +17,6 @@ $(function(){
 		e.preventDefault();
 		sendData();
 	});
-
-
-
 });
 
 
