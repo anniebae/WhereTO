@@ -33,12 +33,15 @@ var AppView = Backbone.View.extend({
       break
       case (id === 4): template = this.attractionsTemplate;
       break
+      case (id === 5): this.query();
+      return false;
     }
     this.setView(template);
   },
   query: function() {
     var view = new Query();
     $('#body').html(view.el);
+    view.render();
   },
   setView: function(template) {
     $('#body').html(template());
