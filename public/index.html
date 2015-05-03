@@ -44,9 +44,11 @@
     </span>
     <%= name %> 
     <% var address = location.display_address %>
+    <% var rating = rating %>
     <% for (var i = 0; i < address.length; i++) { %>
     <br> <%= address[i] %>
     <% } %>
+    <br> <%= rating %>/5
   </li>
 </script>
 
