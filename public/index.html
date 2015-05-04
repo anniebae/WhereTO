@@ -11,8 +11,16 @@
 </head>
 <body>
   
-  <div id="nav"></div>
-  <div id="body"></div>
+  <div class="app-container">
+
+    <div id="nav"></div>
+    <div class="home"></div>
+    <div class="food"></div>
+    <div class="beverages"></div>
+    <div class="attractions"></div>
+    <div class="query"></div>
+
+  </div>
   
 
   
@@ -68,11 +76,11 @@
       </button>
       <div class="collapse navbar-collapse navHeaderCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li data-id="1" class="menu-item"><a href="#" id="home-tab">home</a></li>
-          <li data-id="2" class="menu-item"><a href="#" id="food-tab">food</a></li>
-          <li data-id="3" class="menu-item"><a href="#" id="beverages-tab">beverages</a></li>
-          <li data-id="4" class="menu-item"><a href="#" id="attractions-tab">attractions</a></li>
-          <li data-id="5" class="menu-item"><a href="#" id="query-tab">query</a></li>
+          <li data-id="1" class="menu-item"><a id="home-tab">home</a></li>
+          <li data-id="2" class="menu-item"><a id="food-tab">food</a></li>
+          <li data-id="3" class="menu-item"><a id="beverages-tab">beverages</a></li>
+          <li data-id="4" class="menu-item"><a id="attractions-tab">attractions</a></li>
+          <li data-id="5" class="menu-item"><a id="query-tab">query</a></li>
         </ul>
       </div>
     </div>
@@ -498,7 +506,7 @@
   <script src="js/backbone/models/yelp-data.js"></script>
   <script src="js/backbone/views/response.js"></script>
   <script src="js/backbone/views/query.js"></script>
-  <script src="js/backbone/views/appView.js"></script>
+  <script src="js/backbone/views/navbar.js"></script>
   <script src="js/backbone/routers/router.js"></script>
   <script src="js/main.js"></script>
 </body>
