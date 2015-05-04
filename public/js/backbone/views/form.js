@@ -58,12 +58,15 @@ var Form = Backbone.View.extend({
 	login: function(e) {
 		e.preventDefault();
 		var ref = new Firebase("https://where-to.firebaseio.com/users");
+		var email = $('.form-email').val();
+		var password = $('.form-password').val();
 		ref.authWithPassword({
-		  "email": "bobtony@firebase.com",
-		  "password": "correcthorsebatterystaple"
+			email: email,
+			password: password
 		}, function(error, authData) {
 		  if (error) {
 		    console.log("Login Failed!", error);
+		    $('.form-error').text('Login Failed!');
 		  } else {
 		    console.log("Authenticated successfully with payload:", authData);
 		  }
