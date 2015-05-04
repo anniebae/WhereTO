@@ -21,8 +21,8 @@ app.post('/api/search', urlencodedParser, function(req, res) {
   if (!req.body) return res.sendStatus(400)
 	var request = req.body; // to be the params from search filed
 	var location = request.location;
-	var food = "food";
-	yelp.search({term: food, location: location}, function(error, data) {
+  var term = request.term;
+	yelp.search({term: term, location: location}, function(error, data) {
   	console.log(error);
   	console.log(data);
   	res.json(data);

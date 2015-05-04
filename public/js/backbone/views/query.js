@@ -23,13 +23,15 @@ var Query = Backbone.View.extend({
  	sendData: function() {
 		console.log('me been clicked');
 		var location = $('#input-location').val();
+		var term = $('#input-term').val();
 		console.log(location);
 		$.ajax({
 			url: '/api/search',
 			type: 'POST',
 			dataType: 'json',
 			data: {
-				location: location
+				location: location,
+				term: term
 			},
 			success: function(data){
 				console.log(data);
