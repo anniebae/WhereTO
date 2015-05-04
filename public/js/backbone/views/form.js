@@ -69,6 +69,7 @@ var Form = Backbone.View.extend({
 		    $('.form-error').text('Login Failed!');
 		  } else {
 		    console.log("Authenticated successfully with payload:", authData);
+		    router.navigate('food', {trigger: true});
 		  }
 		});
 

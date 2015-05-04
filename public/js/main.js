@@ -8,3 +8,15 @@ $(function(){
   });
 
 });
+
+
+var ref = new Firebase("https://where-to.firebaseio.com");
+ref.onAuth(function(authData) {
+  if (authData) {
+    console.log("Authenticated with uid:", authData.uid);
+    $('.navbar-right').show();
+  } else {
+    console.log("Client unauthenticated.");
+    $('.navbar-right').hide();
+  }
+});
