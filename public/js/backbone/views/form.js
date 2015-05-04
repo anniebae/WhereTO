@@ -4,7 +4,8 @@ var Form = Backbone.View.extend({
 	events: {
 		'click .btn-login-form' 	 : 'loginForm',
 		'click .btn-register-form' : 'registerForm',
-		'click .btn-register' 		 : 'create'
+		'click .btn-register' 		 : 'create',
+		'click .btn-login' 				 : 'login'
 	},
 	loginForm: function() {
 		$('.form-container').html(this.formTemplate());
@@ -47,9 +48,26 @@ var Form = Backbone.View.extend({
 		    console.log("Successfully created user account with uid:", userData.uid);
 		    $('.form-error').text('Successfully created user account');
 		  }
-});
-
-
-
+		  ref.push({
+		  	email: email,
+		  	password: password,
+		  	uid: userData.uid
+		  });
+		});
 	},
+	login: function(e) {
+		e.preventDefault();
+		var ref = new Firebase("https://where-to.firebaseio.com/users");
+		ref.authWithPassword({
+		  "email": "bobtony@firebase.com",
+		  "password": "correcthorsebatterystaple"
+		}, function(error, authData) {
+		  if (error) {
+		    console.log("Login Failed!", error);
+		  } else {
+		    console.log("Authenticated successfully with payload:", authData);
+		  }
+		});
+
+	}
 });
