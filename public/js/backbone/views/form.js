@@ -3,7 +3,8 @@ var Form = Backbone.View.extend({
 	formTemplate: _.template($('#form-template').html()),
 	events: {
 		'click .btn-login-form' 	 : 'loginForm',
-		'click .btn-register-form' : 'registerForm'
+		'click .btn-register-form' : 'registerForm',
+		'click .btn-register' 		 : 'create'
 	},
 	loginForm: function() {
 		$('.form-container').html(this.formTemplate());
@@ -18,5 +19,8 @@ var Form = Backbone.View.extend({
 		$('.btn-auth').removeClass('btn-login');
 		$('.btn-auth').addClass('btn-register');
 		return this;
+	},
+	create: function(e) {
+		e.preventDefault();
 	},
 });
