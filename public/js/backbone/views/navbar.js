@@ -21,6 +21,7 @@ var Navbar = Backbone.View.extend({
   },
   home: function() {
     $('.home').html(this.homeTemplate());
+    var form = new Form();
     router.navigate('', {trigger: true});
     return this;
   },
