@@ -43,6 +43,7 @@ var Query = Backbone.View.extend({
     			$('.list-group').append(view.el);
   				view.render();
   				$('#input-location').val('');
+  				$('#input-term').val('');
 				};
 			}
 		});
