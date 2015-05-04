@@ -159,6 +159,19 @@ h3 {
   height: 34px;
 }
 
+form label {
+  color: #fff;
+  float: left;
+}
+
+.btn-login {
+  height: 30px;
+  border-radius: 2px;
+  background: lightblue;
+  color: #fff;
+
+}
+
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;

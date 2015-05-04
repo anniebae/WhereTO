@@ -95,28 +95,36 @@
       </div>
       <div class="black-layer">
       </div>
-      <div class="text-layer wow fadeIn">
-        <h1>WhereTO</h1>
-        <ul class="authenticate">
-          <li><button class="unique-user">LOG IN</button></li>
-          <li><button class="unique-user">SIGN UP</button></li>
-        </ul>
-        <div class="col-md-2 col-md-offset-5">
-        <form>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control">
+      <div class="container auth-container text-layer wow fadeIn">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1>WhereTO</h1>
+            <ul class="authenticate">
+              <li><button class="unique-user btn-login-form">LOG IN</button></li>
+              <li><button class="unique-user btn-register-form">SIGN UP</button></li>
+            </ul>
+            <div class="col-md-2 col-md-offset-5 form-container">
+
+            </div>
           </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="password" class="form-control">
-          </div>
-          <div class="form-group">
-            <button type="submit" class="form-control btn btn-default">Submit</button>
-          </div>
-        </form>
         </div>
       </div>
+  </script>
+
+  <script type="text/template" id="form-template">
+    <form>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="form-control btn btn-default btn-login">Submit</button>
+      </div>
+    </form>
   </script>
 
 
