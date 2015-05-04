@@ -50,5 +50,7 @@ var Navbar = Backbone.View.extend({
   logout: function() {
     var ref = new Firebase("https://where-to.firebaseio.com/users");
     ref.unauth();
+    this.home();
+    $('.navbar-right').hide();
   }
 });
