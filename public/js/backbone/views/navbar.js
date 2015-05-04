@@ -13,7 +13,8 @@ var Navbar = Backbone.View.extend({
     'click #food-tab'        : 'food',
     'click #beverages-tab'   : 'beverages',
     'click #attractions-tab' : 'attractions',
-    'click #query-tab'       : 'query'
+    'click #query-tab'       : 'query',
+    'click .btn-logout'      : 'logout'
   },
   render: function() {
     this.$el.html(this.navTemplate());
@@ -46,4 +47,8 @@ var Navbar = Backbone.View.extend({
     view.render();
     router.navigate('query', {trigger: true});
   },
+  logout: function() {
+    var ref = new Firebase("https://where-to.firebaseio.com/users");
+    ref.unauth();
+  }
 });
