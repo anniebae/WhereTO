@@ -50,6 +50,9 @@ font-family: 'Josefin Sans';
 /*  background-color: pink;*/
 }
 
+.menu-item {
+  cursor: pointer;
+}
 
 /********************** NAVBAR **********************/
 
