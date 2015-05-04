@@ -1,4 +1,5 @@
-new AppView();
+var router = new Router();
+Backbone.history.start();
 
 $(function(){
 
