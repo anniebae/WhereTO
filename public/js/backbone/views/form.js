@@ -9,14 +9,14 @@ var Form = Backbone.View.extend({
 	},
 	loginForm: function() {
 		$('.form-container').html(this.formTemplate());
-		$('.btn-auth').text('Login');
+		$('.btn-auth').text('LOG IN');
 		$('.btn-auth').removeClass('btn-register');
 		$('.btn-auth').addClass('btn-login');
 		return this;
 	},
 	registerForm: function() {
 		$('.form-container').html(this.formTemplate());
-		$('.btn-auth').text('Register');
+		$('.btn-auth').text('SIGN UP');
 		$('.btn-auth').removeClass('btn-login');
 		$('.btn-auth').addClass('btn-register');
 		return this;
