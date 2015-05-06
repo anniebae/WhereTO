@@ -9,7 +9,6 @@ var Navbar = Backbone.View.extend({
     this.render();
   },
   events: {
-    'click #home-tab'        : 'home',
     'click #food-tab'        : 'food',
     'click #beverages-tab'   : 'beverages',
     'click #attractions-tab' : 'attractions',
