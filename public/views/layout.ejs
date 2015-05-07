@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>WhereTO</title>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/lib/modernizr.css">
-  <link rel="stylesheet" href="stylesheets/lib/animate.min.css">
-  <link rel="stylesheet" href="stylesheets/lib/bootstrap.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
-</head>
+<% include ./dependencies/head %>
+
 <body>
 
   <div id="nav"></div>
@@ -41,17 +32,17 @@
   <script type="text/template" id="response-template">
     <li class="list-group-item">
       <span class="list-arrow">
-        <a href="<%= url %>" target="_blank">
+        <a href="<%%= url %>" target="_blank">
           <img src="stylesheets/images/arrow.png" class="arrow-img">
         </a>
       </span>
-      <%= name %> 
-      <% var address = location.display_address %>
-      <% var rating = rating %>
-      <% for (var i = 0; i < address.length; i++) { %>
-      <br> <%= address[i] %>
-      <% } %>
-      <br> <%= rating %>/5
+      <%%= name %> 
+      <%% var address = location.display_address %>
+      <%% var rating = rating %>
+      <%% for (var i = 0; i < address.length; i++) { %>
+      <br> <%%= address[i] %>
+      <%% } %>
+      <br> <%%= rating %>/5
     </li>
   </script>
 
@@ -365,6 +356,7 @@
   <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.min.js"></script>
   <script src="js/lib/modernizr.js"></script>
+  <script src="js/lib/ejs.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/wow.js"></script>
   <script src="js/backbone/models/yelp-data.js"></script>

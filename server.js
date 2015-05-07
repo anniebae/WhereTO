@@ -2,6 +2,7 @@ var express          = require('express');
 var app              = express();
 var request          = require('request');
 var bodyParser       = require('body-parser');
+var ejs              = require('ejs');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 var yelp             = require("yelp").createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY, 
@@ -9,12 +10,14 @@ var yelp             = require("yelp").createClient({
   token: process.env.YELP_TOKEN,
   token_secret: process.env.YELP_TOKEN_SECRET
 });
+var root = __dirname + '/public';
 
-app.use(express.static(__dirname + '/public'));
-app.set('view engine', 'html');
+app.use(express.static(root));
+app.set('view engine', 'ejs');
+app.set('views', root + '/views');
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render('layout');
 });
 
 app.post('/api/search', urlencodedParser, function(req, res) {
