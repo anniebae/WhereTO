@@ -133,10 +133,19 @@ h3 {
   color: #99FFCC;
 }
 
+.list-group {
+  padding: 0;
+}
 
 .list-group-item {
   width: 25%;
   position: relative;
+}
+
+.list-group-row {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .list-arrow {
