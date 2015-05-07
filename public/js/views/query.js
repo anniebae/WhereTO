@@ -24,6 +24,7 @@ var Query = Backbone.View.extend({
 		console.log('me been clicked');
 		var location = $('#input-location').val();
 		var term = $('#input-term').val();
+		$('.list-group-loader').html('<img src="images/dog.gif">');
 		console.log(location);
 		$.ajax({
 			url: '/api/search',
@@ -39,6 +40,7 @@ var Query = Backbone.View.extend({
 				for (var i = 0; i < businesses.length; i++) {
 					var model = businesses[i];
 					var yelpData = new YelpData(model);
+  				$('.list-group-loader').empty();
 					var view	= new Response({model: yelpData});
     			$('.list-group').append(view.el);
   				view.render();
