@@ -4,7 +4,7 @@ var Query = Backbone.View.extend({
 		this.render();
 	},
 	events: {
-		'keypress #input-location' : 'keypressOn',
+		'keypress #input-term' : 'keypressOn',
 		'click #btn-location'			 : 'clickOn'
 	},
 	render: function() {
