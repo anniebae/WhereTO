@@ -1,4 +1,6 @@
 var Response = Backbone.View.extend({
+	tagName: 'li',
+	className: 'list-group-item',
 	responseTemplate: _.template($('#response-template').html()),
 	initialize: function() {
 		this.render();
