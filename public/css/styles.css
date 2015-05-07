@@ -35,21 +35,6 @@ ul.list-group li {
   width: 100vw;
   background-color: #99FFCC;
 }
-/*#food {
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-}
-#beverages {
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-}
-#attractions {
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-}*/
 
 .menu-item {
   cursor: pointer;
@@ -150,6 +135,7 @@ h3 {
 
 
 .list-group-item {
+  width: 25%;
   position: relative;
 }
 
