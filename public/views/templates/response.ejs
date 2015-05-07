@@ -1,0 +1,16 @@
+<script type="text/template" id="response-template">
+  <li class="list-group-item">
+    <span class="list-arrow">
+      <a href="<%%= url %>" target="_blank">
+        <img src="stylesheets/images/arrow.png" class="arrow-img">
+      </a>
+    </span>
+    <%%= name %> 
+    <%% var address = location.display_address %>
+    <%% var rating = rating %>
+    <%% for (var i = 0; i < address.length; i++) { %>
+    <br> <%%= address[i] %>
+    <%% } %>
+    <br> <%%= rating %>/5
+  </li>
+</script>
