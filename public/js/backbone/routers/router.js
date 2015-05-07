@@ -3,8 +3,7 @@ var Router = Backbone.Router.extend({
     ''            : 'home',
     'food'        : 'food',
     'beverages'   : 'beverages',
-    'attractions' : 'attractions',
-    'query'       : 'query'
+    'attractions' : 'attractions'
   },
   home: function() {
     $('.food').hide();
@@ -19,7 +18,6 @@ var Router = Backbone.Router.extend({
     $('.home').hide();
     $('.beverages').hide();
     $('.attractions').hide();
-    $('.query').hide();
     var navbar = new Navbar();
     navbar.food();
     $('.food').show();
@@ -41,14 +39,5 @@ var Router = Backbone.Router.extend({
     var navbar = new Navbar();
     navbar.attractions();
     $('.attractions').show();
-  },
-  query: function() {
-    $('.home').hide();
-    $('.attractions').hide();
-    $('.beverages').hide();
-    $('.food').hide();
-    var navbar = new Navbar();
-    navbar.query();
-    $('.query').show();
   },
 });

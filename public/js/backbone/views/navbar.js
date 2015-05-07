@@ -1,7 +1,6 @@
 var Navbar = Backbone.View.extend({
   el: "#nav",
   homeTemplate: _.template($("#home-template").html()),
-  foodTemplate: _.template($("#food-template").html()),
   navTemplate: _.template($("#nav-template").html()),
   beveragesTemplate: _.template($("#beverages-template").html()),
   attractionsTemplate: _.template($("#attractions-template").html()),
@@ -12,7 +11,6 @@ var Navbar = Backbone.View.extend({
     'click #food-tab'        : 'food',
     'click #beverages-tab'   : 'beverages',
     'click #attractions-tab' : 'attractions',
-    'click #query-tab'       : 'query',
     'click .btn-logout'      : 'logout'
   },
   render: function() {
@@ -25,11 +23,6 @@ var Navbar = Backbone.View.extend({
     router.navigate('', {trigger: true});
     return this;
   },
-  food: function() {
-    $('.food').html(this.foodTemplate());
-    router.navigate('food', {trigger: true});
-    return this;
-  },
   beverages: function() {
     $('.beverages').html(this.beveragesTemplate());
     router.navigate('beverages', {trigger: true});
@@ -40,11 +33,11 @@ var Navbar = Backbone.View.extend({
     router.navigate('attractions', {trigger: true});
     return this;
   },
-  query: function() {
+  food: function() {
     var view = new Query();
-    $('.query').html(view.el);
+    $('.food').html(view.el);
     view.render();
-    router.navigate('query', {trigger: true});
+    router.navigate('food', {trigger: true});
   },
   logout: function() {
     var ref = new Firebase("https://where-to.firebaseio.com/users");
