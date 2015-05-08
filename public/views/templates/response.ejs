@@ -1,9 +1,21 @@
 <script type="text/template" id="response-template">
   
     <span class="list-arrow">
-      <a href="<%%= url %>" target="_blank">
+      <div>
+        <a href="<%%= url %>" target="_blank">
+        <i class="fa fa-yelp"></i>
+      </div>
+      <div>
+        <a href="">
+          <i class="fa fa-caret-down"></i>
+        </a>
+      </div>
+<!--       <a href="<%%= url %>" target="_blank">
         <i class="fa fa-yelp"></i>
       </a>
+      <a href="">
+        <i class="fa fa-caret-down"></i>
+      </a> -->
     </span>
     <%%= name %> 
     <%% var address = location.display_address %>

@@ -150,8 +150,8 @@ h3 {
 
 .list-arrow {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 35px;
+  right: 7px;
 }
 
 .arrow-img {
