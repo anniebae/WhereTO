@@ -1,12 +1,9 @@
 var Query = Backbone.View.extend({
 	queryTemplate: _.template($('#query-template').html()),
 	bevTemplate: _.template($('#beverages-template').html()),
-	initialize: function() {
-		this.render();
-	},
 	events: {
 		'keypress #input-term' : 'keypressOn',
-		'click #btn-location'			 : 'clickOn'
+		'click #btn-location'	 : 'clickOn'
 	},
 	food: function() {
 		this.$el.html(this.queryTemplate());

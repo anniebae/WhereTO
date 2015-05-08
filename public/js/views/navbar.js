@@ -25,7 +25,7 @@ var Navbar = Backbone.View.extend({
   beverages: function() {
     var view = new Query();
     $('.beverages').html(view.el);
-    view.render();
+    view.beverages();
     router.navigate('beverages', {trigger: true});
     return this;
   },
@@ -37,7 +37,7 @@ var Navbar = Backbone.View.extend({
   food: function() {
     var view = new Query();
     $('.food').html(view.el);
-    view.render();
+    view.food();
     router.navigate('food', {trigger: true});
   },
   logout: function() {
