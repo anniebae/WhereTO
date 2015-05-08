@@ -2,7 +2,6 @@ var Navbar = Backbone.View.extend({
   el: "#nav",
   homeTemplate: _.template($("#home-template").html()),
   navTemplate: _.template($("#nav-template").html()),
-  attractionsTemplate: _.template($("#attractions-template").html()),
   initialize: function() {
     this.render();
   },
@@ -30,9 +29,10 @@ var Navbar = Backbone.View.extend({
     return this;
   },
   attractions: function() {
-    $('.attractions').html(this.attractionsTemplate());
-    router.navigate('attractions', {trigger: true});
-    return this;
+    var view = new Query();
+    $('.attractions').html(view.el);
+    view.attractions();
+    router.navigate('attractions', {trigger: true});  
   },
   food: function() {
     var view = new Query();

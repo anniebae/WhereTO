@@ -1,6 +1,7 @@
 var Query = Backbone.View.extend({
 	queryTemplate: _.template($('#query-template').html()),
 	bevTemplate: _.template($('#beverages-template').html()),
+	attracTemplate: _.template($("#attractions-template").html()),
 	events: {
 		'keypress #input-term' : 'keypressOn',
 		'click #btn-location'	 : 'clickOn'
@@ -12,6 +13,9 @@ var Query = Backbone.View.extend({
 	beverages: function() {
 		this.$el.html(this.bevTemplate());
 		return this;
+	},
+	attractions: function() {
+		this.$el.html(this.attracTemplate());
 	},
 	keypressOn: function(e) {
 		if (e.which === 13) {
