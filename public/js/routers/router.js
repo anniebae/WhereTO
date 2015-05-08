@@ -17,14 +17,14 @@ var Router = Backbone.Router.extend({
   food: function() {
     $('.home').hide();
     $('.beverages').css({visibility: 'hidden'});
-    $('.attractions').hide();
+    $('.attractions').css({visibility: 'hidden'});
     var navbar = new Navbar();
     navbar.food();
     $('.food').css({visibility: 'visibile'});
   },
   beverages: function() {
     $('.home').hide();
-    $('.attractions').hide();
+    $('.attractions').css({visibility: 'hidden'});
     $('.query').hide();
     $('.food').css({visibility: 'hidden'});
     var navbar = new Navbar();
@@ -33,11 +33,11 @@ var Router = Backbone.Router.extend({
   },
   attractions: function() {
     $('.home').hide();
-    $('.beverages').hide();
+    $('.beverages').css({visibility: 'hidden'});
     $('.query').hide();
-    $('.food').hide();
+    $('.food').css({visibility: 'hidden'});
     var navbar = new Navbar();
     navbar.attractions();
-    $('.attractions').show();
+    $('.attractions').css({visibility: 'visibile'});
   },
 });
