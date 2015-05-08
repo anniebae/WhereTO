@@ -16,20 +16,20 @@ var Router = Backbone.Router.extend({
   },
   food: function() {
     $('.home').hide();
-    $('.beverages').hide();
+    $('.beverages').css({visibility: 'hidden'});
     $('.attractions').hide();
     var navbar = new Navbar();
     navbar.food();
-    $('.food').show();
+    $('.food').css({visibility: 'visibile'});
   },
   beverages: function() {
     $('.home').hide();
     $('.attractions').hide();
     $('.query').hide();
-    $('.food').hide();
+    $('.food').css({visibility: 'hidden'});
     var navbar = new Navbar();
     navbar.beverages();
-    $('.beverages').show();
+    $('.beverages').css({visibility: 'visibile'});
   },
   attractions: function() {
     $('.home').hide();
