@@ -6,7 +6,7 @@ var Router = Backbone.Router.extend({
     'attractions' : 'attractions'
   },
   home: function() {
-    $('.food').hide();
+    $('.food').show();
     $('.beverages').hide();
     $('.attractions').hide();
     $('.query').hide();
