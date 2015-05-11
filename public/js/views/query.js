@@ -4,7 +4,8 @@ var Query = Backbone.View.extend({
 	attracTemplate: _.template($("#attractions-template").html()),
 	events: {
 		'keypress #input-term' : 'keypressOn',
-		'click #btn-location'	 : 'clickOn'
+		'click #btn-location'	 : 'clickOn',
+		'click #btn-caret'		 : 'dropCaret'
 	},
 	food: function() {
 		this.$el.html(this.queryTemplate());
@@ -55,5 +56,8 @@ var Query = Backbone.View.extend({
 				};
 			}
 		});
+	},
+	dropCaret: function() {
+		console.log('caret clicked');
 	},
 });
