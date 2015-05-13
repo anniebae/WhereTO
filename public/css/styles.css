@@ -172,6 +172,15 @@ form label {
   color: #000;
 }
 
+#caretDropdown {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.caretAdd {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;

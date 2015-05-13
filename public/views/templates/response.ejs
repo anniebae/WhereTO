@@ -5,23 +5,17 @@
         <a href="<%%= url %>" target="_blank">
         <i class="fa fa-yelp"></i>
       </div>
-<!--       <div>
-        <a id="btn-caret">
-          <i class="fa fa-caret-down"></i>
-        </a>
-      </div> -->
-
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" type="button" id="caretDropdown" data-toggle="dropdown" aria-expanded="true">
           <a id="btn-caret">
             <i class="fa fa-caret-down"></i>
           </a>
         </button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          ADD TO:
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">brunch</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">lunch/dinner</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">dessert</a></li>
+          <span class="caretAdd">ADD TO:</span>
+          <li role="presentation"><a role="menuitem" tabindex="-1" class="brunch">brunch</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" class="lunch">lunch/dinner</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" class="dessert">dessert</a></li>
         </ul>
       </div>
 
