@@ -5,11 +5,26 @@
         <a href="<%%= url %>" target="_blank">
         <i class="fa fa-yelp"></i>
       </div>
-      <div>
+<!--       <div>
         <a id="btn-caret">
           <i class="fa fa-caret-down"></i>
         </a>
+      </div> -->
+
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+          <a id="btn-caret">
+            <i class="fa fa-caret-down"></i>
+          </a>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          ADD TO:
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">brunch</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">lunch/dinner</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">dessert</a></li>
+        </ul>
       </div>
+
     </span>
     <%%= name %> 
     <%% var address = location.display_address %>
