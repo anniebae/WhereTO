@@ -5,7 +5,8 @@ var Query = Backbone.View.extend({
 	events: {
 		'keypress #input-term' : 'keypressOn',
 		'click #btn-location'	 : 'clickOn',
-		'click #btn-caret'		 : 'dropCaret'
+		'click #btn-caret'		 : 'dropCaret',
+		'click .brunch'				 : 'addBrunch'
 	},
 	food: function() {
 		this.$el.html(this.queryTemplate());
@@ -59,5 +60,11 @@ var Query = Backbone.View.extend({
 	},
 	dropCaret: function() {
 		console.log('caret clicked');
+	},
+	addBrunch: function(e) {
+		e.preventDefault();
+		console.log('brunch clicked');
+		var brunch = new brunchView({model: Brunch});
+		brunch.addOne();
 	},
 });
