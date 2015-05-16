@@ -17,7 +17,11 @@ app.set('view engine', 'ejs');
 app.set('views', root + '/views');
 
 app.get('/', function(req, res){
-  res.render('layout');
+  res.render('layouts/welcome');
+});
+
+app.get('/dashboard', function(req, res) {
+  res.render('layouts/application');
 });
 
 app.post('/api/search', urlencodedParser, function(req, res) {
