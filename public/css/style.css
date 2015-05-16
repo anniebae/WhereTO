@@ -104,25 +104,13 @@ h3 {
   color: #99ffcc;
 }
 
-/* line 107, scss/_base.scss */
-.list-item-option {
-  position: absolute;
-  top: 35px;
-  right: 7px;
-}
-
-/* line 113, scss/_base.scss */
-.arrow-img {
-  height: 18px;
-}
-
-/* line 117, scss/_base.scss */
+/* line 92, scss/_base.scss */
 form label {
   color: #fff;
   float: left;
 }
 
-/* line 122, scss/_base.scss */
+/* line 97, scss/_base.scss */
 .btn-submit {
   width: 100%;
   border-radius: 0px;
@@ -131,19 +119,19 @@ form label {
   color: #000;
 }
 
-/* line 130, scss/_base.scss */
+/* line 105, scss/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 135, scss/_base.scss */
+/* line 110, scss/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 140, scss/_base.scss */
+  /* line 115, scss/_base.scss */
   .btn-default {
     width: 100%;
   }

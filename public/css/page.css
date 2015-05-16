@@ -59,3 +59,9 @@ h6 {
   width: 225px;
   position: relative;
 }
+/* line 31, scss/page.scss */
+.list-group-row .list-group .list-group-item .list-item-option {
+  position: absolute;
+  top: 35px;
+  right: 7px;
+}

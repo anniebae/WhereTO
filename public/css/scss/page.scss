@@ -28,6 +28,11 @@ h6 { font-size: 14px; }
     .list-group-item {
       width: 225px;
       position: relative;
+      .list-item-option {
+        position: absolute;
+        top: 35px;
+        right: 7px;
+      }
     }
   }
 }
