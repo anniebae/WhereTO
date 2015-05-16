@@ -55,14 +55,6 @@ ul.cb-slideshow {
   text-align: center;
 }
 
-h1 {
-
-  font-weight: 100;
-  color: white;
-  font-size: 500%;
-  margin-top: 280px;
-}
-
 ul.authenticate li {
   display: inline-block;
 }
@@ -82,10 +74,6 @@ button:hover {
   background-color: $white;
 }
 
-.form-control {
-  border-radius: 0px;
-  opacity: 0.8;
-}
 
 .form-error {
   color: red;
@@ -126,19 +114,16 @@ h3 {
   height: 18px;
 }
 
-.btn-default {
-  height: 34px;
-  background-color: $mint;
-}
-
 form label {
   color: #fff;
   float: left;
 }
 
-.btn-login, .btn-register {
-  height: 30px;
-  background: $mint;
+.btn-submit {
+  width: 100%;
+  border-radius: 0px;
+  height: 34px;
+  background-color: $mint;
   color: #000;
 }
 
