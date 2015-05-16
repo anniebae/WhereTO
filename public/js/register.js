@@ -2,6 +2,7 @@ var URL 		 = 'https://where-to.firebaseio.com/';
 var ref 		 = new Firebase(URL);
 var refUsers = ref.child('users');
 
+
 $(function() {
 
 	$(document).on('click', '.btn-register', function(e) {
