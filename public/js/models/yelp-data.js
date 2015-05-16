@@ -1,0 +1,1 @@
+var YelpData = Backbone.Model.extend({});

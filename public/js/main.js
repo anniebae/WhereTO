@@ -12,7 +12,6 @@ $(function() {
 
 });
 
-
 ref.onAuth(function(authData) {
   if (authData) {
     console.log("Authenticated with uid:", authData);

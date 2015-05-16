@@ -58,9 +58,9 @@ function loginWithPassword(email, password) {
 	  password: password
 	}, function(error, authData) {
 	  if (error) {
-	    $('.error-login').html("Login Failed!", error);
+	    $('.form-error').html("Login Failed!", error);
 	  } else {
-	    $('.error-login').html("Authenticated successfully with payload: " + authData);
+	    $('.form-error').html("Authenticated successfully with payload: " + authData);
 	    window.location = '/dashboard'
 	  }
 	});
