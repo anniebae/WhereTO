@@ -1,0 +1,181 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Josefin Sans';
+}
+
+ul.list-group li {
+  display: inline-block;
+}
+
+.navbar-inverse {
+  background-color: #000;
+}
+.navbar-inverse .navbar-brand {
+
+  color: #fff;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #99FFCC;
+}
+.navbar-inverse .navbar-nav > li > a {
+
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #99FFCC;
+}
+
+.brand-img {
+  height: 25px;
+}
+
+#home {
+  height: 100vh;
+  width: 100vw;
+  background-color: #99FFCC;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+.slide-img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.photo-layer {
+  z-index: 1;
+  position: absolute;
+}
+
+ul.cb-slideshow {
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0 
+}
+
+.black-layer {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top:0;
+  left:0;
+}
+
+.text-layer {
+  z-index: 5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h1 {
+
+  font-weight: 100;
+  color: white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+ul.authenticate li {
+  display: inline-block;
+}
+
+button.unique-user {
+  background: none;
+  border: 2.5px solid white;
+  color: white;
+  width: 100px;
+  height: 42px;
+  
+  margin: 0 25px 0 0;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.form-control {
+  border-radius: 0px;
+  opacity: 0.8;
+}
+
+.form-error {
+  color: red;
+}
+
+.tab-title {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+  padding-top: 3%;
+}
+
+h3 {
+  font-weight: 100;
+  color: #99FFCC;
+}
+
+.list-group {
+  padding: 0;
+}
+
+.list-group-item {
+  width: 25%;
+  position: relative;
+}
+
+.list-group-row {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.list-arrow {
+  position: absolute;
+  top: 35px;
+  right: 7px;
+}
+
+.arrow-img {
+  height: 18px;
+}
+
+.btn-default {
+  height: 34px;
+  background-color: #99FFCC;
+}
+
+form label {
+  color: #fff;
+  float: left;
+}
+
+.btn-login, .btn-register {
+  height: 30px;
+  background: #99FFCC;
+  color: #000;
+}
+
+#caretDropdown {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.caretAdd {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-default {
+    width: 100%;
+  }
+}

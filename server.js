@@ -4,6 +4,7 @@ var request          = require('request');
 var bodyParser       = require('body-parser');
 var ejs              = require('ejs');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
+var sass             = require('node-sass');
 var yelp             = require("yelp").createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY, 
   consumer_secret: process.env.YELP_CONSUMER_SECRET,
