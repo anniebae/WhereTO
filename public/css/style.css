@@ -88,29 +88,34 @@ button:hover {
 }
 
 /* line 76, scss/_base.scss */
+.form-control {
+  border-radius: 0px;
+}
+
+/* line 80, scss/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 80, scss/_base.scss */
+/* line 84, scss/_base.scss */
 .row {
   text-align: center;
   padding-top: 3%;
 }
 
-/* line 85, scss/_base.scss */
+/* line 89, scss/_base.scss */
 h3 {
   font-weight: 100;
   color: #99ffcc;
 }
 
-/* line 91, scss/_base.scss */
+/* line 95, scss/_base.scss */
 form label {
   color: #fff;
   float: left;
 }
 
-/* line 96, scss/_base.scss */
+/* line 100, scss/_base.scss */
 .btn-submit {
   width: 100%;
   border-radius: 0px;
@@ -119,19 +124,19 @@ form label {
   color: #000;
 }
 
-/* line 104, scss/_base.scss */
+/* line 108, scss/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 109, scss/_base.scss */
+/* line 113, scss/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 114, scss/_base.scss */
+  /* line 118, scss/_base.scss */
   .btn-default {
     width: 100%;
   }
