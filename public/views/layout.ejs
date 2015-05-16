@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <% include ./dependencies/head %>
-
 </head>
 <body>
 
-  <% include ./partials/index %>
+  <% include ./partials/navbar %>
+  
+  <div class="welcome">
+		<% include ./pages/welcome %>
+	</div>
+	
+	<div class="food">
+		<% include ./pages/food %>
+	</div>
+	
+	<div class="beverages">
+		<% include ./pages/beverage %>
+	</div>
+	
+	<div class="attractions">
+		<% include ./pages/attractions %>
+	</div>
 
   <% include ./dependencies/scripts %>
-
   </body>
 </html>

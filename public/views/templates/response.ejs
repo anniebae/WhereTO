@@ -1,31 +1,29 @@
 <script type="text/template" id="response-template">
-  
-    <span class="list-arrow">
-      <div>
-        <a href="<%%= url %>" target="_blank">
-        <i class="fa fa-yelp"></i>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="caretDropdown" data-toggle="dropdown" aria-expanded="true">
-          <a id="btn-caret">
-            <i class="fa fa-caret-down"></i>
-          </a>
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <span class="caretAdd">ADD TO:</span>
-          <li role="presentation"><a role="menuitem" tabindex="-1" class="brunch">brunch</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" class="lunch">lunch/dinner</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" class="dessert">dessert</a></li>
-        </ul>
-      </div>
+  <span class="list-arrow">
+    <div>
+      <a href="<%%= url %>" target="_blank">
+      <i class="fa fa-yelp"></i>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="caretDropdown" data-toggle="dropdown" aria-expanded="true">
+        <a id="btn-caret">
+          <i class="fa fa-caret-down"></i>
+        </a>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <span class="caretAdd">ADD TO:</span>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="brunch">brunch</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="lunch">lunch/dinner</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" class="dessert">dessert</a></li>
+      </ul>
+    </div>
 
-    </span>
-    <%%= name %> 
-    <%% var address = location.display_address %>
-    <%% var rating = rating %>
-    <%% for (var i = 0; i < address.length; i++) { %>
-    <br> <%%= address[i] %>
-    <%% } %>
-    <br> <%%= rating %>/5
-  
+  </span>
+  <%%= name %> 
+  <%% var address = location.display_address %>
+  <%% var rating = rating %>
+  <%% for (var i = 0; i < address.length; i++) { %>
+  <br> <%%= address[i] %>
+  <%% } %>
+  <br> <%%= rating %>/5
 </script>
