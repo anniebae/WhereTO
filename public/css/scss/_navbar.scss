@@ -1,0 +1,17 @@
+.navbar-inverse {
+  background-color: #000;
+	.navbar-brand {
+  	color: #fff;
+  	&:hover {
+  		color: #99FFCC;
+		}
+	}
+
+	.navbar-nav > li > a {
+	  color: #fff;
+		&:hover {
+ 			color: #99FFCC;
+		}
+	}
+	
+}

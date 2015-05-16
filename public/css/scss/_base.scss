@@ -1,76 +1,41 @@
-/* line 1, scss/base.scss */
 body {
   background-color: lightgrey;
   font-family: 'Josefin Sans';
 }
 
-/* line 6, scss/base.scss */
 ul.list-group li {
   display: inline-block;
 }
 
-/* line 10, scss/base.scss */
-.navbar-inverse {
-  background-color: #000;
-}
-
-/* line 13, scss/base.scss */
-.navbar-inverse .navbar-brand {
-  color: #fff;
-}
-
-/* line 17, scss/base.scss */
-.navbar-inverse .navbar-brand:hover {
-  color: #99FFCC;
-}
-
-/* line 20, scss/base.scss */
-.navbar-inverse .navbar-nav > li > a {
-  color: #fff;
-}
-
-/* line 24, scss/base.scss */
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #99FFCC;
-}
-
-/* line 28, scss/base.scss */
 .brand-img {
   height: 25px;
 }
 
-/* line 32, scss/base.scss */
 #home {
   height: 100vh;
   width: 100vw;
   background-color: #99FFCC;
 }
 
-/* line 38, scss/base.scss */
 .menu-item {
   cursor: pointer;
 }
-
-/* line 41, scss/base.scss */
 .slide-img {
   height: 100vh;
   width: 100vw;
 }
 
-/* line 46, scss/base.scss */
 .photo-layer {
   z-index: 1;
   position: absolute;
 }
 
-/* line 51, scss/base.scss */
 ul.cb-slideshow {
   list-style-type: none;
   margin-top: 0;
-  margin-left: 0;
+  margin-left: 0 
 }
 
-/* line 57, scss/base.scss */
 .black-layer {
   background-color: black;
   opacity: 0.5;
@@ -78,11 +43,10 @@ ul.cb-slideshow {
   height: 100vh;
   width: 100vw;
   z-index: 3;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
 }
 
-/* line 68, scss/base.scss */
 .text-layer {
   z-index: 5;
   position: absolute;
@@ -91,126 +55,108 @@ ul.cb-slideshow {
   text-align: center;
 }
 
-/* line 76, scss/base.scss */
 h1 {
+
   font-weight: 100;
   color: white;
   font-size: 500%;
   margin-top: 280px;
 }
 
-/* line 84, scss/base.scss */
 ul.authenticate li {
   display: inline-block;
 }
 
-/* line 88, scss/base.scss */
 button.unique-user {
   background: none;
   border: 2.5px solid white;
   color: white;
   width: 100px;
   height: 42px;
+  
   margin: 0 25px 0 0;
 }
 
-/* line 98, scss/base.scss */
 button:hover {
   color: black;
   background-color: white;
 }
 
-/* line 103, scss/base.scss */
 .form-control {
   border-radius: 0px;
   opacity: 0.8;
 }
 
-/* line 108, scss/base.scss */
 .form-error {
   color: red;
 }
 
-/* line 112, scss/base.scss */
 .tab-title {
   padding-top: 10%;
   text-align: center;
 }
 
-/* line 117, scss/base.scss */
 .row {
   text-align: center;
   padding-top: 3%;
 }
 
-/* line 122, scss/base.scss */
 h3 {
   font-weight: 100;
   color: #99FFCC;
 }
 
-/* line 127, scss/base.scss */
 .list-group {
   padding: 0;
 }
 
-/* line 131, scss/base.scss */
 .list-group-item {
   width: 25%;
   position: relative;
 }
 
-/* line 136, scss/base.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-/* line 142, scss/base.scss */
 .list-arrow {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 148, scss/base.scss */
 .arrow-img {
   height: 18px;
 }
 
-/* line 152, scss/base.scss */
 .btn-default {
   height: 34px;
   background-color: #99FFCC;
 }
 
-/* line 157, scss/base.scss */
 form label {
   color: #fff;
   float: left;
 }
 
-/* line 162, scss/base.scss */
 .btn-login, .btn-register {
   height: 30px;
   background: #99FFCC;
   color: #000;
 }
 
-/* line 168, scss/base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 173, scss/base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 178, scss/base.scss */
   .btn-default {
     width: 100%;
   }
