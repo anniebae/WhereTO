@@ -43,3 +43,19 @@ h6 {
   font-size: 500%;
   margin-top: 280px;
 }
+
+/* line 22, scss/page.scss */
+.list-group-row {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+/* line 26, scss/page.scss */
+.list-group-row .list-group {
+  padding: 0;
+}
+/* line 28, scss/page.scss */
+.list-group-row .list-group .list-group-item {
+  width: 225px;
+  position: relative;
+}

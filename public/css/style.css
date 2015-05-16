@@ -87,43 +87,25 @@ button:hover {
   background-color: white;
 }
 
-/* line 78, scss/_base.scss */
+/* line 77, scss/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 82, scss/_base.scss */
+/* line 81, scss/_base.scss */
 .row {
   text-align: center;
   padding-top: 3%;
 }
 
-/* line 87, scss/_base.scss */
+/* line 86, scss/_base.scss */
 h3 {
   font-weight: 100;
   color: #99ffcc;
 }
 
-/* line 92, scss/_base.scss */
-.list-group {
-  padding: 0;
-}
-
-/* line 96, scss/_base.scss */
-.list-group-item {
-  width: 225px;
-  position: relative;
-}
-
-/* line 101, scss/_base.scss */
-.list-group-row {
-  overflow: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
 /* line 107, scss/_base.scss */
-.list-arrow {
+.list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;

@@ -74,7 +74,6 @@ button:hover {
   background-color: $white;
 }
 
-
 .form-error {
   color: red;
 }
@@ -89,22 +88,23 @@ h3 {
   color: $mint;
 }
 
-.list-group {
-  padding: 0;
-}
 
-.list-group-item {
-  width: 225px;
-  position: relative;
-}
+// .list-group-item {
+//   width: 225px;
+//   position: relative;
+// }
 
-.list-group-row {
-  overflow: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
+// .list-group-row {
+//   overflow: auto;
+//   overflow-y: hidden;
+//   white-space: nowrap;
+// }
 
-.list-arrow {
+// .list-group {
+//   padding: 0;
+// }
+
+.list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
