@@ -1,5 +1,5 @@
 var brunchView = Backbone.View.extend({
-  el: $('.brunch-container'),
+  el: '.brunch-container',
   tagName: 'li',
   className: 'brunch-item',
   initialize: function() {
