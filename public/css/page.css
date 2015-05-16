@@ -32,6 +32,36 @@ h6 {
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
-  padding-top: 10%;
+  padding-top: 115px;
   text-align: center;
+}
+
+/* line 15, scss/page.scss */
+.app-title {
+  font-weight: 100;
+  color: white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+/* line 22, scss/page.scss */
+.list-group-row {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+/* line 26, scss/page.scss */
+.list-group-row .list-group {
+  padding: 0;
+}
+/* line 28, scss/page.scss */
+.list-group-row .list-group .list-group-item {
+  width: 225px;
+  position: relative;
+}
+/* line 31, scss/page.scss */
+.list-group-row .list-group .list-group-item .list-item-option {
+  position: absolute;
+  top: 35px;
+  right: 7px;
 }
