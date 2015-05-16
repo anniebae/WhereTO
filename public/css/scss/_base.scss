@@ -73,6 +73,10 @@ button:hover {
   background-color: $white;
 }
 
+.form-control {
+  border-radius: 0px;
+}
+
 .form-error {
   color: red;
 }
