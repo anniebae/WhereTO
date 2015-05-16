@@ -1,0 +1,37 @@
+/* line 1, scss/page.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 2, scss/page.scss */
+h2 {
+  font-size: 32px;
+}
+
+/* line 3, scss/page.scss */
+h3 {
+  font-size: 27px;
+}
+
+/* line 4, scss/page.scss */
+h4 {
+  font-size: 22px;
+}
+
+/* line 5, scss/page.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 6, scss/page.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 8, scss/page.scss */
+.tab-title {
+  font-weight: 500;
+  line-height: 1.1;
+  padding-top: 10%;
+  text-align: center;
+}

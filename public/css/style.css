@@ -1,7 +1,7 @@
 /* line 1, scss/_base.scss */
 body {
   background-color: lightgrey;
-  font-family: 'Josefin Sans';
+  font-family: Josefin Sans;
 }
 
 /* line 6, scss/_base.scss */
@@ -18,7 +18,7 @@ ul.list-group li {
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: #99FFCC;
+  background-color: #99ffcc;
 }
 
 /* line 20, scss/_base.scss */
@@ -107,85 +107,79 @@ button:hover {
 }
 
 /* line 94, scss/_base.scss */
-.tab-title {
-  padding-top: 10%;
-  text-align: center;
-}
-
-/* line 99, scss/_base.scss */
 .row {
   text-align: center;
   padding-top: 3%;
 }
 
-/* line 104, scss/_base.scss */
+/* line 99, scss/_base.scss */
 h3 {
   font-weight: 100;
-  color: #99FFCC;
+  color: #99ffcc;
 }
 
-/* line 109, scss/_base.scss */
+/* line 104, scss/_base.scss */
 .list-group {
   padding: 0;
 }
 
-/* line 113, scss/_base.scss */
+/* line 108, scss/_base.scss */
 .list-group-item {
-  width: 25%;
+  width: 225px;
   position: relative;
 }
 
-/* line 118, scss/_base.scss */
+/* line 113, scss/_base.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-/* line 124, scss/_base.scss */
+/* line 119, scss/_base.scss */
 .list-arrow {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 130, scss/_base.scss */
+/* line 125, scss/_base.scss */
 .arrow-img {
   height: 18px;
 }
 
-/* line 134, scss/_base.scss */
+/* line 129, scss/_base.scss */
 .btn-default {
   height: 34px;
-  background-color: #99FFCC;
+  background-color: #99ffcc;
 }
 
-/* line 139, scss/_base.scss */
+/* line 134, scss/_base.scss */
 form label {
   color: #fff;
   float: left;
 }
 
-/* line 144, scss/_base.scss */
+/* line 139, scss/_base.scss */
 .btn-login, .btn-register {
   height: 30px;
-  background: #99FFCC;
+  background: #99ffcc;
   color: #000;
 }
 
-/* line 150, scss/_base.scss */
+/* line 145, scss/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 155, scss/_base.scss */
+/* line 150, scss/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 160, scss/_base.scss */
+  /* line 155, scss/_base.scss */
   .btn-default {
     width: 100%;
   }
