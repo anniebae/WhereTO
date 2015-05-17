@@ -7,7 +7,8 @@ var cookieParser  = require('cookie-parser');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var UsersCtrl     = require('./controllers/users');
+var usersCtrl     = require('./controllers/users');
+var authCtrl      = require('./controllers/auth');
 
 var app = express();
 
@@ -55,7 +56,7 @@ passport.deserializeUser(User.deserializeUser());
 var database = require('./config/database')(mongoose);
 
 // Authentication Controller
-var authConfig = require('./config/auth')(passport);
+var authCtrl = require('./controllers/auth')(passport);
 
 
 app.listen(8000, function(){

@@ -1,11 +1,10 @@
 var express = require('express');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var authConfig = require('../config/auth');
+var authCtrl = require('../controllers/auth');
 var User = require('../models/user');
 
 exports.postUsers = function(req, res) {
-
   User.register(new User({
     username: req.body.username,
     name: req.body.name,
@@ -19,7 +18,6 @@ exports.postUsers = function(req, res) {
         res.redirect('/');
       });
   });
-
 };
 
 exports.getUsers = function(req, res) {
@@ -37,5 +35,13 @@ exports.getUser = function(req, res) {
       res.send(err);
       console.log(user);
       res.json(user);
+  });
+};
+
+exports.deleteUser = function(req, res) {
+  User.remove(req.params._id, function(err) {
+    if (err)
+      res.send(err);
+      res.json({message: 'Account deleted'});
   });
 };

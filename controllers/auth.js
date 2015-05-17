@@ -2,7 +2,6 @@ var express = require('express');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
-var flash = require('connect-flash');
 
 module.exports = function(passport) {
 
@@ -15,6 +14,7 @@ module.exports = function(passport) {
     }
     return fn(null, null);
   }
+}
 
   passport.use(new LocalStrategy(function(username, password, done) {
     User.findOne({ username: username }, function(err, user) {
@@ -31,4 +31,5 @@ module.exports = function(passport) {
     });
   }));
 
-}
+
+exports.isAuthenticated = passport.authenticate('local', { session : false });

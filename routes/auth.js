@@ -3,7 +3,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
 var flash = require('connect-flash');
-var authConfig = require('../config/auth');
+var authCtrl = require('../controllers/auth');
 var router = express.Router();
 
 
