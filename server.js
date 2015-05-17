@@ -58,16 +58,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect('mongodb://localhost/where-to', function(err) {
-  if (err) {
-    console.log('Could not connect! Ensure that you have mongodb running on localhost!');
-  }
-});
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function callback() {
-  console.log('Connected to DB');
-});
+var database       = require('./config/database')(mongoose);
 var authentication = require('./config/authentication')(passport);
 
 
