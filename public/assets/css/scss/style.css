@@ -258,17 +258,18 @@ form label {
 
 /* line 8, partials/_profile.scss */
 .user-list {
-  text-align: right;
   background: white;
   border-radius: 2px;
   padding: 0;
 }
-/* line 13, partials/_profile.scss */
+/* line 12, partials/_profile.scss */
 .user-list .user-list-title {
   color: #15365d;
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-/* line 17, partials/_profile.scss */
+/* line 18, partials/_profile.scss */
 .user-list .list-item {
   height: 60px;
   width: 100%;
@@ -276,13 +277,40 @@ form label {
   border-bottom: 1px solid #c9c8c7;
   background: white;
 }
-/* line 23, partials/_profile.scss */
+/* line 24, partials/_profile.scss */
 .user-list .list-item:hover {
   background: #00b2e2;
   color: white;
 }
 /* line 27, partials/_profile.scss */
-.user-list .list-item .list-item-title {
+.user-list .list-item:hover .list-icon.fa {
+  color: white;
+}
+/* line 30, partials/_profile.scss */
+.user-list .list-item:hover .list-desc.list-item-title {
+  color: white;
+}
+/* line 35, partials/_profile.scss */
+.user-list .list-item .list-desc {
+  width: 50%;
+  text-align: left;
+}
+/* line 38, partials/_profile.scss */
+.user-list .list-item .list-desc .list-item-title {
   color: #00b2e2;
-  text-align: right;
+  height: 100%;
+}
+/* line 43, partials/_profile.scss */
+.user-list .list-item .list-icon {
+  width: 25%;
+}
+/* line 45, partials/_profile.scss */
+.user-list .list-item .list-icon .fa {
+  font-size: 2em;
+  color: #6d6e71;
+}
+/* line 50, partials/_profile.scss */
+.user-list .list-item .list-total {
+  width: 25%;
+  color: #c9c8c7;
 }
