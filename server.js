@@ -4,9 +4,14 @@ var request          = require('request');
 var bodyParser       = require('body-parser');
 var Firebase         = require('firebase');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
-var hbs = require('express-handlebars').create({
+var handlebars       = require('express-handlebars');
+
+
+var hbs = handlebars.create({
     defaultLayout:'main',
-    extname: '.hbs'
+    extname: '.hbs',
+    partialsDir: ['views/welcome', 'views/query', 'views/dependencies', 'views/partials'],
+
   });
 
 var root = __dirname + '/public';
@@ -22,7 +27,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/dashboard', function(req, res) {
-  res.render('query/index', {layout: 'main'});
+  res.render('query/index');
 });
 
 
