@@ -19,14 +19,9 @@ app.set('views', 'views');
 app.engine('hbs', hbs.engine);
 app.use(express.static(root));
 
-app.get('/', function(req, res){
-  res.render('welcome/index');
-});
 
-app.get('/dashboard', function(req, res) {
-  res.render('query/index');
-});
-
+app.get('/', appRouter);
+app.get('/dashboard', appRouter);
 app.post('/api/search', apiRouter);
 
 
