@@ -23,5 +23,4 @@ apiRouter.post('/api/search', urlencodedParser, function(req, res) {
   });
 });
 
-
 module.exports = apiRouter;

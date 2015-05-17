@@ -4,13 +4,6 @@ var handlebars       = require('express-handlebars');
 var apiRouter        = require('./routes/api-router');
 var appRouter        = require('./routes/app-router');
 
-// Config
-var root = __dirname + '/public';
-app.set('view engine', 'hbs');
-app.set('views', 'views');
-app.engine('hbs', hbs.engine);
-app.use(express.static(root));
-
 // Handlebars
 var viewDirectories = [
   'views/welcome',
@@ -23,6 +16,14 @@ var hbs = handlebars.create({
     extname: '.hbs',
     partialsDir: viewDirectories
   });
+
+// Config
+var root = __dirname + '/public';
+app.set('view engine', 'hbs');
+app.set('views', 'views');
+app.engine('hbs', hbs.engine);
+app.use(express.static(root));
+
 
 // Routes
 app.get('/', appRouter);

@@ -1,4 +1,3 @@
-
 $(function() {
 
 	$(document).on('click', '.btn-query', function(e) {
@@ -14,7 +13,6 @@ $(function() {
 	});
 
 });
-
 
 function sendRequest() {
 	var location = $('.input-location-query').val();
