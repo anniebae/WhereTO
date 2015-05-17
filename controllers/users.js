@@ -34,7 +34,7 @@ exports.getUser = function(req, res) {
     if (err)
       res.send(err);
       console.log(user);
-      res.json(user);
+      res.render('users/show', {user: user});
   });
 };
 
