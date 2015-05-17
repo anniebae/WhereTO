@@ -1,8 +1,33 @@
-.list-item {
-	height: 100px;
-	border: $black10;
-	background: $white;
-	.list-item-title {
-		color: $primarylight;	
+.user-data {
+	text-align: left;
+	.img-avatar {
+		width: 250px;
 	}
 }
+
+.user-list {
+	text-align: right;
+	background: $white;
+	border-radius: 2px;
+	padding: 0;
+	.user-list-title {
+		color: $primarydark;
+		text-transform: uppercase;
+	}
+	.list-item {
+		height: 60px;
+		width: 100%;
+		padding: 15px;
+		border-bottom: 1px solid $primarygray;
+		background: $white;	
+		&:hover {
+			background: $primarylight;
+			color: $white;
+		}
+		.list-item-title {
+			color: $primarylight;	
+			text-align: right;
+		}
+	}
+}
+

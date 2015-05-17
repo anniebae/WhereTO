@@ -191,19 +191,13 @@ button:hover {
   padding-top: 3%;
 }
 
-/* line 86, partials/_base.scss */
-h3 {
-  font-weight: 100;
-  color: #99ffcc;
-}
-
-/* line 92, partials/_base.scss */
+/* line 87, partials/_base.scss */
 form label {
-  color: #fff;
+  color: white;
   float: left;
 }
 
-/* line 97, partials/_base.scss */
+/* line 92, partials/_base.scss */
 .btn-submit {
   border-radius: 0px;
   height: 34px;
@@ -211,18 +205,18 @@ form label {
   color: #000;
 }
 
-/* line 104, partials/_base.scss */
+/* line 99, partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 109, partials/_base.scss */
+/* line 104, partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
-/* line 113, partials/_base.scss */
+/* line 108, partials/_base.scss */
 .sections-wrapper {
   position: relative;
   background-color: pink;
@@ -231,35 +225,64 @@ form label {
   margin: 3% auto;
 }
 
-/* line 121, partials/_base.scss */
+/* line 116, partials/_base.scss */
 .section-tab {
   position: absolute;
   height: 100%;
 }
 
-/* line 126, partials/_base.scss */
+/* line 121, partials/_base.scss */
 #foods {
   background-color: orange;
 }
 
-/* line 130, partials/_base.scss */
+/* line 125, partials/_base.scss */
 #drinks {
   background-color: purple;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 135, partials/_base.scss */
+  /* line 130, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
 }
 /* line 1, partials/_profile.scss */
-.list-item {
-  height: 100px;
-  border: #e6e7e8;
+.user-data {
+  text-align: left;
+}
+/* line 3, partials/_profile.scss */
+.user-data .img-avatar {
+  width: 250px;
+}
+
+/* line 8, partials/_profile.scss */
+.user-list {
+  text-align: right;
+  background: white;
+  border-radius: 2px;
+  padding: 0;
+}
+/* line 13, partials/_profile.scss */
+.user-list .user-list-title {
+  color: #15365d;
+  text-transform: uppercase;
+}
+/* line 17, partials/_profile.scss */
+.user-list .list-item {
+  height: 60px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #c9c8c7;
   background: white;
 }
-/* line 5, partials/_profile.scss */
-.list-item .list-item-title {
+/* line 23, partials/_profile.scss */
+.user-list .list-item:hover {
+  background: #00b2e2;
+  color: white;
+}
+/* line 27, partials/_profile.scss */
+.user-list .list-item .list-item-title {
   color: #00b2e2;
+  text-align: right;
 }
