@@ -5,6 +5,27 @@ h4 { font-size: 22px; }
 h5 { font-size: 18px; }
 h6 { font-size: 14px; }
 
+.navbar-inverse {
+  background-color: $black;
+  .navbar-brand {
+    color: $white;
+    &:hover {
+      color: $mint;
+    }
+    .navbar-img {
+      width: 25px;
+    }
+  }
+
+
+  .navbar-nav > li > a {
+    color: $white;
+    &:hover {
+      color: $mint;
+    }
+  }
+}
+
 .tab-title {
   font-weight: 500;
 	line-height: 1.1;
@@ -14,7 +35,7 @@ h6 { font-size: 14px; }
 
 .app-title {
   font-weight: 100;
-  color: white;
+  color: $white;
   font-size: 500%;
   margin-top: 280px;
 }

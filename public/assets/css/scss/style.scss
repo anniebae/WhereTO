@@ -1,6 +1,5 @@
-@import "globals";
-@import "base";
-@import "navbar";
-@import "variables";
-@import "page";
-@import "users/style";
+@import "vendor/variables";
+@import "partials/globals";
+@import "partials/page";
+@import "partials/base";
+@import "partials/profile";
