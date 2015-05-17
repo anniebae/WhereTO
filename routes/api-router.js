@@ -9,9 +9,9 @@ var yelp 			 = require("yelp").createClient({
   token_secret: process.env.YELP_TOKEN_SECRET
 });
     
-var apiRouter = express.Router();
+var api = express.Router();
 
-apiRouter.post('/search', urlencoded, function(req, res) {
+api.post('/search', urlencoded, function(req, res) {
   if (!req.body) return res.sendStatus(400)
   var request = req.body; // to be the params from search filed
   var location = request.location;
@@ -23,4 +23,4 @@ apiRouter.post('/search', urlencoded, function(req, res) {
   });
 });
 
-module.exports = apiRouter;
+module.exports = api;
