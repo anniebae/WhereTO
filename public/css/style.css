@@ -117,26 +117,25 @@ form label {
 
 /* line 100, scss/_base.scss */
 .btn-submit {
-  width: 100%;
   border-radius: 0px;
   height: 34px;
   background-color: #99ffcc;
   color: #000;
 }
 
-/* line 108, scss/_base.scss */
+/* line 107, scss/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 113, scss/_base.scss */
+/* line 112, scss/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 118, scss/_base.scss */
+  /* line 117, scss/_base.scss */
   .btn-default {
     width: 100%;
   }
