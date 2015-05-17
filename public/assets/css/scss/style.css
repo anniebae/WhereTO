@@ -216,33 +216,8 @@ form label {
   margin-left: 10px;
 }
 
-/* line 108, partials/_base.scss */
-.sections-wrapper {
-  position: relative;
-  background-color: pink;
-  height: 700px;
-  width: 800px;
-  margin: 3% auto;
-}
-
-/* line 116, partials/_base.scss */
-.section-tab {
-  position: absolute;
-  height: 100%;
-}
-
-/* line 121, partials/_base.scss */
-#foods {
-  background-color: orange;
-}
-
-/* line 125, partials/_base.scss */
-#drinks {
-  background-color: purple;
-}
-
 @media screen and (max-width: 767px) {
-  /* line 130, partials/_base.scss */
+  /* line 113, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
@@ -347,4 +322,28 @@ form label {
   font-size: 2em;
   line-height: 1.3em;
   color: #e6e7e8;
+}
+
+/* line 1, partials/_query.scss */
+.sections-wrapper {
+  position: relative;
+  background-color: pink;
+  height: 700px;
+}
+/* line 5, partials/_query.scss */
+.sections-wrapper .section-tab {
+  position: absolute;
+  height: 100%;
+}
+/* line 10, partials/_query.scss */
+.sections-wrapper ul.nav-tabs li {
+  display: inline-block;
+}
+/* line 14, partials/_query.scss */
+.sections-wrapper #foods {
+  background-color: #ff8f12;
+}
+/* line 18, partials/_query.scss */
+.sections-wrapper #drinks {
+  background-color: purple;
 }

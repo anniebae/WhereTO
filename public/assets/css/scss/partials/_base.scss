@@ -105,26 +105,9 @@ form label {
   margin-left: 10px;
 }
 
-.sections-wrapper {
-  position: relative;
-  background-color: pink;
-  height: 700px;
-  width: 800px;
-  margin: 3% auto;
-}
 
-.section-tab {
-  position: absolute;
-  height: 100%;
-}
 
-#foods {
-  background-color: orange;
-}
 
-#drinks {
-  background-color: purple;
-}
 
 @media screen and (max-width: 767px) {
   .btn-default {

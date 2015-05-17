@@ -1,0 +1,21 @@
+.sections-wrapper {
+  position: relative;
+  background-color: $pink;
+  height: 700px;
+	.section-tab {
+	  position: absolute;
+	  height: 100%;
+	}
+	
+	ul.nav-tabs li {
+		display: inline-block;
+	}
+
+	#foods {
+  	background-color: $orange;
+	}
+
+	#drinks {
+  	background-color: purple;
+	}
+}
