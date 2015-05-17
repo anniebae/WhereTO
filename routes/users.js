@@ -9,4 +9,7 @@ router.route('/')
 	.post(UsersCtrl.postUsers)
 	.get(UsersCtrl.getUsers);
 
+router.route('/:username')
+	.get(UsersCtrl.getUser);
+
 module.exports = router;
