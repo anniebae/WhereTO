@@ -4,11 +4,9 @@ var favicon       = require('serve-favicon');
 var logger        = require('morgan');
 var bodyParser    = require('body-parser');
 var cookieParser  = require('cookie-parser');
-var mongodb       = require('mongodb');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var handlebars    = require('express-handlebars');
 
 
 var routes = require('./routes/router');
@@ -16,22 +14,11 @@ var apiRouter = require('./routes/api-router');
 
 var app = express();
 
-// Handlebars
-var viewDirectories = [
-  'views/welcome',
-  'views/query',
-  'views/dependencies',
-  'views/partials'
-];
-var hbs = handlebars.create({
-    defaultLayout:'main',
-    extname: '.hbs',
-    partialsDir: viewDirectories
-  });
 
 // Express Config
 var root = __dirname + '/public';
 
+var hbs = require('./config/handlebars');
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.engine('hbs', hbs.engine);
