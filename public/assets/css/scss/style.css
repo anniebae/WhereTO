@@ -269,21 +269,25 @@ form label {
     width: 100px;
   }
 }
+/* line 16, partials/_profile.scss */
+.user-data .user-title {
+  text-transform: uppercase;
+}
 
-/* line 18, partials/_profile.scss */
+/* line 20, partials/_profile.scss */
 .user-list {
   background: white;
   border-radius: 2px;
   padding: 0;
 }
-/* line 22, partials/_profile.scss */
+/* line 24, partials/_profile.scss */
 .user-list .user-list-title {
   color: #15365d;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 28, partials/_profile.scss */
+/* line 30, partials/_profile.scss */
 .user-list .row.list-item {
   height: 60px;
   width: 100%;
@@ -292,52 +296,52 @@ form label {
   background: white;
   cursor: pointer;
 }
-/* line 35, partials/_profile.scss */
+/* line 37, partials/_profile.scss */
 .user-list .row.list-item:hover {
   background: #00b2e2;
   color: white;
 }
-/* line 38, partials/_profile.scss */
+/* line 40, partials/_profile.scss */
 .user-list .row.list-item:hover .fa {
   color: white;
 }
-/* line 41, partials/_profile.scss */
+/* line 43, partials/_profile.scss */
 .user-list .row.list-item:hover .list-desc.list-item-title {
   color: white;
 }
-/* line 46, partials/_profile.scss */
+/* line 48, partials/_profile.scss */
 .user-list .row.list-item .list-desc {
   width: 50%;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 50, partials/_profile.scss */
+/* line 52, partials/_profile.scss */
 .user-list .row.list-item .list-desc .list-item-title {
   color: #00b2e2;
   height: 100%;
 }
-/* line 55, partials/_profile.scss */
+/* line 57, partials/_profile.scss */
 .user-list .row.list-item .list-icon {
   width: 25%;
 }
-/* line 57, partials/_profile.scss */
+/* line 59, partials/_profile.scss */
 .user-list .row.list-item .list-icon .fa {
   font-size: 2.5em;
   margin: -10px;
   color: #6d6e71;
 }
-/* line 63, partials/_profile.scss */
+/* line 65, partials/_profile.scss */
 .user-list .row.list-item .list-total {
   width: 25%;
   line-height: 2.5;
   color: #c9c8c7;
   display: inline-block;
 }
-/* line 68, partials/_profile.scss */
+/* line 70, partials/_profile.scss */
 .user-list .row.list-item .list-total .list-item-total {
   float: left;
 }
-/* line 71, partials/_profile.scss */
+/* line 73, partials/_profile.scss */
 .user-list .row.list-item .list-total i.fa {
   float: right;
   font-size: 2em;
