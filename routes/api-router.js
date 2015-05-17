@@ -1,8 +1,8 @@
-var express = require('express');
-var request          = require('request');
-var bodyParser       = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({extended: false});
-var yelp 						 = require("yelp").createClient({
+var express    = require('express');
+var request    = require('request');
+var bodyParser = require('body-parser');
+var urlencoded = bodyParser.urlencoded({extended: false});
+var yelp 			 = require("yelp").createClient({
   consumer_key: process.env.YELP_CONSUMER_KEY, 
   consumer_secret: process.env.YELP_CONSUMER_SECRET,
   token: process.env.YELP_TOKEN,
@@ -11,7 +11,7 @@ var yelp 						 = require("yelp").createClient({
     
 var apiRouter = express.Router();
 
-apiRouter.post('/api/search', urlencodedParser, function(req, res) {
+apiRouter.post('/api/search', urlencoded, function(req, res) {
   if (!req.body) return res.sendStatus(400)
   var request = req.body; // to be the params from search filed
   var location = request.location;

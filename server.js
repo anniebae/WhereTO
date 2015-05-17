@@ -1,13 +1,13 @@
 var express       = require('express');
 var app           = express();
-var mongoose      = require('mongoose');
 var bodyParser    = require('body-parser');
+var urlencoded    = bodyParser.urlencoded({extended: false});
 var cookieParser  = require('cookie-parser');
-var session       = require('express-session');
-var passport      = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
-var bcrypt        = require('bcrypt');
 var flash         = require('connect-flash');
+var session       = require('express-session');
+var mongoose      = require('mongoose');
+var passport      = require('passport');
+var bcrypt        = require('bcrypt');
 var handlebars    = require('express-handlebars');
 var apiRouter     = require('./routes/api-router');
 var appRouter     = require('./routes/app-router');
@@ -35,23 +35,13 @@ app.set('views', 'views');
 app.engine('hbs', hbs.engine);
 app.use(cookieParser());
 app.use(bodyParser());
+
 app.use(express.static(root));
 
 app.use(session({ secret: 'dudemanjones' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-
-passport.use(new LocalStrategy(
-  function(username, password, done) {
-    User.findOne({ username: username }, function (err, user) {
-      if (err) { return done(err); }
-      if (!user) { return done(null, false); }
-      if (!user.verifyPassword(password)) { return done(null, false); }
-      return done(null, user);
-    });
-  }
-));
 
 // Routes
 app.get('/', appRouter);

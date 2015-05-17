@@ -8,9 +8,7 @@ var flash         = require('connect-flash');
 var bcrypt        = require('bcrypt');
 var app = express.Router();
 
-app.get('/',
-	passport.authenticate('local',
-	{failureRedirect: '/welcome' }), 
+app.get('/', 
 	function(req, res) {
   	res.redirect('query/index');
 });
