@@ -14,6 +14,7 @@ router.route('/:username')
 	.get(getAuth, usersCtrl.getUser);
 
 router.route('/:id')
+	.put(getAuth, usersCtrl.putUser)
 	.delete(getAuth, usersCtrl.deleteUser);
 
 function getAuth(req, res, next) {

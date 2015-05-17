@@ -38,10 +38,25 @@ exports.getUser = function(req, res) {
   });
 };
 
+exports.putUser = function(req, res) {
+  User.update(req.params.beer_id, 
+    {
+      name     : req.body.name,
+      email    : req.body.email,
+      password : req.body.password,
+      username : req.body.username
+    }, 
+    function(err, num, raw) {
+      if (err)
+        res.send(err);
+      res.json({message: num + ' updated'});
+    });
+};
+
 exports.deleteUser = function(req, res) {
   User.remove(req.params._id, function(err) {
     if (err)
       res.send(err);
-      res.json({message: 'Account deleted'});
+    res.json({message: 'Account deleted'});
   });
 };
