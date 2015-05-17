@@ -1,6 +1,24 @@
+
+$(function() {
+
+	$(document).on('click', '.btn-query', function(e) {
+		e.preventDefault();
+		sendRequest();
+	});
+
+	$(document).on('keypress', '.input-term-query', function(e) {
+		if (e.which === 13) {
+			e.preventDefault();
+ 			sendRequest();
+ 		}
+	});
+
+});
+
+
 function sendRequest() {
-	var location = $('#input-location').val();
-	var term = $('#input-term').val();
+	var location = $('.input-location-query').val();
+	var term = $('#input-term-query').val();
 	$('.list-group-loader').html('<img src="images/dog.gif">');
 	console.log(location);
 	$.ajax({
@@ -21,8 +39,8 @@ function sendRequest() {
 				var view	= new Response({model: yelpData});
   			$('.list-group').append(view.el);
 				view.render();
-				$('#input-location').val('');
-				$('#input-term').val('');
+				$('.input-location-query').val('');
+				$('.input-term-query').val('');
 			};
 		}
 	});
