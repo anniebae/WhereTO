@@ -4,15 +4,21 @@ var Firebase         = require('firebase');
 var handlebars       = require('express-handlebars');
 var apiRouter        = require('./routes/api-router');
 var appRouter        = require('./routes/app-router');
+var root = __dirname + '/public';
+
+var viewDirectories = [
+  'views/welcome',
+  'views/query',
+  'views/dependencies',
+  'views/partials'
+];
 
 var hbs = handlebars.create({
     defaultLayout:'main',
     extname: '.hbs',
-    partialsDir: ['views/welcome', 'views/query', 'views/dependencies', 'views/partials']
+    partialsDir: viewDirectories
 
   });
-
-var root = __dirname + '/public';
 
 app.set('view engine', 'hbs');
 app.set('views', 'views');
