@@ -113,6 +113,13 @@ form label {
   margin-left: 10px;
 }
 
+.sections-wrapper {
+  background-color: lightblue;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+}
+
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;

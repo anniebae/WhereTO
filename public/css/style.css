@@ -134,8 +134,16 @@ form label {
   margin-left: 10px;
 }
 
+/* line 116, scss/_base.scss */
+.sections-wrapper {
+  background-color: lightblue;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+}
+
 @media screen and (max-width: 767px) {
-  /* line 117, scss/_base.scss */
+  /* line 124, scss/_base.scss */
   .btn-default {
     width: 100%;
   }
