@@ -10,9 +10,9 @@ var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var handlebars    = require('express-handlebars');
 
+
 var routes = require('./routes/router');
 var apiRouter = require('./routes/api-router');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -69,7 +69,7 @@ db.once('open', function callback() {
   console.log('Connected to DB');
 });
 
-
+var authentication = require('./config/authentication')(passport);
 
 
 app.listen(8000, function(){
