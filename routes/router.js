@@ -3,6 +3,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
 var flash = require('connect-flash');
+var authentication = require('../config/authentication');
 var router = express.Router();
 
 
@@ -32,7 +33,7 @@ router.post('/register', function(req, res) {
 });
 
 router.get('/login', function(req, res) {
-  res.render('welcome/index', {user: user});
+  res.render('welcome/index', {user: req.user});
 });
 
 router.post('/login', function(req, res, next) {
@@ -41,7 +42,7 @@ router.post('/login', function(req, res, next) {
       return next(err) 
     }
     if (!user) {
-      return res.redirect('/welcome')
+      return res.redirect('/welcome');
     }
     req.logIn(user, function(err) {
       if (err) { 
@@ -64,7 +65,7 @@ router.get('/ping', function(req, res){
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
-  res.redirect('/welcome')
+    res.redirect('/welcome')
 }
 
 module.exports = router;

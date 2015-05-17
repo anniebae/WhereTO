@@ -68,10 +68,9 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback() {
   console.log('Connected to DB');
 });
-
 var authentication = require('./config/authentication')(passport);
 
 
 app.listen(8000, function(){
     console.log("WhereTO running");
-})
+});
