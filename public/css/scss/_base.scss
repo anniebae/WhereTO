@@ -114,10 +114,24 @@ form label {
 }
 
 .sections-wrapper {
-  background-color: lightblue;
-  height: 500px;
+  position: relative;
+  background-color: pink;
+  height: 700px;
   width: 800px;
-  margin: auto;
+  margin: 3% auto;
+}
+
+.section-tab {
+  position: absolute;
+  height: 100%;
+}
+
+#foods {
+  background-color: orange;
+}
+
+#drinks {
+  background-color: purple;
 }
 
 @media screen and (max-width: 767px) {

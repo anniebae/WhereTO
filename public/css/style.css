@@ -136,14 +136,31 @@ form label {
 
 /* line 116, scss/_base.scss */
 .sections-wrapper {
-  background-color: lightblue;
-  height: 500px;
+  position: relative;
+  background-color: pink;
+  height: 700px;
   width: 800px;
-  margin: auto;
+  margin: 3% auto;
+}
+
+/* line 124, scss/_base.scss */
+.section-tab {
+  position: absolute;
+  height: 100%;
+}
+
+/* line 129, scss/_base.scss */
+#foods {
+  background-color: orange;
+}
+
+/* line 133, scss/_base.scss */
+#drinks {
+  background-color: purple;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 124, scss/_base.scss */
+  /* line 138, scss/_base.scss */
   .btn-default {
     width: 100%;
   }
