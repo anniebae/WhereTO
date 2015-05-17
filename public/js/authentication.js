@@ -70,3 +70,17 @@ function logout() {
 	ref.unauth();
 	window.location = '/';
 }
+
+function authenticate(authData) {
+	$.ajax({
+		url: '/api/authenticate',
+		type: 'POST',
+		dataType: 'json',
+		data: {
+			user: authData
+		},
+		success: function(data){
+			console.log(data);
+		}
+	});
+}
