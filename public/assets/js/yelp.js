@@ -19,7 +19,7 @@ $(function() {
 function sendRequest() {
 	var location = $('.input-location-query').val();
 	var term = $('#input-term-query').val();
-	$('.list-group-loader').html('<img src="images/dog.gif">');
+	$('.list-group-loader').html('<img src="assets/images/dog.gif">');
 	console.log(location);
 	$.ajax({
 		url: '/api/search',
