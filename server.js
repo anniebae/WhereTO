@@ -10,7 +10,7 @@ var handlebars       = require('express-handlebars');
 var hbs = handlebars.create({
     defaultLayout:'main',
     extname: '.hbs',
-    partialsDir: ['views/welcome', 'views/query', 'views/dependencies', 'views/partials'],
+    partialsDir: ['views/welcome', 'views/query', 'views/dependencies', 'views/partials']
 
   });
 

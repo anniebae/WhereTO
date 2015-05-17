@@ -20,5 +20,4 @@ ref.onAuth(function(authData) {
     console.log("Client unauthenticated.");
     $('.navbar-right').css({display: 'none'});
   }
-  authenticate(authData);
 });

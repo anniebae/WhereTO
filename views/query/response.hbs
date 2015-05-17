@@ -1,7 +1,7 @@
 <script type="text/template" id="response-template">
   <span class="list-item-option">
     <div>
-      <a href="<%%= url %>" target="_blank">
+      <a href="<%= url %>" target="_blank">
       <i class="fa fa-yelp"></i>
     </div>
     <div class="dropdown">
@@ -18,11 +18,11 @@
       </ul>
     </div>
   </span>
-  <%%= name %> 
-  <%% var address = location.display_address %>
-  <%% var rating = rating %>
-  <%% for (var i = 0; i < address.length; i++) { %>
-  <br> <%%= address[i] %>
-  <%% } %>
-  <br> <%%= rating %>/5
+  <%= name %> 
+  <% var address = location.display_address %>
+  <% var rating = rating %>
+  <% for (var i = 0; i < address.length; i++) { %>
+  <br> <%= address[i] %>
+  <% } %>
+  <br> <%= rating %>/5
 </script>
