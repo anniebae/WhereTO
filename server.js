@@ -4,6 +4,7 @@ var favicon       = require('serve-favicon');
 var logger        = require('morgan');
 var bodyParser    = require('body-parser');
 var cookieParser  = require('cookie-parser');
+var mongodb       = require('mongodb');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -11,6 +12,7 @@ var handlebars    = require('express-handlebars');
 
 var routes = require('./routes/router');
 var apiRouter = require('./routes/api-router');
+var users = require('./routes/users');
 
 var app = express();
 
@@ -56,13 +58,19 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect('mongodb://localhost/where-to');
-
-app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+mongoose.connect('mongodb://localhost/where-to', function(err) {
+  if (err) {
+    console.log('Could not connect! Ensure that you have mongodb running on localhost!');
+  }
 });
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback() {
+  console.log('Connected to DB');
+});
+
+
+
 
 app.listen(8000, function(){
     console.log("WhereTO running");
