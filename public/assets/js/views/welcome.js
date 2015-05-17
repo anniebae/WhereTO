@@ -6,8 +6,8 @@ var Welcome = Backbone.View.extend({
 		this.loginForm();
 	},
 	events: {
-		'click .btn-register' 		 : 'register',
-		'click .btn-login' 				 : 'login',
+		// 'click .btn-register' 		 : 'register',
+		// 'click .btn-login' 				 : 'login',
 		'click .btn-login-form' 	 : 'loginForm',
 		'click .btn-register-form' : 'registerForm'
 	},

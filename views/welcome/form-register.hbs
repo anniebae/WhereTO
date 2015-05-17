@@ -1,24 +1,27 @@
 <script type="text/template" id="register-form-template">
-	<form>
+	<form action="/register" method="post">
 	  <div class="form-group">
 	    <label>Full Name</label>
-	    <input type="email" class="form-control name-register">
+	    <input type="text" name="name" class="form-control name-register">
 	  </div>
 	  <div class="form-group">
 	    <label>Username</label>
-	    <input type="email" class="form-control username-register">
+	    <input type="text" name="username" class="form-control username-register">
 	  </div>
 	  <div class="form-group">
 	    <label>Email</label>
-	    <input type="email" class="form-control email-register">
+	    <input type="email" name="email" class="form-control email-register">
 	  </div>
 	  <div class="form-group">
 	    <label>Password</label>
-	    <input type="password" class="form-control password-register">
+	    <input type="password" name="password" class="form-control password-register">
 	  </div>
 	  <div class="form-group">
 	    <button type="submit" class="form-control btn btn-default btn-register btn-submit">SIGN UP</button>
 	  </div>
 	</form>
+ 	{{#if message }}
+      <div class="alert alert-danger">{{ message }}</div>
+   {{/if}}
 	<p class="form-error"></p>
 </script>

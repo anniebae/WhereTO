@@ -11,7 +11,7 @@ var yelp 			 = require("yelp").createClient({
     
 var apiRouter = express.Router();
 
-apiRouter.post('/api/search', urlencoded, function(req, res) {
+apiRouter.post('/search', urlencoded, function(req, res) {
   if (!req.body) return res.sendStatus(400)
   var request = req.body; // to be the params from search filed
   var location = request.location;
