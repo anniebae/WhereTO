@@ -15,23 +15,6 @@ router.get('/welcome', function(req, res) {
     res.render('welcome/index', {user: req.user});
 });
 
-router.post('/register', function(req, res) {
-  User.register(new User({
-    username: req.body.username,
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password
-  }), req.body.password, function(err, user) {
-      console.log(user);
-      if (err) {
-        return res.render('welcome/index');
-      }
-      passport.authenticate('local')(req, res, function() {
-        res.redirect('/');
-      });
-  });
-});
-
 router.get('/login', function(req, res) {
   res.render('welcome/index', {user: req.user});
 });

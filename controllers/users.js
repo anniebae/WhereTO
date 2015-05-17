@@ -1,17 +1,25 @@
+var express = require('express');
+var passport      = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var authConfig = require('../config/auth');
 var User = require('../models/user');
 
 exports.postUsers = function(req, res) {
-  var user = new User({
+
+  User.register(new User({
     username: req.body.username,
+    name: req.body.name,
+    email: req.body.email,
     password: req.body.password
+  }), req.body.password, function(err, user) {
+      if (err) {
+        return res.render('welcome/index');
+      }
+      passport.authenticate('local')(req, res, function() {
+        res.redirect('/');
+      });
   });
 
-  user.save(function(err) {
-    if (err)
-      res.send(err);
-
-    res.json({ message: 'We don\'t know what we\'re doing!' });
-  });
 };
 
 exports.getUsers = function(req, res) {

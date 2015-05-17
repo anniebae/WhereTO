@@ -5,6 +5,8 @@ var UsersCtrl = require('../controllers/users');
 
 var router = express.Router();
 
-router.route('/').get(UsersCtrl.getUsers);
+router.route('/')
+	.post(UsersCtrl.postUsers)
+	.get(UsersCtrl.getUsers);
 
 module.exports = router;
