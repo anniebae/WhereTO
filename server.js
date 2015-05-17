@@ -1,5 +1,6 @@
 var express       = require('express');
 var app           = express();
+var mongoose      = require('mongoose');
 var bodyParser    = require('body-parser');
 var cookieParser  = require('cookie-parser');
 var session       = require('express-session');
@@ -10,6 +11,9 @@ var handlebars    = require('express-handlebars');
 var bcrypt        = require('bcrypt');
 var apiRouter     = require('./routes/api-router');
 var appRouter     = require('./routes/app-router');
+var database      = require('./config/database');
+
+mongoose.connect(database.url);
 
 // Handlebars
 var viewDirectories = [
