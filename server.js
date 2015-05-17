@@ -35,10 +35,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-var routes = require('./routes/router');
-var apiRouter = require('./routes/api-router');
-app.use('/', routes);
+var authRouter = require('./routes/auth');
+var usersRouter = require('./routes/users');
+var apiRouter = require('./routes/api');
+app.use('/', authRouter);
 app.use('/api', apiRouter);
+app.use('/users', usersRouter);
 
 // Models
 var User = require('./models/user');
@@ -52,7 +54,7 @@ passport.deserializeUser(User.deserializeUser());
 var database = require('./config/database')(mongoose);
 
 // Authentication Controller
-var authentication = require('./config/authentication')(passport);
+var authConfig = require('./config/auth')(passport);
 
 
 app.listen(8000, function(){
