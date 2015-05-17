@@ -7,8 +7,6 @@ var cookieParser  = require('cookie-parser');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var usersCtrl     = require('./controllers/users');
-var authCtrl      = require('./controllers/auth');
 
 var app = express();
 
@@ -37,9 +35,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-var authRouter = require('./routes/auth');
+var authRouter  = require('./routes/auth');
 var usersRouter = require('./routes/users');
-var apiRouter = require('./routes/api');
+var apiRouter   = require('./routes/api');
 app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
@@ -53,10 +51,11 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 // Database
-var database = require('./config/database')(mongoose);
+var db = require('./config/db')(mongoose);
 
-// Authentication Controller
-var authCtrl = require('./controllers/auth')(passport);
+// Controllers
+var usersCtrl = require('./controllers/users');
+var authCtrl  = require('./controllers/auth')(passport);
 
 
 app.listen(8000, function(){
