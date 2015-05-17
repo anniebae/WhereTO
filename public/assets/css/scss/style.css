@@ -248,28 +248,42 @@ form label {
   }
 }
 /* line 1, partials/_profile.scss */
-.user-data {
-  text-align: left;
-}
-/* line 3, partials/_profile.scss */
-.user-data .img-avatar {
-  width: 250px;
+.user-header {
+  padding: 0;
+  background: url("http://evturn.com/assets/img/tile.png");
+  height: 280px;
+  background-size: cover;
 }
 
 /* line 8, partials/_profile.scss */
+.user-data {
+  text-align: left;
+}
+/* line 10, partials/_profile.scss */
+.user-data .img-avatar {
+  width: 240px;
+}
+@media (max-width: 768px) {
+  /* line 10, partials/_profile.scss */
+  .user-data .img-avatar {
+    width: 100px;
+  }
+}
+
+/* line 18, partials/_profile.scss */
 .user-list {
   background: white;
   border-radius: 2px;
   padding: 0;
 }
-/* line 12, partials/_profile.scss */
+/* line 22, partials/_profile.scss */
 .user-list .user-list-title {
   color: #15365d;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 18, partials/_profile.scss */
+/* line 28, partials/_profile.scss */
 .user-list .row.list-item {
   height: 60px;
   width: 100%;
@@ -278,52 +292,52 @@ form label {
   background: white;
   cursor: pointer;
 }
-/* line 25, partials/_profile.scss */
+/* line 35, partials/_profile.scss */
 .user-list .row.list-item:hover {
   background: #00b2e2;
   color: white;
 }
-/* line 28, partials/_profile.scss */
+/* line 38, partials/_profile.scss */
 .user-list .row.list-item:hover .fa {
   color: white;
 }
-/* line 31, partials/_profile.scss */
+/* line 41, partials/_profile.scss */
 .user-list .row.list-item:hover .list-desc.list-item-title {
   color: white;
 }
-/* line 36, partials/_profile.scss */
+/* line 46, partials/_profile.scss */
 .user-list .row.list-item .list-desc {
   width: 50%;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 40, partials/_profile.scss */
+/* line 50, partials/_profile.scss */
 .user-list .row.list-item .list-desc .list-item-title {
   color: #00b2e2;
   height: 100%;
 }
-/* line 45, partials/_profile.scss */
+/* line 55, partials/_profile.scss */
 .user-list .row.list-item .list-icon {
   width: 25%;
 }
-/* line 47, partials/_profile.scss */
+/* line 57, partials/_profile.scss */
 .user-list .row.list-item .list-icon .fa {
   font-size: 2.5em;
-  line-height: 1.2;
+  margin: -10px;
   color: #6d6e71;
 }
-/* line 53, partials/_profile.scss */
+/* line 63, partials/_profile.scss */
 .user-list .row.list-item .list-total {
   width: 25%;
   line-height: 2.5;
   color: #c9c8c7;
   display: inline-block;
 }
-/* line 58, partials/_profile.scss */
+/* line 68, partials/_profile.scss */
 .user-list .row.list-item .list-total .list-item-total {
   float: left;
 }
-/* line 61, partials/_profile.scss */
+/* line 71, partials/_profile.scss */
 .user-list .row.list-item .list-total i.fa {
   float: right;
   font-size: 2em;
