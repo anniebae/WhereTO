@@ -28,3 +28,14 @@ $dashboardlightgray: #f8f8f8;
 $dashboardmedgray: #bbbdbf;
 $dashboarddarkgray: #6c6d6f;
 $white: #fff;
+
+.btn-primarylight {
+	background: $primarylight;
+	color: $white;
+	height: 30px;
+	width: 100px;
+	&:hover {
+		background: $primarydark;
+		color: $white;
+	}
+}

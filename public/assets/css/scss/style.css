@@ -1,3 +1,16 @@
+/* line 32, partials/_globals.scss */
+.btn-primarylight {
+  background: #00b2e2;
+  color: white;
+  height: 30px;
+  width: 100px;
+}
+/* line 37, partials/_globals.scss */
+.btn-primarylight:hover {
+  background: #15365d;
+  color: white;
+}
+
 /* line 1, partials/_page.scss */
 h1 {
   font-size: 48px;
@@ -362,4 +375,13 @@ form label {
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px solid #c9c8c7;
+}
+/* line 19, partials/_users.scss */
+.container-users .container-user-results .user-result-item .user-result-connect {
+  height: 100%;
+  padding-top: 20px;
+}
+/* line 23, partials/_users.scss */
+.container-users .container-user-results .user-result-item .user-result-link {
+  text-decoration: none;
 }
