@@ -275,48 +275,44 @@ form label {
   margin: 0;
   border-bottom: 1px solid #c9c8c7;
   background: white;
-  cursor: pointer;
 }
-/* line 42, partials/_profile.scss */
-.page-content .user-list .row.list-item:hover {
-  background: #00b2e2;
-  color: white;
-}
-/* line 47, partials/_profile.scss */
+/* line 41, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-desc {
   height: 100%;
   text-align: left;
+  cursor: pointer;
   text-transform: uppercase;
 }
-/* line 51, partials/_profile.scss */
+/* line 46, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-desc .list-item-title {
   color: #00b2e2;
   line-height: 2.5em;
 }
-/* line 57, partials/_profile.scss */
+/* line 52, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-icon .fa {
   font-size: 2.5em;
   padding: 10px;
   color: #929497;
   text-align: center;
 }
-/* line 64, partials/_profile.scss */
+/* line 59, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total {
   height: 100%;
   color: #c9c8c7;
   display: inline-block;
 }
-/* line 68, partials/_profile.scss */
+/* line 63, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total .list-item-total {
   float: left;
   line-height: 2.5em;
 }
-/* line 72, partials/_profile.scss */
+/* line 67, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total i.fa {
   float: right;
   font-size: 1.8em;
   line-height: 2.5em;
   color: #e6e7e8;
+  cursor: pointer;
 }
 
 /* line 1, partials/_query.scss */

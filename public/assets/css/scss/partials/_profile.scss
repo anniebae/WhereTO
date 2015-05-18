@@ -38,15 +38,10 @@
 			margin: 0;
 			border-bottom: 1px solid $primarygray;
 			background: $white;	
-			cursor: pointer;
-			&:hover {
-				background: $primarylight;
-				color: $white;
-			}
-
 			.list-desc {
 			  height: 100%;
 				text-align: left;
+				cursor: pointer;
 				text-transform: uppercase;
 				.list-item-title {
 					color: $primarylight;
@@ -74,6 +69,7 @@
 				  font-size: 1.8em;
 	  			line-height: 2.5em;
 					color: $black10;
+					cursor: pointer;
 				}
 			}
 		}
