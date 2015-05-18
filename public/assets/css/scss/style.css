@@ -354,9 +354,12 @@ form label {
 .container-users .container-user-results {
   background: white;
   color: #00b2e2;
+  border-radius: 5px;
 }
-/* line 13, partials/_users.scss */
+/* line 14, partials/_users.scss */
 .container-users .container-user-results .user-result-item {
-  height: 80px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid #c9c8c7;
 }

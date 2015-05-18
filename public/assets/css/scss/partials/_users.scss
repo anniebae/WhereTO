@@ -10,8 +10,11 @@
 	.container-user-results {
 		background: $white;
 		color: $primarylight;
+		border-radius: 5px;
 		.user-result-item {
-			height: 80px;
+			height: 100px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			border-top: 1px solid $primarygray;
 		}
 	}
