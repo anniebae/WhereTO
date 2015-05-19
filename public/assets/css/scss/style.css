@@ -348,15 +348,14 @@ form label {
 .sections-wrapper #food {
   background-color: #ff8f12;
   height: 625px;
-  display: none;
 }
-/* line 20, partials/_query.scss */
+/* line 19, partials/_query.scss */
 .sections-wrapper #drinks {
   background-color: purple;
   height: 625px;
   display: none;
 }
-/* line 25, partials/_query.scss */
+/* line 24, partials/_query.scss */
 .sections-wrapper #attractions {
   background-color: green;
   height: 625px;
