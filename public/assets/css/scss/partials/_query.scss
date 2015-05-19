@@ -2,6 +2,7 @@
   position: relative;
   background-color: $ashblue;
   height: 700px;
+  margin-bottom: 2%;
 	.section-tab {
 	  position: absolute;
 	  height: 100%;
@@ -13,17 +14,17 @@
 
 	#food {
   	background-color: $orange;
-    height: 621px;
+    height: 625px;
     display: none;
 	}
 	#drinks {
   	background-color: purple;
-    height: 621px;
+    height: 625px;
     display: none;
   }
   #attractions {
     background-color: green;
-    height: 621px;
+    height: 625px;
     display: none;
   }
 }

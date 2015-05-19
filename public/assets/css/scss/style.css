@@ -333,32 +333,33 @@ form label {
   position: relative;
   background-color: #336699;
   height: 700px;
+  margin-bottom: 2%;
 }
-/* line 5, partials/_query.scss */
+/* line 6, partials/_query.scss */
 .sections-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 10, partials/_query.scss */
+/* line 11, partials/_query.scss */
 .sections-wrapper ul.nav-tabs li {
   display: inline-block;
 }
-/* line 14, partials/_query.scss */
+/* line 15, partials/_query.scss */
 .sections-wrapper #food {
   background-color: #ff8f12;
-  height: 621px;
+  height: 625px;
   display: none;
 }
-/* line 19, partials/_query.scss */
+/* line 20, partials/_query.scss */
 .sections-wrapper #drinks {
   background-color: purple;
-  height: 621px;
+  height: 625px;
   display: none;
 }
-/* line 24, partials/_query.scss */
+/* line 25, partials/_query.scss */
 .sections-wrapper #attractions {
   background-color: green;
-  height: 621px;
+  height: 625px;
   display: none;
 }
 
