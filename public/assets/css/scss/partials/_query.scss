@@ -11,11 +11,19 @@
 		display: inline-block;
 	}
 
-	#foods {
+	#food {
   	background-color: $orange;
+    height: 621px;
+    display: none;
 	}
-
 	#drinks {
   	background-color: purple;
-	}
+    height: 621px;
+    display: none;
+  }
+  #attractions {
+    background-color: green;
+    height: 621px;
+    display: none;
+  }
 }
