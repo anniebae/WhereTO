@@ -63,16 +63,16 @@ h6 {
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 27, partials/_page.scss */
+/* line 26, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 29, partials/_page.scss */
+/* line 28, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 35, partials/_page.scss */
+/* line 34, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -80,7 +80,7 @@ h6 {
   text-align: center;
 }
 
-/* line 42, partials/_page.scss */
+/* line 41, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -88,22 +88,27 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 49, partials/_page.scss */
+/* line 48, partials/_page.scss */
+.yelp {
+  text-align: center;
+}
+
+/* line 52, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 53, partials/_page.scss */
+/* line 56, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 55, partials/_page.scss */
+/* line 58, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 58, partials/_page.scss */
+/* line 61, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;

@@ -23,7 +23,6 @@ h6 { font-size: 14px; }
     }
   }
 
-
   .navbar-nav > li > a {
     color: $white;
     &:hover {
@@ -44,6 +43,10 @@ h6 { font-size: 14px; }
   color: $white;
   font-size: 500%;
   margin-top: 280px;
+}
+
+.yelp {
+  text-align: center;
 }
 
 .list-group-row {
