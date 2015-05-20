@@ -115,6 +115,14 @@ h6 {
   right: 7px;
 }
 
+/* line 70, partials/_page.scss */
+ol.added-results li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 95%;
+}
+
 /* line 1, partials/_base.scss */
 body {
   background-color: lightgrey;
