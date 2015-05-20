@@ -13,12 +13,14 @@ $(function(){
   });
   $('.drinks-tab').on('click', function(){
     console.log('drinks-tab clicked');
+    $(this).parent().find('li.active').removeClass('active');
     $('#food').hide();
     $('#attractions').hide();
     $('#drinks').show();
   });
   $('.attractions-tab').on('click', function(){
     console.log('attractions-tab clicked');
+    $(this).parent().find('li.active').removeClass('active');
     $('#food').hide();
     $('#drinks').hide();
     $('#attractions').show();
