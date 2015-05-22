@@ -25,4 +25,5 @@ $(function(){
     $('#drinks').hide();
     $('#attractions').show();
   });
+
 });

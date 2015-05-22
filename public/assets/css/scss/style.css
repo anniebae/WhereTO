@@ -14,6 +14,7 @@
 /* line 1, partials/_page.scss */
 h1 {
   font-size: 48px;
+  color: white;
 }
 
 /* line 2, partials/_page.scss */
@@ -41,38 +42,43 @@ h6 {
   font-size: 14px;
 }
 
-/* line 9, partials/_page.scss */
+/* line 8, partials/_page.scss */
+.text-layer {
+  padding-top: 180px;
+}
+
+/* line 12, partials/_page.scss */
 .section-title {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 14, partials/_page.scss */
+/* line 17, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 16, partials/_page.scss */
+/* line 19, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 18, partials/_page.scss */
+/* line 21, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 21, partials/_page.scss */
+/* line 24, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 26, partials/_page.scss */
+/* line 29, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 28, partials/_page.scss */
+/* line 31, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 34, partials/_page.scss */
+/* line 37, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -80,7 +86,7 @@ h6 {
   text-align: center;
 }
 
-/* line 41, partials/_page.scss */
+/* line 44, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -88,34 +94,34 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 48, partials/_page.scss */
+/* line 51, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 52, partials/_page.scss */
+/* line 55, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 56, partials/_page.scss */
+/* line 59, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 58, partials/_page.scss */
+/* line 61, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 61, partials/_page.scss */
+/* line 64, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 70, partials/_page.scss */
+/* line 73, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
