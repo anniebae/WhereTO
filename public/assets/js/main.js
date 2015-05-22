@@ -4,6 +4,8 @@ var usersRef = ref.child('users');
 
 var welcome = new Welcome();
 
+new WOW().init();
+
 $(function(){
   $('.food-tab').on('click', function(){
     console.log('food-tab clicked');
