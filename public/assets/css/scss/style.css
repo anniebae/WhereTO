@@ -1,78 +1,84 @@
-/* line 33, partials/_globals.scss */
+/* line 33, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_globals.scss */
 .btn-primarylight {
   background: #00b2e2;
   color: white;
   height: 30px;
   width: 100px;
 }
-/* line 38, partials/_globals.scss */
+/* line 38, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_globals.scss */
 .btn-primarylight:hover {
   background: #15365d;
   color: white;
 }
 
-/* line 1, partials/_page.scss */
+/* line 1, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h1 {
   font-size: 48px;
+  color: white;
 }
 
-/* line 2, partials/_page.scss */
+/* line 2, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h2 {
   font-size: 32px;
 }
 
-/* line 3, partials/_page.scss */
+/* line 3, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h3 {
   font-size: 27px;
 }
 
-/* line 4, partials/_page.scss */
+/* line 4, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h4 {
   font-size: 22px;
 }
 
-/* line 5, partials/_page.scss */
+/* line 5, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 6, partials/_page.scss */
+/* line 6, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 h6 {
   font-size: 14px;
 }
 
-/* line 9, partials/_page.scss */
+/* line 8, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
+.text-layer {
+  padding-top: 180px;
+}
+
+/* line 12, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .section-title {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 14, partials/_page.scss */
+/* line 17, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 16, partials/_page.scss */
+/* line 19, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 18, partials/_page.scss */
+/* line 21, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 21, partials/_page.scss */
+/* line 24, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 27, partials/_page.scss */
+/* line 29, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 29, partials/_page.scss */
+/* line 31, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 35, partials/_page.scss */
+/* line 38, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -80,7 +86,7 @@ h6 {
   text-align: center;
 }
 
-/* line 42, partials/_page.scss */
+/* line 45, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -88,71 +94,84 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 49, partials/_page.scss */
+/* line 52, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
+.yelp {
+  text-align: center;
+}
+
+/* line 56, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 53, partials/_page.scss */
+/* line 60, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 55, partials/_page.scss */
+/* line 62, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 58, partials/_page.scss */
+/* line 65, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 1, partials/_base.scss */
+/* line 74, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_page.scss */
+ol.added-results li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 95%;
+}
+
+/* line 1, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 body {
   background-color: lightgrey;
   font-family: Josefin Sans;
 }
 
-/* line 6, partials/_base.scss */
+/* line 6, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 ul.list-group li {
   display: inline-block;
 }
 
-/* line 10, partials/_base.scss */
+/* line 10, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 #home {
   height: 100vh;
   width: 100vw;
   background-color: #99ffcc;
 }
 
-/* line 16, partials/_base.scss */
+/* line 16, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .menu-item {
   cursor: pointer;
 }
 
-/* line 20, partials/_base.scss */
+/* line 20, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .slide-img {
   height: 100vh;
   width: 100vw;
 }
 
-/* line 25, partials/_base.scss */
+/* line 25, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .photo-layer {
   z-index: 1;
   position: absolute;
 }
 
-/* line 30, partials/_base.scss */
+/* line 30, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 ul.cb-slideshow {
   list-style-type: none;
   margin-top: 0;
   margin-left: 0;
 }
 
-/* line 36, partials/_base.scss */
+/* line 36, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .black-layer {
   background-color: #231f20;
   opacity: 0.5;
@@ -164,7 +183,7 @@ ul.cb-slideshow {
   left: 0;
 }
 
-/* line 47, partials/_base.scss */
+/* line 47, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .text-layer {
   z-index: 5;
   position: absolute;
@@ -173,12 +192,12 @@ ul.cb-slideshow {
   text-align: center;
 }
 
-/* line 55, partials/_base.scss */
+/* line 55, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 ul.authenticate li {
   display: inline-block;
 }
 
-/* line 59, partials/_base.scss */
+/* line 59, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 button.unique-user {
   background: none;
   border: 2.5px solid white;
@@ -188,29 +207,29 @@ button.unique-user {
   margin: 0 25px 0 0;
 }
 
-/* line 68, partials/_base.scss */
+/* line 68, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 button:hover {
   color: #231f20;
   background-color: white;
 }
 
-/* line 73, partials/_base.scss */
+/* line 73, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .form-control {
   border-radius: 0px;
 }
 
-/* line 77, partials/_base.scss */
+/* line 77, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 82, partials/_base.scss */
+/* line 82, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 form label {
   color: white;
   float: left;
 }
 
-/* line 87, partials/_base.scss */
+/* line 87, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .btn-submit {
   border-radius: 0px;
   height: 34px;
@@ -218,24 +237,24 @@ form label {
   color: #000;
 }
 
-/* line 94, partials/_base.scss */
+/* line 94, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 99, partials/_base.scss */
+/* line 99, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 108, partials/_base.scss */
+  /* line 108, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_base.scss */
   .btn-default {
     width: 100%;
   }
 }
-/* line 1, partials/_profile.scss */
+/* line 1, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .user-header {
   margin-top: 50px;
   padding: 0;
@@ -244,15 +263,15 @@ form label {
   background-size: cover;
 }
 
-/* line 9, partials/_profile.scss */
+/* line 9, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content {
   margin-top: 20px;
 }
-/* line 11, partials/_profile.scss */
+/* line 11, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-data {
   text-align: left;
 }
-/* line 13, partials/_profile.scss */
+/* line 13, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-data .img-avatar {
   width: 240px;
   z-index: 1;
@@ -260,28 +279,28 @@ form label {
   border-radius: 6px;
 }
 @media (max-width: 768px) {
-  /* line 13, partials/_profile.scss */
+  /* line 13, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
   .page-content .user-data .img-avatar {
     width: 100px;
   }
 }
-/* line 22, partials/_profile.scss */
+/* line 22, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-data .user-title {
   text-transform: uppercase;
 }
-/* line 26, partials/_profile.scss */
+/* line 26, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list {
   background: white;
   border-radius: 2px;
   padding: 0;
 }
-/* line 30, partials/_profile.scss */
+/* line 30, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .user-list-title {
   color: #15365d;
   text-transform: uppercase;
   line-height: 2.5em;
 }
-/* line 35, partials/_profile.scss */
+/* line 35, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item {
   height: 60px;
   width: 100%;
@@ -289,37 +308,37 @@ form label {
   border-bottom: 1px solid #c9c8c7;
   background: white;
 }
-/* line 41, partials/_profile.scss */
+/* line 41, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-desc {
   height: 100%;
   text-align: left;
   cursor: pointer;
   text-transform: uppercase;
 }
-/* line 46, partials/_profile.scss */
+/* line 46, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-desc .list-item-title {
   color: #00b2e2;
   line-height: 2.5em;
 }
-/* line 52, partials/_profile.scss */
+/* line 52, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-icon .fa {
   font-size: 2.5em;
   padding: 10px;
   color: #929497;
   text-align: center;
 }
-/* line 59, partials/_profile.scss */
+/* line 59, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total {
   height: 100%;
   color: #c9c8c7;
   display: inline-block;
 }
-/* line 63, partials/_profile.scss */
+/* line 63, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total .list-item-total {
   float: left;
   line-height: 2.5em;
 }
-/* line 67, partials/_profile.scss */
+/* line 67, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total i.fa {
   float: right;
   font-size: 1.8em;
@@ -328,60 +347,70 @@ form label {
   cursor: pointer;
 }
 
-/* line 1, partials/_query.scss */
+/* line 1, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
 .sections-wrapper {
   position: relative;
   background-color: #336699;
   height: 700px;
+  margin-bottom: 2%;
 }
-/* line 5, partials/_query.scss */
+/* line 6, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
 .sections-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 10, partials/_query.scss */
+/* line 11, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
 .sections-wrapper ul.nav-tabs li {
   display: inline-block;
 }
-/* line 14, partials/_query.scss */
-.sections-wrapper #foods {
+/* line 15, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
+.sections-wrapper #food {
   background-color: #ff8f12;
+  height: 625px;
 }
-/* line 18, partials/_query.scss */
+/* line 19, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
 .sections-wrapper #drinks {
   background-color: purple;
+  height: 625px;
+  display: none;
+}
+/* line 24, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_query.scss */
+.sections-wrapper #attractions {
+  background-color: green;
+  height: 625px;
+  display: none;
 }
 
-/* line 1, partials/_users.scss */
+/* line 1, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users {
   margin-top: 70px;
 }
-/* line 3, partials/_users.scss */
+/* line 3, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users .img-user-result {
   background: url("http://evturn.com/assets/img/ev-winter-yellow-200.jpg");
   width: 80px;
   height: 80px;
   background-size: cover;
 }
-/* line 10, partials/_users.scss */
+/* line 10, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users .container-user-results {
   background: white;
   color: #00b2e2;
   border-radius: 5px;
 }
-/* line 14, partials/_users.scss */
+/* line 14, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users .container-user-results .user-result-item {
   height: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px solid #c9c8c7;
 }
-/* line 19, partials/_users.scss */
+/* line 19, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users .container-user-results .user-result-item .user-result-connect {
   height: 100%;
   padding-top: 20px;
 }
-/* line 23, partials/_users.scss */
+/* line 23, /Users/evanturner/src/projects/WhereTO/public/assets/css/scss/partials/_users.scss */
 .container-users .container-user-results .user-result-item .user-result-link {
   text-decoration: none;
 }

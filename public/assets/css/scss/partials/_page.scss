@@ -1,10 +1,13 @@
-h1 { font-size: 48px; }
+h1 { font-size: 48px; color: white;}
 h2 { font-size: 32px; }
 h3 { font-size: 27px; }
 h4 { font-size: 22px; }
 h5 { font-size: 18px; }
 h6 { font-size: 14px; }
 
+.text-layer {
+  padding-top: 180px;
+}
 
 .section-title {
   margin-top: 20px;
@@ -23,7 +26,6 @@ h6 { font-size: 14px; }
     }
   }
 
-
   .navbar-nav > li > a {
     color: $white;
     &:hover {
@@ -31,6 +33,7 @@ h6 { font-size: 14px; }
     }
   }
 }
+
 
 .tab-title {
   font-weight: 500;
@@ -44,6 +47,10 @@ h6 { font-size: 14px; }
   color: $white;
   font-size: 500%;
   margin-top: 280px;
+}
+
+.yelp {
+  text-align: center;
 }
 
 .list-group-row {
@@ -62,4 +69,11 @@ h6 { font-size: 14px; }
       }
     }
   }
+}
+
+ol.added-results li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 95%;
 }
