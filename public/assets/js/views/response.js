@@ -7,6 +7,8 @@ var Response = Backbone.View.extend({
 	},
 	render: function() {
 		this.$el.html(this.responseTemplate(this.model.toJSON()));
+		// var url = this.model.get('image_url');
+		// $('.list-group-item').css({background: "url(" + url + ")"});
 		return this;
 	},
 });
