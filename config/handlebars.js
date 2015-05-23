@@ -1,6 +1,8 @@
+// node_modules
 var express       = require('express');
 var handlebars    = require('express-handlebars');
 
+// own unique module
 var viewDirectories = [
   'views/welcome',
   'views/query',

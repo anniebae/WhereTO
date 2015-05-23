@@ -1,3 +1,4 @@
+// Node modules
 var express       = require('express');
 var path          = require('path');
 var favicon       = require('serve-favicon');
@@ -8,8 +9,12 @@ var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
+
+// var annie = require('./config/annie');
+
 var app = express();
 
+// __dirname (express variable) is head of file (WhereTO) 
 var root = __dirname + '/public';
 
 // Handlebars

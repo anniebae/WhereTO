@@ -21,8 +21,10 @@
   <%= name %> 
   <% var address = location.display_address %>
   <% var rating = rating %>
+  <% var img = image_url %>
   <% for (var i = 0; i < address.length; i++) { %>
   <br> <%= address[i] %>
   <% } %>
   <br> <%= rating %>/5
+  <br> <img src="<%= img %>">
 </script>
