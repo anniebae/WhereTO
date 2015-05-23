@@ -50,6 +50,7 @@ app.use('/users', usersRouter);
 
 // Models
 var User = require('./models/user');
+var Annie = require('./config/annie');
 
 // Authentication Configuration
 passport.use(new LocalStrategy(User.authenticate()));
