@@ -6,7 +6,6 @@ var bodyParser    = require('body-parser');
 var cookieParser  = require('cookie-parser');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
-var sass      		= require('node-sass');
 var LocalStrategy = require('passport-local').Strategy;
 
 var app = express();
@@ -45,7 +44,6 @@ app.use('/users', usersRouter);
 
 // Models
 var User = require('./models/user');
-var Annie = require('./config/annie');
 
 // Authentication Configuration
 passport.use(new LocalStrategy(User.authenticate()));
