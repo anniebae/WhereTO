@@ -25,7 +25,7 @@ exports.getUsers = function(req, res) {
     if (err)
       res.send(err);
     console.log(users);
-    res.render('users/index', {users: users});
+    res.render('users/index', {users: users, user: req.user});
   });
 };
 
@@ -34,7 +34,7 @@ exports.getUser = function(req, res) {
     if (err)
       res.send(err);
       console.log(user);
-      res.render('users/show', user);
+      res.render('users/show', {user: user});
   });
 };
 
