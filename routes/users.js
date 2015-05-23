@@ -23,3 +23,8 @@ function getAuth(req, res, next) {
   }
 
 module.exports = router;
+
+
+
+
+// functions created in controllers are used in routes
