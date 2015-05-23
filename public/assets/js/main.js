@@ -28,4 +28,47 @@ $(function(){
     $('#attractions').show();
   });
 
+  $('.input-term-query').autocomplete({
+    source: function(req, res) {
+      var request = req.body;
+      var location = request.location;
+      var term = request.term;
+      $.ajax({
+        url: "/search",
+        dataType: "json",
+        data: {
+          term: term,
+          location: location
+        },
+        success: function(data) {
+          response($.map(data.results, function(item) {
+            return {
+              label: item,
+              value: item
+            }
+          }));
+        }
+      });
+    }
+  });
+
+
+
+
+
+api.post('/search', urlencoded, function(req, res) {
+  if (!req.body) return res.sendStatus(400)
+  var request = req.body; // to be the params from search filed
+  var location = request.location;
+  var term = request.term;
+  yelp.search({term: term, location: location}, function(error, data) {
+    console.log(error);
+    console.log(data);
+    res.json(data);
+  });
+});
+
+
+
+
 });
