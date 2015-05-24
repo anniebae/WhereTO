@@ -25,12 +25,11 @@
   <% for (var i = 0; i < address.length; i++) { %>
   <br> <%= address[i] %>
   <% } %>
-  <br> <%= rating %>/5
   <br>
-
-
-  <a href="<%= img %>" data-lightbox="response">
-    <img src="<%= img %>"
+  <a href="<%= img %>" data-lightbox="response" data-title="<%= name %>">
+    <img src="<%= img %>">
   </a>
+
+  <br> rating: <%= rating %>/5
   
 </script>
