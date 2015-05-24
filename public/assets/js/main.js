@@ -28,28 +28,32 @@ $(function(){
     $('#attractions').show();
   });
 
-  $('.input-term-query').autocomplete({
-    source: function(req, res) {
-      var request = req.body;
-      var location = request.location;
-      var term = request.term;
-      $.ajax({
-        url: "/search",
-        dataType: "json",
-        data: {
-          term: term,
-          location: location
-        },
-        success: function(data) {
-          response($.map(data.results, function(item) {
-            return {
-              label: item,
-              value: item
-            }
-          }));
-        }
-      });
-    }
-  });
+  $('.authenticate').on('click', function() {
+    $('.form-welcome').show();
+  })
+
+  // $('.input-term-query').autocomplete({
+  //   source: function(req, res) {
+  //     var request = req.body;
+  //     var location = request.location;
+  //     var term = request.term;
+  //     $.ajax({
+  //       url: "/search",
+  //       dataType: "json",
+  //       data: {
+  //         term: term,
+  //         location: location
+  //       },
+  //       success: function(data) {
+  //         response($.map(data.results, function(item) {
+  //           return {
+  //             label: item,
+  //             value: item
+  //           }
+  //         }));
+  //       }
+  //     });
+  //   }
+  // });
 
 });
