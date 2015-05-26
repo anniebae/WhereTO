@@ -16,5 +16,5 @@ var Welcome = Backbone.View.extend({
 	loginForm: function() {
 		$('.form-welcome').html(this.loginTemplate());
 		return this;
-	},
+	}
 });

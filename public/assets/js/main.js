@@ -30,7 +30,7 @@ $(function(){
 
   $('.authenticate').on('click', function() {
     $('.form-welcome').show();
-  })
+  });
 
   // $('.input-term-query').autocomplete({
   //   source: function(req, res) {
