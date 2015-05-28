@@ -31,7 +31,6 @@ $(function(){
   $('.authenticate').on('click', function() {
     $('.form-welcome').show();
   });
-  $('.navbar-right').hide();
 
   // $('.input-term-query').autocomplete({
   //   source: function(req, res) {

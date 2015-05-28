@@ -10,5 +10,5 @@ var Response = Backbone.View.extend({
 		// var url = this.model.get('image_url');
 		// $('.list-group-item').css({background: "url(" + url + ")"});
 		return this;
-	},
+	}
 });
