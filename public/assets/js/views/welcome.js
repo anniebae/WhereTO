@@ -12,6 +12,7 @@ var Welcome = Backbone.View.extend({
 	registerForm: function() {
 		$('.form-welcome').html(this.registerTemplate());
 		return this;
+		$('.navbar-right').hide();
 	},
 	loginForm: function() {
 		$('.form-welcome').html(this.loginTemplate());
