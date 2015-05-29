@@ -127,6 +127,11 @@ h6 {
 }
 
 /* line 79, partials/_page.scss */
+.added-results-times {
+  float: right;
+}
+
+/* line 83, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -134,17 +139,17 @@ ol.added-results li {
   width: 95%;
 }
 
-/* line 86, partials/_page.scss */
+/* line 90, partials/_page.scss */
 .added-results-img {
   height: 75px;
   width: 100px;
 }
 
-/* line 92, partials/_page.scss */
+/* line 96, partials/_page.scss */
 ul.added-results-ul {
   margin-left: -40px;
 }
-/* line 94, partials/_page.scss */
+/* line 98, partials/_page.scss */
 ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
