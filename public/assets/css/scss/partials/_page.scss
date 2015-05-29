@@ -83,9 +83,18 @@ h6 { font-size: 14px; }
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
   width: 95%;
+  &:nth-child(even) {
+    background: #fff;
+  }
+  &:nth-child(odd) {
+    background: #ADAD85;
+  }
 }
+
+
+
+
 
 .added-results-img {
   height: 75px;

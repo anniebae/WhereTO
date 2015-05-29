@@ -135,21 +135,28 @@ h6 {
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
   width: 95%;
 }
-
+/* line 87, partials/_page.scss */
+ol.added-results li:nth-child(even) {
+  background: #fff;
+}
 /* line 90, partials/_page.scss */
+ol.added-results li:nth-child(odd) {
+  background: #ADAD85;
+}
+
+/* line 99, partials/_page.scss */
 .added-results-img {
   height: 75px;
   width: 100px;
 }
 
-/* line 96, partials/_page.scss */
+/* line 105, partials/_page.scss */
 ul.added-results-ul {
   margin-left: -40px;
 }
-/* line 98, partials/_page.scss */
+/* line 107, partials/_page.scss */
 ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -392,7 +399,6 @@ form label {
 }
 /* line 15, partials/_query.scss */
 .sections-wrapper #food {
-  background-color: #ff8f12;
   height: 625px;
 }
 /* line 19, partials/_query.scss */
