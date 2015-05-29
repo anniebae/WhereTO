@@ -84,6 +84,8 @@ ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 95%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   &:nth-child(even) {
     background: #fff;
   }
@@ -103,7 +105,7 @@ ol.added-results li {
 }
 
 ul.added-results-ul {
-  margin-left: -40px;
+  margin-left: -50px;
   li {
     list-style-type: none;
     margin: 0;
