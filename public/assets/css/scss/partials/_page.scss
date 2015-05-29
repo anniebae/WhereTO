@@ -86,4 +86,14 @@ ol.added-results li {
 .added-results-img {
   height: 75px;
   width: 100px;
+
+}
+
+ul.added-results-ul {
+  margin-left: -40px;
+  li {
+    list-style-type: none;
+    margin: 0;
+    display: inline;    
+  }
 }

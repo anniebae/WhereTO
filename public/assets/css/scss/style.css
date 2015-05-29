@@ -140,6 +140,17 @@ ol.added-results li {
   width: 100px;
 }
 
+/* line 92, partials/_page.scss */
+ul.added-results-ul {
+  margin-left: -40px;
+}
+/* line 94, partials/_page.scss */
+ul.added-results-ul li {
+  list-style-type: none;
+  margin: 0;
+  display: inline;
+}
+
 /* line 1, partials/_base.scss */
 body {
   background-color: lightgrey;
