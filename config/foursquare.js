@@ -1,9 +1,3 @@
-var config = {
-  'secrets' : {
-    'clientId' : process.env.FOURSQUARE_CLIENT_ID,
-    'clientSecret' : process.env.FOURSQUARE_CLIENT_SECRET,
-    'redirectUrl' : 'https://whereTO.com/location'
-  }
-}
+var endpoint = 'https://api.foursquare.com/v2/venues/search?client_id=' + process.env.FOURSQUARE_CLIENT_ID + '&client_secret='+ process.env.FOURSQUARE_CLIENT_SECRET + '&v=20130815&ll=40.7,-74&query=donuts';
 
-var foursquare = require('node-foursquare')(config);
+module.exports = endpoint;
