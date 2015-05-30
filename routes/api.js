@@ -8,6 +8,15 @@ var yelp 			 = require("yelp").createClient({
   token: process.env.YELP_TOKEN,
   token_secret: process.env.YELP_TOKEN_SECRET
 });
+var foursquare_config = {
+  'secrets' : {
+    'clientId' : process.env.FOURSQUARE_CLIENT,
+    'clientSecret' : process.env.FOURSQUARE_CLIENT_SECRET,
+    'redirectUrl' : 'https://whereTO.com/location'
+  }
+}
+
+var foursquare = require('node-foursquare')(foursquare_config);
     
 var api = express.Router();
 
