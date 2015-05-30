@@ -8,7 +8,18 @@ var cookieParser  = require('cookie-parser');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var foursquare    = require('node-foursquare-venues')('clientId', 'secretId', 'version', 'mode');
+// Database
+var db = require('./config/db')(mongoose);
+// Models
+var User = require('./models/user');
+// Controllers
+var usersCtrl = require('./controllers/users');
+var authCtrl  = require('./controllers/auth')(passport);
+// Routes
+var authRouter  = require('./routes/auth');
+var usersRouter = require('./routes/users');
+var apiRouter   = require('./routes/api');
+
 
 var app = express();
 
@@ -38,27 +49,18 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-var authRouter  = require('./routes/auth');
-var usersRouter = require('./routes/users');
-var apiRouter   = require('./routes/api');
 app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
-
-// Models
-var User = require('./models/user');
 
 // Authentication Configuration
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// Database
-var db = require('./config/db')(mongoose);
 
-// Controllers
-var usersCtrl = require('./controllers/users');
-var authCtrl  = require('./controllers/auth')(passport);
+
+
 
 
 app.listen(8000, function(){
