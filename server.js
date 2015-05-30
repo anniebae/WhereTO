@@ -5,7 +5,9 @@ var favicon       = require('serve-favicon');
 var logger        = require('morgan');
 var bodyParser    = require('body-parser');
 var cookieParser  = require('cookie-parser');
+// Schema
 var mongoose      = require('mongoose');
+// User Authentication
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 // Database
@@ -19,7 +21,6 @@ var authCtrl  = require('./controllers/auth')(passport);
 var authRouter  = require('./routes/auth');
 var usersRouter = require('./routes/users');
 var apiRouter   = require('./routes/api');
-
 
 var app = express();
 
