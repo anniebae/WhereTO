@@ -8,6 +8,7 @@ var cookieParser  = require('cookie-parser');
 var mongoose      = require('mongoose');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var foursquare    = require('node-foursquare-venues')('clientId', 'secretId', 'version', 'mode');
 
 var app = express();
 
