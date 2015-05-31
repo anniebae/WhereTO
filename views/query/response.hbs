@@ -1,7 +1,7 @@
 <script type="text/template" id="response-template">
   <span class="list-item-option">
     <div class="yelp">
-      <a href="<%= url %>" target="_blank">
+      <a href="" target="_blank">
         <i class="fa fa-yelp"></i>
       </a>
     </div>
@@ -22,15 +22,9 @@
   <%= name %> 
   <% var address = location.formattedAddress %>
   <% var rating = rating %>
-  <!-- <% var img = image_url %> -->
   <% for (var i = 0; i < address.length; i++) { %>
   <br> <%= address[i] %>
   <% } %>
   <br>
-  <!-- <a href="<%= img %>" data-lightbox="response" data-title="<%= name %>">
-    <img src="<%= img %>">
-  </a> -->
-
   <br> rating: <%= rating %>/10
-  
 </script>
