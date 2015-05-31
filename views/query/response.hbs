@@ -20,17 +20,17 @@
     </div>
   </span>
   <%= name %> 
-  <% var address = location.display_address %>
+  <% var address = location.formattedAddress %>
   <% var rating = rating %>
-  <% var img = image_url %>
+  <!-- <% var img = image_url %> -->
   <% for (var i = 0; i < address.length; i++) { %>
   <br> <%= address[i] %>
   <% } %>
   <br>
-  <a href="<%= img %>" data-lightbox="response" data-title="<%= name %>">
+  <!-- <a href="<%= img %>" data-lightbox="response" data-title="<%= name %>">
     <img src="<%= img %>">
-  </a>
+  </a> -->
 
-  <br> rating: <%= rating %>/5
+  <br> rating: <%= rating %>/10
   
 </script>
