@@ -29,6 +29,7 @@ function sendRequest() {
 		},
 		success: function(data){
 			var data = JSON.parse(data);
+			console.log(data);
 			var res = data.response; 
 			var items = res.groups[0].items;
 			for (var i = 0; i < items.length; i++) {
