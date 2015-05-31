@@ -34,6 +34,7 @@ function sendRequest() {
 			var items = res.groups[0].items;
 			for (var i = 0; i < items.length; i++) {
 				var model = items[i].venue;
+				console.log(model);
 				var foursquareObj = new YelpData(model);
 				$('.list-group-loader').empty();
 				var view	= new Response({model: foursquareObj});
