@@ -7,7 +7,7 @@ var authCtrl = require('../controllers/auth');
 var router = express.Router();
 
 
-router.get('/', getAuth, function(req, res) {
+router.get('/', function(req, res) {
   res.render('query/index', {user: req.user});
 });
 

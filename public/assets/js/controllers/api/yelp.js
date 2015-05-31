@@ -28,13 +28,14 @@ function sendRequest() {
 			term: term
 		},
 		success: function(data){
-			console.log(data);
-			var businesses = data.businesses; 
-			for (var i = 0; i < businesses.length; i++) {
-				var model = businesses[i];
-				var yelpData = new YelpData(model);
+			var data = JSON.parse(data);
+			var res = data.response; 
+			var items = res.groups[0].items;
+			for (var i = 0; i < items.length; i++) {
+				var model = items[i];.venue;
+				var foursquareObj = new YelpData(model);
 				$('.list-group-loader').empty();
-				var view	= new Response({model: yelpData});
+				var view	= new Response({model: foursquareObj});
   			$('.list-group').append(view.el);
 				view.render();
 				$('.input-location-query').val('');
