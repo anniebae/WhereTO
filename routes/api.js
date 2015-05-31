@@ -7,19 +7,33 @@ var api = express.Router();
 
 api.post('/search', urlencoded, function(req, res) {
   var query = req.body.location;
-  var url = foursquare.query;
-  var path = url + query;
-  request(path, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      res.json(body);
-      var dataRes = JSON.parse(body); 
-      var items = dataRes.response.groups[0].items;
-      for (var i = 0; i < items.length; i++) {
-        var model = items[i].venue;
-        console.log(model.id);
-      };
-    }
-  });
+  var path = foursquare.query + query;
+  parseQuery(path);
 });
 
 module.exports = api;
+
+var parseQuery = function(path) {
+  var venueIds = [];
+  request(path, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var res = JSON.parse(body); 
+      var items = res.response.groups[0].items;
+      for (var i = 0; i < items.length; i++) {
+        var model = items[i].venue;
+        venueIds.push(model.id);
+      };
+      console.log(venueIds);
+    }
+  });
+}
+
+var parseVenue = function(id) {
+  var path = foursquare.venue + id;
+  request(path, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var res = JSON.parse(body); 
+      console.log(res);
+    }
+  });
+}
