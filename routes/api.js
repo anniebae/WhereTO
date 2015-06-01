@@ -21,6 +21,7 @@ var parseQuery = function(path) {
       var items = res.response.groups[0].items;
       for (var i = 0; i < items.length; i++) {
         var model = items[i].venue;
+        console.log(model);
         venueIds.push(model.id);
       };
       console.log(venueIds);
