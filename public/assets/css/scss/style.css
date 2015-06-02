@@ -13,7 +13,7 @@
 
 /* line 1, partials/_page.scss */
 h1 {
-  font-size: 48px;
+  font-size: 110px;
   color: white;
 }
 
@@ -44,46 +44,47 @@ h6 {
 
 /* line 9, partials/_page.scss */
 .text-layer {
-  padding-top: 180px;
+  padding-top: 275px;
+  color: white;
 }
 
-/* line 13, partials/_page.scss */
+/* line 14, partials/_page.scss */
 .form-welcome {
   display: none;
 }
 
-/* line 17, partials/_page.scss */
+/* line 18, partials/_page.scss */
 .section-title {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 22, partials/_page.scss */
+/* line 23, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 24, partials/_page.scss */
+/* line 25, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 26, partials/_page.scss */
+/* line 27, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 29, partials/_page.scss */
+/* line 30, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 34, partials/_page.scss */
+/* line 35, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 36, partials/_page.scss */
+/* line 37, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 43, partials/_page.scss */
+/* line 44, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -91,7 +92,7 @@ h6 {
   text-align: center;
 }
 
-/* line 50, partials/_page.scss */
+/* line 51, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -99,39 +100,39 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 57, partials/_page.scss */
+/* line 58, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 61, partials/_page.scss */
+/* line 62, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 65, partials/_page.scss */
+/* line 66, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 67, partials/_page.scss */
+/* line 68, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 70, partials/_page.scss */
+/* line 71, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 79, partials/_page.scss */
+/* line 80, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 83, partials/_page.scss */
+/* line 84, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -139,26 +140,26 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 89, partials/_page.scss */
+/* line 90, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 92, partials/_page.scss */
+/* line 93, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
 
-/* line 101, partials/_page.scss */
+/* line 102, partials/_page.scss */
 .added-results-img {
   height: 75px;
   width: 100px;
 }
 
-/* line 107, partials/_page.scss */
+/* line 108, partials/_page.scss */
 ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 109, partials/_page.scss */
+/* line 110, partials/_page.scss */
 ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -236,11 +237,11 @@ ul.authenticate li {
 /* line 59, partials/_base.scss */
 button.unique-user {
   background: none;
-  border: 2.5px solid white;
+  border: 1px solid white;
   color: white;
-  width: 100px;
-  height: 42px;
-  margin: 0 25px 0 0;
+  width: 85px;
+  height: 30px;
+  margin: 10px 20px 0 0;
 }
 
 /* line 68, partials/_base.scss */
