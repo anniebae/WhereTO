@@ -13,6 +13,9 @@ api.post('/search', urlencoded, function(req, res) {
 
 module.exports = api;
 
+
+
+
 var parseQuery = function(path) {
   var venueIds = [];
   request(path, function (error, response, body) {
@@ -21,7 +24,7 @@ var parseQuery = function(path) {
       var items = res.response.groups[0].items;
       for (var i = 0; i < items.length; i++) {
         var model = items[i].venue;
-        venueIds.push(model.id);
+        console.log(model);
       };
       console.log(venueIds);
     }
