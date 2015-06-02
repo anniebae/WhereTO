@@ -8,14 +8,14 @@ var router = express.Router();
 
 router.route('/')
 	.post(usersCtrl.postUsers)
-	.get(usersCtrl.getUsers);
+	.get(getAuth, usersCtrl.getUsers);
 
 router.route('/:username')
-	.get(usersCtrl.getUser);
+	.get(getAuth, usersCtrl.getUser);
 
 router.route('/:id')
-	.put(usersCtrl.putUser)
-	.delete(usersCtrl.deleteUser);
+	.put(getAuth, usersCtrl.putUser)
+	.delete(getAuth, usersCtrl.deleteUser);
 
 function getAuth(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
