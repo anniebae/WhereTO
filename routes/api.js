@@ -26,7 +26,6 @@ var parseQuery = function(path) {
         var model = items[i].venue;
         console.log(model);
       };
-      console.log(venueIds);
     }
   });
 }
