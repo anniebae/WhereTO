@@ -28,16 +28,13 @@ function sendRequest() {
 			term: term
 		},
 		success: function(data){
-			var data = JSON.parse(data);
 			console.log(data);
-			var res = data.response; 
-			var items = res.groups[0].items;
-			for (var i = 0; i < items.length; i++) {
-				var model = items[i].venue;
-				console.log(model);
-				var foursquareObj = new YelpData(model);
+			var businesses = data.businesses; 
+			for (var i = 0; i < businesses.length; i++) {
+				var model = businesses[i];
+				var yelpData = new YelpData(model);
 				$('.list-group-loader').empty();
-				var view	= new Response({model: foursquareObj});
+				var view	= new Response({model: yelpData});
   			$('.list-group').append(view.el);
 				view.render();
 				$('.input-location-query').val('');
