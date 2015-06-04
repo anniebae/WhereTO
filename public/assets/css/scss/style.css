@@ -155,19 +155,17 @@ ol.added-results li:nth-child(even) {
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-
-/* line 108, partials/_page.scss */
-.added-results-img {
+/* line 102, partials/_page.scss */
+ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-
-/* line 114, partials/_page.scss */
-ul.added-results-ul {
+/* line 106, partials/_page.scss */
+ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 116, partials/_page.scss */
-ul.added-results-ul li {
+/* line 108, partials/_page.scss */
+ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
   display: inline;
