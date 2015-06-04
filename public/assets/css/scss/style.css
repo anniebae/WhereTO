@@ -55,36 +55,37 @@ h6 {
 
 /* line 18, partials/_page.scss */
 .section-title {
+  color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 23, partials/_page.scss */
+/* line 24, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 25, partials/_page.scss */
+/* line 26, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 27, partials/_page.scss */
+/* line 28, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 30, partials/_page.scss */
+/* line 31, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 35, partials/_page.scss */
+/* line 36, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 37, partials/_page.scss */
+/* line 38, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 44, partials/_page.scss */
+/* line 45, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -92,7 +93,7 @@ h6 {
   text-align: center;
 }
 
-/* line 51, partials/_page.scss */
+/* line 52, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -100,39 +101,45 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 58, partials/_page.scss */
+/* line 59, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 62, partials/_page.scss */
+/* line 63, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 66, partials/_page.scss */
+/* line 67, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 68, partials/_page.scss */
+/* line 69, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 71, partials/_page.scss */
+/* line 72, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 80, partials/_page.scss */
+/* line 81, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 84, partials/_page.scss */
+/* line 85, partials/_page.scss */
+.added-results-title {
+  text-align: center;
+  color: white;
+}
+
+/* line 90, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -140,26 +147,26 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 90, partials/_page.scss */
+/* line 96, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 93, partials/_page.scss */
+/* line 99, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
 
-/* line 102, partials/_page.scss */
+/* line 108, partials/_page.scss */
 .added-results-img {
   height: 75px;
   width: 100px;
 }
 
-/* line 108, partials/_page.scss */
+/* line 114, partials/_page.scss */
 ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 110, partials/_page.scss */
+/* line 116, partials/_page.scss */
 ul.added-results-ul li {
   list-style-type: none;
   margin: 0;

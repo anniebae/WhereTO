@@ -16,6 +16,7 @@ h6 { font-size: 14px; }
 }
 
 .section-title {
+  color: $white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -79,6 +80,11 @@ h6 { font-size: 14px; }
 
 .added-results-times {
   float: right;
+}
+
+.added-results-title {
+  text-align: center;
+  color: $white;
 }
 
 ol.added-results li {
