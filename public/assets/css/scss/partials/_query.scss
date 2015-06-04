@@ -1,7 +1,10 @@
 .sections-wrapper {
   position: relative;
   background-color: $ashblue;
-  height: 700px;
+  height: 100%;
+  width: 60%;
+  float: right;
+  top: 41px;
   margin-bottom: 2%;
 	.section-tab {
 	  position: absolute;
