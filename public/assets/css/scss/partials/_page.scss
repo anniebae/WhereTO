@@ -30,6 +30,7 @@ h6 { font-size: 14px; }
   height: 100vh;
   width: 40%;
   float: left;
+  position: relative;
 }
 
 #query {
@@ -39,6 +40,12 @@ h6 { font-size: 14px; }
 .query-wrapper {
   width: 40%;
   text-align: center;
+}
+
+#response.container {
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .navbar-inverse {
@@ -87,7 +94,7 @@ h6 { font-size: 14px; }
   .list-group {
     padding: 0;
     .list-group-item {
-      width: 225px;
+      width: 40%;
       position: relative;
       .list-item-option {
         position: absolute;

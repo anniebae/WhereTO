@@ -70,45 +70,53 @@ h6 {
   height: 100vh;
   width: 40%;
   float: left;
+  position: relative;
 }
 
-/* line 35, partials/_page.scss */
+/* line 36, partials/_page.scss */
 #query {
   padding-top: 125px;
 }
 
-/* line 39, partials/_page.scss */
+/* line 40, partials/_page.scss */
 .query-wrapper {
   width: 40%;
   text-align: center;
 }
 
-/* line 44, partials/_page.scss */
+/* line 45, partials/_page.scss */
+#response.container {
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 51, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 46, partials/_page.scss */
+/* line 53, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 48, partials/_page.scss */
+/* line 55, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 51, partials/_page.scss */
+/* line 58, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 56, partials/_page.scss */
+/* line 63, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 58, partials/_page.scss */
+/* line 65, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 65, partials/_page.scss */
+/* line 72, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -116,7 +124,7 @@ h6 {
   text-align: center;
 }
 
-/* line 72, partials/_page.scss */
+/* line 79, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -124,45 +132,45 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 79, partials/_page.scss */
+/* line 86, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 83, partials/_page.scss */
+/* line 90, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 87, partials/_page.scss */
+/* line 94, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 89, partials/_page.scss */
+/* line 96, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
-  width: 225px;
+  width: 40%;
   position: relative;
 }
-/* line 92, partials/_page.scss */
+/* line 99, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 101, partials/_page.scss */
+/* line 108, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 105, partials/_page.scss */
+/* line 112, partials/_page.scss */
 .added-results-title {
   text-align: center;
   color: #231f20;
 }
 
-/* line 110, partials/_page.scss */
+/* line 117, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -170,24 +178,24 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 116, partials/_page.scss */
+/* line 123, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 119, partials/_page.scss */
+/* line 126, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 122, partials/_page.scss */
+/* line 129, partials/_page.scss */
 ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-/* line 126, partials/_page.scss */
+/* line 133, partials/_page.scss */
 ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 128, partials/_page.scss */
+/* line 135, partials/_page.scss */
 ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -201,42 +209,37 @@ body {
 }
 
 /* line 6, partials/_base.scss */
-ul.list-group li {
-  display: inline-block;
-}
-
-/* line 10, partials/_base.scss */
 #home {
   height: 100vh;
   width: 100vw;
   background-color: #99ffcc;
 }
 
-/* line 16, partials/_base.scss */
+/* line 12, partials/_base.scss */
 .menu-item {
   cursor: pointer;
 }
 
-/* line 20, partials/_base.scss */
+/* line 16, partials/_base.scss */
 .slide-img {
   height: 100vh;
   width: 100vw;
 }
 
-/* line 25, partials/_base.scss */
+/* line 21, partials/_base.scss */
 .photo-layer {
   z-index: 1;
   position: absolute;
 }
 
-/* line 30, partials/_base.scss */
+/* line 26, partials/_base.scss */
 ul.cb-slideshow {
   list-style-type: none;
   margin-top: 0;
   margin-left: 0;
 }
 
-/* line 36, partials/_base.scss */
+/* line 32, partials/_base.scss */
 .black-layer {
   background-color: #231f20;
   opacity: 0.5;
@@ -248,7 +251,7 @@ ul.cb-slideshow {
   left: 0;
 }
 
-/* line 47, partials/_base.scss */
+/* line 43, partials/_base.scss */
 .text-layer {
   z-index: 5;
   position: absolute;
@@ -257,12 +260,12 @@ ul.cb-slideshow {
   text-align: center;
 }
 
-/* line 55, partials/_base.scss */
+/* line 51, partials/_base.scss */
 ul.authenticate li {
   display: inline-block;
 }
 
-/* line 59, partials/_base.scss */
+/* line 55, partials/_base.scss */
 button.unique-user {
   background: none;
   border: 1px solid white;
@@ -272,29 +275,29 @@ button.unique-user {
   margin: 10px 20px 0 0;
 }
 
-/* line 68, partials/_base.scss */
+/* line 64, partials/_base.scss */
 button:hover {
   color: #231f20;
   background-color: white;
 }
 
-/* line 73, partials/_base.scss */
+/* line 69, partials/_base.scss */
 .form-control {
   border-radius: 0px;
 }
 
-/* line 77, partials/_base.scss */
+/* line 73, partials/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 82, partials/_base.scss */
+/* line 78, partials/_base.scss */
 form label {
   color: white;
   float: left;
 }
 
-/* line 87, partials/_base.scss */
+/* line 83, partials/_base.scss */
 .btn-submit {
   border-radius: 0px;
   height: 34px;
@@ -302,19 +305,19 @@ form label {
   color: #000;
 }
 
-/* line 94, partials/_base.scss */
+/* line 90, partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 99, partials/_base.scss */
+/* line 95, partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 108, partials/_base.scss */
+  /* line 104, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
