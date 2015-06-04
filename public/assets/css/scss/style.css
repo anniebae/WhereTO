@@ -43,62 +43,72 @@ h6 {
 }
 
 /* line 9, partials/_page.scss */
+.main-view {
+  height: 100vh;
+}
+
+/* line 13, partials/_page.scss */
 .text-layer {
   padding-top: 275px;
   color: white;
 }
 
-/* line 14, partials/_page.scss */
+/* line 18, partials/_page.scss */
 .form-welcome {
   display: none;
 }
 
-/* line 18, partials/_page.scss */
+/* line 22, partials/_page.scss */
 .section-title {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 25, partials/_page.scss */
-#query {
-  position: absolute;
-  padding-top: 125px;
-  height: 100%;
+/* line 29, partials/_page.scss */
+.query-response-wrapper {
+  height: 100vh;
+  width: 40%;
+  float: left;
 }
 
-/* line 31, partials/_page.scss */
+/* line 35, partials/_page.scss */
+#query {
+  padding-top: 125px;
+}
+
+/* line 39, partials/_page.scss */
 .query-wrapper {
   width: 40%;
   text-align: center;
 }
 
-/* line 36, partials/_page.scss */
+/* line 44, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 38, partials/_page.scss */
+/* line 46, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 40, partials/_page.scss */
+/* line 48, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 43, partials/_page.scss */
+/* line 51, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 48, partials/_page.scss */
+/* line 56, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 50, partials/_page.scss */
+/* line 58, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 57, partials/_page.scss */
+/* line 65, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -106,7 +116,7 @@ h6 {
   text-align: center;
 }
 
-/* line 64, partials/_page.scss */
+/* line 72, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -114,45 +124,45 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 71, partials/_page.scss */
+/* line 79, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 75, partials/_page.scss */
+/* line 83, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 79, partials/_page.scss */
+/* line 87, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 81, partials/_page.scss */
+/* line 89, partials/_page.scss */
 .list-group-row .list-group .list-group-item {
   width: 225px;
   position: relative;
 }
-/* line 84, partials/_page.scss */
+/* line 92, partials/_page.scss */
 .list-group-row .list-group .list-group-item .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 93, partials/_page.scss */
+/* line 101, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 97, partials/_page.scss */
+/* line 105, partials/_page.scss */
 .added-results-title {
   text-align: center;
   color: #231f20;
 }
 
-/* line 102, partials/_page.scss */
+/* line 110, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -160,24 +170,24 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 108, partials/_page.scss */
+/* line 116, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 111, partials/_page.scss */
+/* line 119, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 114, partials/_page.scss */
+/* line 122, partials/_page.scss */
 ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-/* line 118, partials/_page.scss */
+/* line 126, partials/_page.scss */
 ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 120, partials/_page.scss */
+/* line 128, partials/_page.scss */
 ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -410,35 +420,34 @@ form label {
   width: 60%;
   float: right;
   top: 41px;
-  margin-bottom: 2%;
 }
-/* line 9, partials/_query.scss */
+/* line 8, partials/_query.scss */
 .sections-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 14, partials/_query.scss */
+/* line 13, partials/_query.scss */
 .sections-wrapper ul.nav-tabs li {
   display: inline-block;
 }
-/* line 18, partials/_query.scss */
+/* line 17, partials/_query.scss */
 .sections-wrapper #food {
   height: 625px;
 }
-/* line 22, partials/_query.scss */
+/* line 21, partials/_query.scss */
 .sections-wrapper #drinks {
   background-color: purple;
   height: 625px;
   display: none;
 }
-/* line 27, partials/_query.scss */
+/* line 26, partials/_query.scss */
 .sections-wrapper #attractions {
   background-color: green;
   height: 625px;
   display: none;
 }
 
-/* line 34, partials/_query.scss */
+/* line 33, partials/_query.scss */
 .sections-tab {
   cursor: pointer;
 }
