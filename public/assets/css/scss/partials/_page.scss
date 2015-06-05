@@ -42,7 +42,8 @@ h6 { font-size: 14px; }
 }
 
 #response {
-  position: absolute;
+  width: 90%;
+  margin: 0 auto;
   height: 85%;
   overflow-y: scroll;
 }
@@ -92,14 +93,10 @@ h6 { font-size: 14px; }
   white-space: nowrap;
   .list-group {
     padding: 0;
-    .list-group-item {
-      width: 40%;
-      position: relative;
-      .list-item-option {
-        position: absolute;
-        top: 35px;
-        right: 7px;
-      }
+    .list-item-option {
+      position: absolute;
+      top: 35px;
+      right: 7px;
     }
   }
 }
