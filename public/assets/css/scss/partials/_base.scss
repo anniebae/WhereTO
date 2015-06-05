@@ -99,9 +99,18 @@ form label {
 
 
 
-
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;
+  }
+  .query-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .query-wrapper {
+    width: 75%;
   }
 }

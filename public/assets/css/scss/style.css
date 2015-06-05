@@ -197,6 +197,13 @@ ol.added-results li ul.added-results-ul li {
   display: inline;
 }
 
+@media (min-width: 767px) {
+  /* line 140, partials/_page.scss */
+  .query-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
 /* line 1, partials/_base.scss */
 body {
   background-color: lightgrey;
@@ -312,9 +319,21 @@ form label {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 104, partials/_base.scss */
+  /* line 103, partials/_base.scss */
   .btn-default {
     width: 100%;
+  }
+
+  /* line 106, partials/_base.scss */
+  .query-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  /* line 113, partials/_base.scss */
+  .query-wrapper {
+    width: 75%;
   }
 }
 /* line 1, partials/_profile.scss */

@@ -135,3 +135,10 @@ ol.added-results li {
     }
   }
 }
+
+@media (min-width: 767px) {
+  .query-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
