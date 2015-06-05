@@ -28,8 +28,6 @@ h6 { font-size: 14px; }
 
 .query-response-wrapper {
   height: 100vh;
-  width: 40%;
-  float: left;
   position: relative;
 }
 
@@ -133,12 +131,5 @@ ol.added-results li {
       margin: 0;
       display: inline;    
     }
-  }
-}
-
-@media (min-width: 767px) {
-  .query-wrapper {
-    width: 85%;
-    margin: 0 auto;
   }
 }

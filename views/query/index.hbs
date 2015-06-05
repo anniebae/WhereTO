@@ -1,62 +1,74 @@
 <div class="main-view">
   
-  <div class="query-response-wrapper">
-    {{>_query}}
-    <div id="response">
-      <div class="row list-group-row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="text-center list-group-loader"></div>
-          <ul class="list-group">
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
 
-          <!-- yelp response object -->
+      <div class="query-response-wrapper">
+        {{>_query}}
+        <div id="response">
+          <div class="row list-group-row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="text-center list-group-loader"></div>
+              <ul class="list-group">
 
-          </ul>  
+              <!-- yelp response object -->
+
+              </ul>  
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  
-
-  <div class="container sections-wrapper">
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="active food-tab"><a class="sections-tab">Food <i class="fa fa-times"></i></a></li>
-      <li role="presentation" class="drinks-tab"><a class="sections-tab">Drinks <i class="fa fa-times"></i></a></li>
-      <li role="presentation" class="attractions-tab"><a class="sections-tab">Attractions <i class="fa fa-times"></i></a></li>
-      <li role="presentation" class="add-tab"><a class="sections-tab"><i class="fa fa-plus"></i></a></li>
-    </ul>
-
-    <div id="food">
-      <h2 class="added-results-title">FOOD</h2>
-      <ol class="added-results">
-        <li><a href="<%= url %>" target="_blank">Someplace</a> <br>
-          <div class="added-results-times">
-              <i class="fa fa-times"></i>
-          </div>
-          100 Broadway New York, NY <br>
-          <div class="row">
-            <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-            <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-            <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-            <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-            <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-          </div>
-        </li>
-        <li>General Assembly <br>
-          10e 21st St. New York, NY 10010 <br>
-          INSERT PHOTOS
-        </li>
-        <li>Thisplace <br>
-          2560 Park Ave. New York, NY <br>
-          INSERT PHOTOS
-        </li>
-      </ol>
     </div>
-    <div id="drinks">
-      <h2 class="added-results-title">DRINKS</h2>
-    </div>
-    <div id="attractions">
-      <h2 class="added-results-title">ATTRACTIONS</h2>
+
+
+
+
+
+    <div class="col-md-8 col-sm-8">
+      <div class="container sections-wrapper">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active food-tab"><a class="sections-tab">Food <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="drinks-tab"><a class="sections-tab">Drinks <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="attractions-tab"><a class="sections-tab">Attractions <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="add-tab"><a class="sections-tab"><i class="fa fa-plus"></i></a></li>
+        </ul>
+
+        <div id="food">
+          <h2 class="added-results-title">FOOD</h2>
+          <ol class="added-results">
+            <li><a href="<%= url %>" target="_blank">Someplace</a> <br>
+              <div class="added-results-times">
+                  <i class="fa fa-times"></i>
+              </div>
+              100 Broadway New York, NY <br>
+              <div class="row">
+                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+              </div>
+            </li>
+            <li>General Assembly <br>
+              10e 21st St. New York, NY 10010 <br>
+              INSERT PHOTOS
+            </li>
+            <li>Thisplace <br>
+              2560 Park Ave. New York, NY <br>
+              INSERT PHOTOS
+            </li>
+          </ol>
+        </div>
+        <div id="drinks">
+          <h2 class="added-results-title">DRINKS</h2>
+        </div>
+        <div id="attractions">
+          <h2 class="added-results-title">ATTRACTIONS</h2>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
