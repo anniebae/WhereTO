@@ -87,7 +87,7 @@ h6 {
 /* line 45, partials/_page.scss */
 #response.container {
   position: absolute;
-  height: 100%;
+  height: 85%;
   overflow-y: scroll;
 }
 
