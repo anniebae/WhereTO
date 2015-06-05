@@ -38,11 +38,10 @@ h6 { font-size: 14px; }
 }
 
 .query-wrapper {
-  width: 40%;
   text-align: center;
 }
 
-#response.container {
+#response {
   position: absolute;
   height: 85%;
   overflow-y: scroll;
