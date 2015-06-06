@@ -6,6 +6,7 @@
       </a>
     </div>
     <form action="/places" method="post">   
+      <input type="text" name="category" placeholder="Category">
       <input type="hidden" name="venue" value="<%= name %>">
       <input type="hidden" name="yelpId" value="<%= id %>">
       <input type="hidden" name="city" value="<%= location.city %>">
