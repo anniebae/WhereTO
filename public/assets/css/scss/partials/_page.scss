@@ -11,12 +11,18 @@ h6 { font-size: 14px; }
 }
 
 .text-layer {
-  padding-top: 275px;
+  padding-top: 51px;
   color: white;
 }
 
 .form-welcome {
+  height: 45px;
   display: none;
+  background-color: $navgray;
+}
+
+.form-inputs {
+  padding-top: .4%;
 }
 
 .section-title {
