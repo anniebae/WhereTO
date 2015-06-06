@@ -29,7 +29,7 @@ $(function(){
   });
 
   $('.authenticate').on('click', function() {
-    $('.form-welcome').show();
+    $('.form-welcome').slideToggle("fast");
   });
 
   // $('.input-term-query').autocomplete({
