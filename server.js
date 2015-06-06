@@ -1,10 +1,11 @@
 // Node modules
-var express       = require('express');
-var path          = require('path');
-var favicon       = require('serve-favicon');
-var logger        = require('morgan');
-var bodyParser    = require('body-parser');
-var cookieParser  = require('cookie-parser');
+var express        = require('express');
+var methodOverride = require('method-override');
+var path           = require('path');
+var favicon        = require('serve-favicon');
+var logger         = require('morgan');
+var bodyParser     = require('body-parser');
+var cookieParser   = require('cookie-parser');
 
 // Schema
 var mongoose = require('mongoose');
@@ -50,7 +51,16 @@ app.use(require('express-session')({
   resave: false,
   saveUninitialized: false
 }));
+app.use(methodOverride(function(req, res){
+  if (req.body && typeof req.body === 'object' && '_method' in req.body) {
+    var method = req.body._method
+    delete req.body._method
+    return method
+  }
+}));
 app.use(express.static(root));
+
+
 
 // Authentication Initialization
 app.use(passport.initialize());
