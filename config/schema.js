@@ -8,12 +8,18 @@ exports.User = function() {
     username    : {type: String, required: true, unique: true},
     
   });
-};
+}
 
-export.Place = function() {
+exports.Place = function() {
   return new mongoose.Schema({
     name        : {type: String, required: true},
     location    : {type: String, required: true},
     yelpId      : {type: Number, require: true}
+  });
+}
+
+exports.Collection = function() {
+  return new mongoose.Schema({
+    name        : {type: String}
   });
 }
