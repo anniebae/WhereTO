@@ -39,19 +39,32 @@ exports.getUser = function(req, res) {
 };
 
 exports.putUser = function(req, res) {
-  User.update(req.params.beer_id, 
+  User.update(req.params._id, 
     {
       name     : req.body.name,
       email    : req.body.email,
       password : req.body.password,
-      username : req.body.username
-    }, 
+      username : req.body.username,
+      places   : req.body.places
+    },
     function(err, num, raw) {
       if (err)
         res.send(err);
-      res.json({message: num + ' updated'});
+      res.json({message: name + ' updated'});
     });
 };
+
+exports.deletePlace = function(req, res) {
+  var id = req.body.placeId;
+  var places = req.user.places;
+  console.log('before ', places);
+  var newPlaces = places.remove(id);
+  console.log('after ', newPlaces);
+  // User.save(function (err) {
+  // if (err) console.log(err);
+  console.log(id + ' the sub-doc was removed')
+// });
+}
 
 exports.deleteUser = function(req, res) {
   User.remove(req.params._id, function(err) {
