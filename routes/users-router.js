@@ -1,8 +1,8 @@
 var express 	= require('express');
 var passport 	= require('passport');
 var User 			= require('../models/user');
-var AuthCtrl 	= require('../controllers/auth');
-var UsersCtrl = require('../controllers/users'),
+var AuthCtrl 	= require('../controllers/auth-ctrl');
+var UsersCtrl = require('../controllers/users-ctrl'),
     postUsers = UsersCtrl.postUsers,
      getUsers = UsersCtrl.getUsers,
       getUser = UsersCtrl.getUser,

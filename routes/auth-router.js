@@ -2,7 +2,7 @@ var express = require('express');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
-var AuthCtrl = require('../controllers/auth');
+var AuthCtrl = require('../controllers/auth-ctrl');
 var router = express.Router();
 
 router.get('/', function(req, res) {

@@ -1,7 +1,7 @@
 var express       = require('express');
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var AuthCtrl      = require('../controllers/auth');
+var AuthCtrl      = require('../controllers/auth-ctrl');
 var User          = require('../models/user');
 
 exports.postUsers = function(req, res) {

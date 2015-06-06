@@ -20,13 +20,13 @@ var db = require('./config/db')(mongoose);
 var User = require('./models/user');
 
 // Controllers
-var UsersCtrl = require('./controllers/users');
-var AuthCtrl  = require('./controllers/auth')(passport);
+var UsersCtrl = require('./controllers/users-ctrl');
+var AuthCtrl  = require('./controllers/auth-ctrl')(passport);
 
 // Routes
-var authRouter  = require('./routes/auth');
-var usersRouter = require('./routes/users');
-var apiRouter   = require('./routes/api');
+var authRouter  = require('./routes/auth-router');
+var usersRouter = require('./routes/users-router');
+var apiRouter   = require('./routes/api-router');
 
 var app = express();
 
