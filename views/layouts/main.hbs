@@ -4,8 +4,11 @@
 {{>head}}
 </head>
 <body>
-	{{>_authNavbar}}
-  {{>_unauthNavbar}}
+  {{#if user}}
+	  {{>_authNavbar}}
+  {{else}}
+    {{>_unauthNavbar}}
+  {{/if}}
 	
 	{{{body}}}
 	
