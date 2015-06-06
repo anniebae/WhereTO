@@ -10,7 +10,7 @@ exports.postPlaces = function(req, res) {
     yelpId     : req.body.yelpId,
     city       : req.body.city,
     zipcode    : req.body.zipcode,
-    category   : 'Snacktime'
+    category   : req.body.category
   });
   currentUser.places.push(place);
 
