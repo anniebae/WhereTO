@@ -20,8 +20,8 @@ var db = require('./config/db')(mongoose);
 var User = require('./models/user');
 
 // Controllers
-var usersCtrl = require('./controllers/users');
-var authCtrl  = require('./controllers/auth')(passport);
+var UsersCtrl = require('./controllers/users');
+var AuthCtrl  = require('./controllers/auth')(passport);
 
 // Routes
 var authRouter  = require('./routes/auth');

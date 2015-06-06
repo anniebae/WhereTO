@@ -1,21 +1,26 @@
 var express 	= require('express');
 var passport 	= require('passport');
 var User 			= require('../models/user');
-var usersCtrl = require('../controllers/users');
-var authCtrl 	= require('../controllers/auth');
+var AuthCtrl 	= require('../controllers/auth');
+var UsersCtrl = require('../controllers/users'),
+    postUsers = UsersCtrl.postUsers,
+     getUsers = UsersCtrl.getUsers,
+      getUser = UsersCtrl.getUser,
+      putUser = UsersCtrl.putUser,
+   deleteUser = UsersCtrl.deleteUser;
 
 var router = express.Router();
 
 router.route('/')
-	.post(usersCtrl.postUsers)
-	.get(getAuth, usersCtrl.getUsers);
+	.post(postUsers)
+	.get(getUsers);
 
 router.route('/:username')
-	.get(getAuth, usersCtrl.getUser);
+	.get(getUser);
 
 router.route('/:id')
-	.put(getAuth, usersCtrl.putUser)
-	.delete(getAuth, usersCtrl.deleteUser);
+	.put(putUser)
+	.delete(deleteUser);
 
 function getAuth(req, res, next) {
   if (req.isAuthenticated()) { return next(); }

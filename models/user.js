@@ -1,16 +1,10 @@
 var mongoose = require('mongoose');
-var Schema 	 = mongoose.Schema;
+var userSchema = require('../config/schema').User();
 var passportLocalMongoose = require('passport-local-mongoose');
 var bcrypt = require('bcrypt');
 
-var User = new Schema({
-	name		 : {type: String, required: true},
-	password : {type: String, required: true},
-	email    : {type: String, required: true, unique: true},
-	username : {type: String, required: true, unique: true}
-});
 
-User.pre('save', function(next) {
+userSchema.pre('save', function(next) {
 	var user = this;
 	if (!user.isModified('password')) return next();
 	bcrypt.genSalt(10, function(err, salt) {
@@ -24,7 +18,7 @@ User.pre('save', function(next) {
 	});
 });
 
-User.methods.comparePassword = function(candidatePassword, cb) {
+userSchema.methods.comparePassword = function(candidatePassword, cb) {
 	bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
 		if (err) return cb(err);
 		cb(null, isMatch);
@@ -32,6 +26,6 @@ User.methods.comparePassword = function(candidatePassword, cb) {
 };
 
 
-User.plugin(passportLocalMongoose);
+userSchema.plugin(passportLocalMongoose);
 
-module.exports = mongoose.model('User', User);
+module.exports = mongoose.model('User', userSchema);
