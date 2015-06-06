@@ -1,11 +1,11 @@
-/* line 33, partials/_globals.scss */
+/* line 35, partials/_globals.scss */
 .btn-primarylight {
   background: #00b2e2;
   color: white;
   height: 30px;
   width: 100px;
 }
-/* line 38, partials/_globals.scss */
+/* line 40, partials/_globals.scss */
 .btn-primarylight:hover {
   background: #15365d;
   color: white;
@@ -49,39 +49,46 @@ h6 {
 
 /* line 13, partials/_page.scss */
 .text-layer {
-  padding-top: 275px;
+  padding-top: 51px;
   color: white;
 }
 
 /* line 18, partials/_page.scss */
 .form-welcome {
+  height: 45px;
   display: none;
+  background-color: #231f20;
 }
 
-/* line 22, partials/_page.scss */
+/* line 24, partials/_page.scss */
+.form-inputs {
+  padding-top: .4%;
+}
+
+/* line 28, partials/_page.scss */
 .section-title {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 29, partials/_page.scss */
+/* line 35, partials/_page.scss */
 .query-response-wrapper {
   height: 100vh;
   position: relative;
 }
 
-/* line 34, partials/_page.scss */
+/* line 40, partials/_page.scss */
 #query {
   padding-top: 125px;
 }
 
-/* line 38, partials/_page.scss */
+/* line 44, partials/_page.scss */
 .query-wrapper {
   text-align: center;
 }
 
-/* line 42, partials/_page.scss */
+/* line 48, partials/_page.scss */
 #response {
   width: 90%;
   margin: 0 auto;
@@ -89,32 +96,32 @@ h6 {
   overflow-y: scroll;
 }
 
-/* line 49, partials/_page.scss */
+/* line 55, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 51, partials/_page.scss */
+/* line 57, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 53, partials/_page.scss */
+/* line 59, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 56, partials/_page.scss */
+/* line 62, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 61, partials/_page.scss */
+/* line 67, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 63, partials/_page.scss */
+/* line 69, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 70, partials/_page.scss */
+/* line 76, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -122,7 +129,7 @@ h6 {
   text-align: center;
 }
 
-/* line 77, partials/_page.scss */
+/* line 83, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -130,40 +137,40 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 84, partials/_page.scss */
+/* line 90, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 88, partials/_page.scss */
+/* line 94, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 92, partials/_page.scss */
+/* line 98, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 94, partials/_page.scss */
+/* line 100, partials/_page.scss */
 .list-group-row .list-group .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 102, partials/_page.scss */
+/* line 108, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 106, partials/_page.scss */
+/* line 112, partials/_page.scss */
 .added-results-title {
   text-align: center;
   color: #231f20;
 }
 
-/* line 111, partials/_page.scss */
+/* line 117, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -171,24 +178,24 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 117, partials/_page.scss */
+/* line 123, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 120, partials/_page.scss */
+/* line 126, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 123, partials/_page.scss */
+/* line 129, partials/_page.scss */
 ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-/* line 127, partials/_page.scss */
+/* line 133, partials/_page.scss */
 ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 129, partials/_page.scss */
+/* line 135, partials/_page.scss */
 ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
