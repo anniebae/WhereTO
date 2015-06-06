@@ -50,6 +50,7 @@ ul.cb-slideshow {
 
 ul.authenticate li {
   display: inline-block;
+  float: right;
 }
 
 button.unique-user {
@@ -97,8 +98,6 @@ form label {
 }
 
 
-
-
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;
@@ -106,6 +105,16 @@ form label {
   .query-wrapper {
     width: 85%;
     margin: 0 auto;
+  }
+  .form-welcome {
+    width: 302px;
+    height: 120px;
+  }
+  .form-inputs {
+    padding-top: 4.5%;
+  }
+  .form-group {
+    background-color: $navgray;
   }
 }
 

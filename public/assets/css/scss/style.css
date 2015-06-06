@@ -267,9 +267,10 @@ ul.cb-slideshow {
 /* line 51, partials/_base.scss */
 ul.authenticate li {
   display: inline-block;
+  float: right;
 }
 
-/* line 55, partials/_base.scss */
+/* line 56, partials/_base.scss */
 button.unique-user {
   background: none;
   border: 1px solid white;
@@ -279,29 +280,29 @@ button.unique-user {
   margin: 10px 20px 0 0;
 }
 
-/* line 64, partials/_base.scss */
+/* line 65, partials/_base.scss */
 button:hover {
   color: #231f20;
   background-color: white;
 }
 
-/* line 69, partials/_base.scss */
+/* line 70, partials/_base.scss */
 .form-control {
   border-radius: 0px;
 }
 
-/* line 73, partials/_base.scss */
+/* line 74, partials/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 78, partials/_base.scss */
+/* line 79, partials/_base.scss */
 form label {
   color: white;
   float: left;
 }
 
-/* line 83, partials/_base.scss */
+/* line 84, partials/_base.scss */
 .btn-submit {
   border-radius: 0px;
   height: 34px;
@@ -309,31 +310,47 @@ form label {
   color: #000;
 }
 
-/* line 90, partials/_base.scss */
+/* line 91, partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 95, partials/_base.scss */
+/* line 96, partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 103, partials/_base.scss */
+  /* line 102, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
 
-  /* line 106, partials/_base.scss */
+  /* line 105, partials/_base.scss */
   .query-wrapper {
     width: 85%;
     margin: 0 auto;
   }
+
+  /* line 109, partials/_base.scss */
+  .form-welcome {
+    width: 302px;
+    height: 120px;
+  }
+
+  /* line 113, partials/_base.scss */
+  .form-inputs {
+    padding-top: 4.5%;
+  }
+
+  /* line 116, partials/_base.scss */
+  .form-group {
+    background-color: #231f20;
+  }
 }
 @media screen and (max-width: 510px) {
-  /* line 113, partials/_base.scss */
+  /* line 122, partials/_base.scss */
   .query-wrapper {
     width: 75%;
   }
