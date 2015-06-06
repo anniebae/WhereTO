@@ -7,7 +7,8 @@ var UsersCtrl = require('../controllers/users-ctrl'),
      getUsers = UsersCtrl.getUsers,
       getUser = UsersCtrl.getUser,
       putUser = UsersCtrl.putUser,
-   deleteUser = UsersCtrl.deleteUser;
+   deleteUser = UsersCtrl.deleteUser,
+  deletePlace = UsersCtrl.deletePlace;
 
 var router = express.Router();
 
@@ -18,9 +19,9 @@ router.route('/')
 router.route('/:username')
 	.get(getUser);
 
-router.route('/:id')
-	.put(putUser)
-	.delete(deleteUser);
+router.route('/:username/places/:id')
+	.delete(deletePlace)
+	
 
 function getAuth(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
