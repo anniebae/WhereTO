@@ -2,13 +2,11 @@
 	<form class="form-inline form-inputs" action="/login" method="post">
 	  <div class="form-group">
 	  	<label>Username
-	    <input type="text" name="username" class="form-control username-login" placeholder="dmuffinz" autofocus></label>
+	    <input type="text" name="username" class="form-control username-login" placeholder="Username" autofocus></label>
+	    <label>Password
+	    <input type="password" name="password" class="form-control password-login" placeholder="Password"></label>
+	  	<button type="submit" class="form-control btn btn-default btn-login">LOG IN</button>
 	  </div>
-	  <div class="form-group">
-	  	<label>Password
-	    <input type="password" name="password" class="form-control password-login" placeholder="shhhh"></label>
-	  </div>
-	  <button type="submit" class="form-control btn btn-default btn-login btn-submit">LOG IN</button>
 	</form>
 	<p class="form-error">{{ message }}</p>
 </script>

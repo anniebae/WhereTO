@@ -41,6 +41,8 @@ ul.cb-slideshow {
 }
 
 .text-layer {
+  padding-top: 51px;
+  color: white;
   z-index: 5;
   position: absolute;
   height: 100vh;
@@ -50,6 +52,7 @@ ul.cb-slideshow {
 
 ul.authenticate li {
   display: inline-block;
+  float: right;
 }
 
 button.unique-user {
@@ -74,13 +77,30 @@ button:hover {
   color: red;
 }
 
+#form-register {
+  background-color: $mint;
+  padding: 6%;
+  border-radius: 2%;
+  z-index: 99999;
+  h2 {
+    color: $black;
+  }
+  label {
+    color: $black
+  }
+}
+
+.btn-register {
+  background-color: $black;
+  color: $mint;
+}
 
 form label {
   color: $white;
   float: left;
 }
 
-.btn-submit {
+.btn-login {
   border-radius: 0px;
   height: 34px;
   background-color: $mint;
@@ -97,8 +117,6 @@ form label {
 }
 
 
-
-
 @media screen and (max-width: 767px) {
   .btn-default {
     width: 100%;
@@ -106,6 +124,16 @@ form label {
   .query-wrapper {
     width: 85%;
     margin: 0 auto;
+  }
+  .form-welcome {
+    width: 302px;
+    height: 120px;
+  }
+  .form-inputs {
+    padding-top: 4.5%;
+  }
+  .form-group {
+    background-color: $navgray;
   }
 }
 

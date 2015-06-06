@@ -48,12 +48,6 @@ h6 {
 }
 
 /* line 14, partials/_page.scss */
-.text-layer {
-  padding-top: 51px;
-  color: white;
-}
-
-/* line 19, partials/_page.scss */
 .form-welcome {
   height: 50px;
   display: block;
@@ -64,35 +58,35 @@ h6 {
   background-color: #231f20;
 }
 
-/* line 29, partials/_page.scss */
+/* line 24, partials/_page.scss */
 .form-inputs {
   padding-top: 1.5%;
 }
 
-/* line 33, partials/_page.scss */
+/* line 28, partials/_page.scss */
 .section-title {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 40, partials/_page.scss */
+/* line 35, partials/_page.scss */
 .query-response-wrapper {
   height: 100vh;
   position: relative;
 }
 
-/* line 45, partials/_page.scss */
+/* line 40, partials/_page.scss */
 #query {
   padding-top: 125px;
 }
 
-/* line 49, partials/_page.scss */
+/* line 44, partials/_page.scss */
 .query-wrapper {
   text-align: center;
 }
 
-/* line 53, partials/_page.scss */
+/* line 48, partials/_page.scss */
 #response {
   width: 90%;
   margin: 0 auto;
@@ -100,32 +94,32 @@ h6 {
   overflow-y: scroll;
 }
 
-/* line 60, partials/_page.scss */
+/* line 55, partials/_page.scss */
 .navbar-inverse {
   background-color: #231f20;
 }
-/* line 62, partials/_page.scss */
+/* line 57, partials/_page.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 64, partials/_page.scss */
+/* line 59, partials/_page.scss */
 .navbar-inverse .navbar-brand:hover {
   color: #99ffcc;
 }
-/* line 67, partials/_page.scss */
+/* line 62, partials/_page.scss */
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 72, partials/_page.scss */
+/* line 67, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
-/* line 74, partials/_page.scss */
+/* line 69, partials/_page.scss */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #99ffcc;
 }
 
-/* line 81, partials/_page.scss */
+/* line 76, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -133,7 +127,7 @@ h6 {
   text-align: center;
 }
 
-/* line 88, partials/_page.scss */
+/* line 83, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -141,40 +135,40 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 95, partials/_page.scss */
+/* line 90, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 99, partials/_page.scss */
+/* line 94, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 103, partials/_page.scss */
+/* line 98, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 105, partials/_page.scss */
+/* line 100, partials/_page.scss */
 .list-group-row .list-group .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 113, partials/_page.scss */
+/* line 108, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 117, partials/_page.scss */
+/* line 112, partials/_page.scss */
 .added-results-title {
   text-align: center;
   color: #231f20;
 }
 
-/* line 122, partials/_page.scss */
+/* line 117, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -182,24 +176,24 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 128, partials/_page.scss */
+/* line 123, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 131, partials/_page.scss */
+/* line 126, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 134, partials/_page.scss */
+/* line 129, partials/_page.scss */
 ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-/* line 138, partials/_page.scss */
+/* line 133, partials/_page.scss */
 ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 140, partials/_page.scss */
+/* line 135, partials/_page.scss */
 ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -257,6 +251,8 @@ ul.cb-slideshow {
 
 /* line 43, partials/_base.scss */
 .text-layer {
+  padding-top: 51px;
+  color: white;
   z-index: 5;
   position: absolute;
   height: 100vh;
@@ -264,12 +260,13 @@ ul.cb-slideshow {
   text-align: center;
 }
 
-/* line 51, partials/_base.scss */
+/* line 53, partials/_base.scss */
 ul.authenticate li {
   display: inline-block;
+  float: right;
 }
 
-/* line 55, partials/_base.scss */
+/* line 58, partials/_base.scss */
 button.unique-user {
   background: none;
   border: 1px solid white;
@@ -279,61 +276,99 @@ button.unique-user {
   margin: 10px 20px 0 0;
 }
 
-/* line 64, partials/_base.scss */
+/* line 67, partials/_base.scss */
 button:hover {
   color: #231f20;
   background-color: white;
 }
 
-/* line 69, partials/_base.scss */
+/* line 72, partials/_base.scss */
 .form-control {
   border-radius: 0px;
 }
 
-/* line 73, partials/_base.scss */
+/* line 76, partials/_base.scss */
 .form-error {
   color: red;
 }
 
-/* line 78, partials/_base.scss */
+/* line 80, partials/_base.scss */
+#form-register {
+  background-color: #99ffcc;
+  padding: 6%;
+  border-radius: 2%;
+  z-index: 99999;
+}
+/* line 85, partials/_base.scss */
+#form-register h2 {
+  color: #231f20;
+}
+/* line 88, partials/_base.scss */
+#form-register label {
+  color: #231f20;
+}
+
+/* line 93, partials/_base.scss */
+.btn-register {
+  background-color: #231f20;
+  color: #99ffcc;
+}
+
+/* line 98, partials/_base.scss */
 form label {
   color: white;
   float: left;
 }
 
-/* line 83, partials/_base.scss */
-.btn-submit {
+/* line 103, partials/_base.scss */
+.btn-login {
   border-radius: 0px;
   height: 34px;
   background-color: #99ffcc;
   color: #000;
 }
 
-/* line 90, partials/_base.scss */
+/* line 110, partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 95, partials/_base.scss */
+/* line 115, partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 103, partials/_base.scss */
+  /* line 121, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
 
-  /* line 106, partials/_base.scss */
+  /* line 124, partials/_base.scss */
   .query-wrapper {
     width: 85%;
     margin: 0 auto;
   }
+
+  /* line 128, partials/_base.scss */
+  .form-welcome {
+    width: 302px;
+    height: 120px;
+  }
+
+  /* line 132, partials/_base.scss */
+  .form-inputs {
+    padding-top: 4.5%;
+  }
+
+  /* line 135, partials/_base.scss */
+  .form-group {
+    background-color: #231f20;
+  }
 }
 @media screen and (max-width: 510px) {
-  /* line 113, partials/_base.scss */
+  /* line 141, partials/_base.scss */
   .query-wrapper {
     width: 75%;
   }

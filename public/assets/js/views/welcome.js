@@ -14,6 +14,7 @@ var Welcome = Backbone.View.extend({
 		return this;
 	},
 	loginForm: function() {
+		console.log('loginbtn clicked');
 		$('.form-welcome').html(this.loginTemplate());
 		return this;
 	}
