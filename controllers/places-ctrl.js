@@ -19,4 +19,4 @@ exports.postPlaces = function(req, res) {
     console.log('Me just saved: ', place);
     res.redirect('/search');
   });
-};
+}
