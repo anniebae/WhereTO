@@ -5,19 +5,12 @@
         <i class="fa fa-yelp"></i>
       </a>
     </div>
-    <div class="dropdown">
-      <button class="btn btn-default dropdown-toggle" type="button" id="caretDropdown" data-toggle="dropdown" aria-expanded="true">
-        <a id="btn-caret">
-          <i class="fa fa-caret-down"></i>
-        </a>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <span class="caretAdd">ADD TO:</span>
-        <li role="presentation"><a role="menuitem" tabindex="-1" class="brunch">brunch</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" class="lunch">lunch/dinner</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" class="dessert">dessert</a></li>
-      </ul>
-    </div>
+    <form action="/places" method="post">      
+      <input type="hidden" name="venue" value="<%= name %>">
+      <input type="hidden" name="yelpId" value="<%= id %>">
+      <button type="submit"><i class="fa fa-plus"></i></button>
+    </form>
+      
   </span>
   <%= name %> 
   <% var address = location.display_address %>

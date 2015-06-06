@@ -24,9 +24,10 @@ var UsersCtrl = require('./controllers/users-ctrl');
 var AuthCtrl  = require('./controllers/auth-ctrl')(passport);
 
 // Routes
-var authRouter  = require('./routes/auth-router');
-var usersRouter = require('./routes/users-router');
-var apiRouter   = require('./routes/api-router');
+var authRouter   = require('./routes/auth-router');
+var usersRouter  = require('./routes/users-router');
+var placesRouter = require('./routes/places-router');
+var apiRouter    = require('./routes/api-router');
 
 var app = express();
 
@@ -59,6 +60,7 @@ app.use(passport.session());
 app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
+app.use('/places', placesRouter);
 
 // Authentication Configuration
 passport.use(new LocalStrategy(User.authenticate()));
