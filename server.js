@@ -60,8 +60,6 @@ app.use(methodOverride(function(req, res){
 }));
 app.use(express.static(root));
 
-
-
 // Authentication Initialization
 app.use(passport.initialize());
 app.use(passport.session());
