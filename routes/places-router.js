@@ -5,6 +5,11 @@ var PlacesCtrl = require('../controllers/places-ctrl'),
 var places = express.Router();
 
 places.route('/')
-  .post(postPlaces);
+  .post(getAuth, postPlaces);
+
+function getAuth(req, res, next) {
+  if (req.isAuthenticated()) { return next(); }
+    res.redirect('/welcome')
+  }
 
 module.exports = places;

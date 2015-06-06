@@ -3,16 +3,20 @@ var Place = require('../models/place');
 
 exports.postPlaces = function(req, res) {
   console.log('mcblovin: ', req.body);
+  console.log('Current User: ', req.user);
+  var currentUser = req.user;
   var place = new Place({
     venue      : req.body.venue,
     yelpId     : req.body.yelpId,
     city       : req.body.city,
-    zipcode    : req.body.zipcode
+    zipcode    : req.body.zipcode,
+    category   : 'Snacktime'
   });
+  currentUser.places.push(place);
 
-  place.save(function(err) {
+  currentUser.save(function(err) {
     if (err) return console.log(err); 
     console.log('Me just saved: ', place);
-    res.redirect('/users');
+    res.redirect('/search');
   });
 };
