@@ -1,28 +1,22 @@
 var mongoose = require('mongoose');
 
-exports.Collection = function() {
-  new mongoose.Schema({
-    name        : {type: String},
-    places      : []
-  });
-}
-
 exports.User = function() {
   return new mongoose.Schema({
     name        : {type: String, required: true},
     password    : {type: String, required: true},
     email       : {type: String, required: true, unique: true},
     username    : {type: String, required: true, unique: true},
-    collections : []
+    categories  : []
   });
 }
 
 
 exports.Place = function() {
   return new mongoose.Schema({
-    name        : {type: String, required: true},
-    location    : {type: String, required: true},
-    yelpId      : {type: Number, require: true},
-    collection  : {type: String}
+    venue       : {type: String, required: true},
+    city        : {type: String, required: true},
+    zipcode     : {type: Number, required: true},
+    yelpId      : {type: String, required: true},
+    category    : {type: String}
   });
 }

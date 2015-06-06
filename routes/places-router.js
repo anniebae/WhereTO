@@ -1,9 +1,10 @@
-var express   = require('express');
+var express    = require('express');
+var PlacesCtrl = require('../controllers/places-ctrl'),
+    postPlaces = PlacesCtrl.postPlaces;
 
 var places = express.Router();
 
-places.post('/', function(req, res) {
-  console.log(req.body);
-});
+places.route('/')
+  .post(postPlaces);
 
 module.exports = places;
