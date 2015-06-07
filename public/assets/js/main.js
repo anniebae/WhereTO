@@ -1,7 +1,3 @@
-var URL = 'https://where-to.firebaseio.com/';
-var ref = new Firebase(URL);
-var usersRef = ref.child('users');
-
 var welcome = new Welcome();
 
 new WOW().init();
@@ -32,28 +28,5 @@ $(function(){
     $('.form-welcome').slideToggle("fast");
   });
 
-  // $('.input-term-query').autocomplete({
-  //   source: function(req, res) {
-  //     var request = req.body;
-  //     var location = request.location;
-  //     var term = request.term;
-  //     $.ajax({
-  //       url: "/search",
-  //       dataType: "json",
-  //       data: {
-  //         term: term,
-  //         location: location
-  //       },
-  //       success: function(data) {
-  //         response($.map(data.results, function(item) {
-  //           return {
-  //             label: item,
-  //             value: item
-  //           }
-  //         }));
-  //       }
-  //     });
-  //   }
-  // });
 
 });

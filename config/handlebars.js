@@ -6,7 +6,7 @@ var viewDirectories = [
   'views/welcome',
   'views/query',
   'views/dependencies',
-  'views/partials'
+  'views/navbars'
 ];
 
 var hbs = handlebars.create({
