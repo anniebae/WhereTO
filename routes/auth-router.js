@@ -3,18 +3,26 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
 var getAuth   = require('../controllers/sessions-ctrl').getAuth;
-var AuthCtrl = require('../controllers/auth-ctrl');
+var LocalConfig  = require('../config/passport-local');
 var auth = express.Router();
 
-auth.get('/', getAuth, function(req, res) {
+auth.route('/', getAuth)
+  .get(getRoot);
+
+auth.route('/login', getAuth)
+  .post(login);
+
+auth.route('/logout')
+  .get(logout);
+
+
+module.exports = auth;
+
+function getRoot(req, res) {
   res.render('search/index', {layout: 'main', user: req.user});
-});
+}
 
-auth.get('/login', function(req, res) {
-  res.render('welcome/index', {layout: 'welcome', user: req.user});
-});
-
-auth.post('/login', function(req, res, next) {
+function login(req, res, next) {
   passport.authenticate('local', function(err, user, info) {
     if (err) { 
       return next(err) 
@@ -29,12 +37,9 @@ auth.post('/login', function(req, res, next) {
       return res.redirect('/');
     });
   })(req, res, next);
-});
+}
 
-auth.get('/logout', function(req, res) {
+function logout(req, res) {
     req.logout();
     res.redirect('/');
-});
-
-
-module.exports = auth;
+}
