@@ -4,7 +4,7 @@ var handlebars = require('express-handlebars');
 // own unique module
 var viewDirectories = [
   'views/welcome',
-  'views/query',
+  'views/search',
   'views/dependencies',
   'views/navbars'
 ];
@@ -12,7 +12,8 @@ var viewDirectories = [
 var hbs = handlebars.create({
     defaultLayout:'main',
     extname: '.hbs',
-    partialsDir: viewDirectories
+    partialsDir: viewDirectories,
+    layoutsDir: 'views/layouts'
   });
 
 module.exports = hbs;

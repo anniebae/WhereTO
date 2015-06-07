@@ -32,4 +32,5 @@ passport.use(new LocalStrategy(function(username, password, done) {
   });
 }));
 
+
 exports.isAuthenticated = passport.authenticate('local', { session : false });

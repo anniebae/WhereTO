@@ -25,12 +25,13 @@ var UsersCtrl = require('./controllers/users-ctrl');
 var AuthCtrl  = require('./controllers/auth-ctrl')(passport);
 
 // Routes
-var authRouter   = require('./routes/auth-router');
+var welcomeRouter   = require('./routes/welcome-router');
 var usersRouter  = require('./routes/users-router');
 var placesRouter = require('./routes/places-router');
 var apiRouter    = require('./routes/api-router');
 
 var app = express();
+
 
 // __dirname (express variable) is head of file (WhereTO) 
 var root = __dirname + '/public';
@@ -65,7 +66,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-app.use('/', authRouter);
+app.use('/', welcomeRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/places', placesRouter);

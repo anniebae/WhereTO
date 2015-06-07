@@ -2,22 +2,23 @@ var express = require('express');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
+var getAuth   = require('../controllers/sessions-ctrl').getAuth;
 var AuthCtrl = require('../controllers/auth-ctrl');
-var router = express.Router();
+var welcome = express.Router();
 
-router.get('/', function(req, res) {
-  res.render('query/index', {user: req.user});
+welcome.get('/', getAuth, function(req, res) {
+  res.render('search/index', {user: req.user});
 });
 
-router.get('/welcome', function(req, res) {
+welcome.get('/welcome', function(req, res) {
     res.render('welcome/index', {user: req.user});
 });
 
-router.get('/login', function(req, res) {
+welcome.get('/login', function(req, res) {
   res.render('welcome/index', {user: req.user});
 });
 
-router.post('/login', function(req, res, next) {
+welcome.post('/login', function(req, res, next) {
   passport.authenticate('local', function(err, user, info) {
     if (err) { 
       return next(err) 
@@ -34,14 +35,10 @@ router.post('/login', function(req, res, next) {
   })(req, res, next);
 });
 
-router.get('/logout', function(req, res) {
+welcome.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/welcome');
 });
 
-function getAuth(req, res, next) {
-  if (req.isAuthenticated()) { return next(); }
-    res.redirect('/welcome')
-  }
 
-module.exports = router;
+module.exports = welcome;
