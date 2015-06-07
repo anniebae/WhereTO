@@ -25,7 +25,7 @@ var UsersCtrl = require('./controllers/users-ctrl');
 var AuthCtrl  = require('./controllers/auth-ctrl')(passport);
 
 // Routes
-var welcomeRouter   = require('./routes/welcome-router');
+var authRouter   = require('./routes/auth-router');
 var usersRouter  = require('./routes/users-router');
 var placesRouter = require('./routes/places-router');
 var apiRouter    = require('./routes/api-router');
@@ -66,7 +66,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-app.use('/', welcomeRouter);
+app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/places', placesRouter);

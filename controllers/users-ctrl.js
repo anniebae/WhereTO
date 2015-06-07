@@ -12,7 +12,7 @@ exports.postUsers = function(req, res) {
     password: req.body.password
   }), req.body.password, function(err, user) {
       if (err) {
-        return res.render('welcome/index');
+        return res.render('welcome/index', {layout: 'welcome'});
       }
       passport.authenticate('local')(req, res, function() {
         res.redirect('/');
@@ -25,7 +25,7 @@ exports.getUsers = function(req, res) {
     if (err)
       res.send(err);
     console.log(users);
-    res.render('users/index', {users: users, user: req.user});
+    res.render('users/index', {layout: 'main', users: users, user: req.user});
   });
 };
 
@@ -34,7 +34,7 @@ exports.getUser = function(req, res) {
     if (err)
       res.send(err);
       console.log(user);
-      res.render('users/show', {user: user});
+      res.render('users/show', {layout: 'main', user: user});
   });
 };
 
