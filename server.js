@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 // User Authentication
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var LocalConfig = require('./config/passport-local')(passport);
+var LocalConfig   = require('./config/passport-local')(passport);
 
 // Database
 var db = require('./config/db')(mongoose);
