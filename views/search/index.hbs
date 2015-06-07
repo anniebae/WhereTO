@@ -1,31 +1,26 @@
-<div class="main-view">
-  
+<div class="container main-view">
   <div class="row">
-    <div class="col-md-4 col-sm-4">
 
-      <div class="query-response-wrapper">
-        {{>_search-input}}
-        <div id="response">
-          <div class="row list-group-row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left search-container">
+      <h3>'splore</h3>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 search-input-container">
+          {{>_search-input}}
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 search-results-container">
             <div class="text-center list-group-loader"></div>
-              <ul class="list-group">
+            <ul class="result-items">
 
               <!-- yelp response object -->
 
-              </ul>  
-            </div>
+            </ul>
           </div>
         </div>
       </div>
-
     </div>
 
-
-
-
-
-    <div class="col-md-8 col-sm-8">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       <div class="sections-wrapper">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active food-tab"><a class="sections-tab">Food <i class="fa fa-times"></i></a></li>
@@ -35,29 +30,23 @@
         </ul>
 
         <div id="food">
-          <h2 class="added-results-title">FOOD</h2>
+          <h2 class="added-results-title">@{{ user.username }}'s Places</h2>
           <ol class="added-results">
-            <li><a href="<%= url %>" target="_blank">Someplace</a> <br>
+            {{#each user.places}}
+            <li>
               <div class="added-results-times">
-                  <i class="fa fa-times"></i>
+                <i class="fa fa-times"></i>
+              </div> 
+              <div class="added-results-times">
+                <h4><a href="#" target="_blank">{{this.venue}}</a></h4>
+                <h5>{{this.city}}</h5>
               </div>
-              100 Broadway New York, NY <br>
-              <div class="row">
-                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
-                <div class="col-md-2 col-offset-1"><a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="added-results-img"></a></div>
+              <div class="col-md-2 col-offset-1">
+                <a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="img-responsive added-results-img"></a>
               </div>
+              
             </li>
-            <li>General Assembly <br>
-              10e 21st St. New York, NY 10010 <br>
-              INSERT PHOTOS
-            </li>
-            <li>Thisplace <br>
-              2560 Park Ave. New York, NY <br>
-              INSERT PHOTOS
-            </li>
+            {{/each}}
           </ol>
         </div>
         <div id="drinks">

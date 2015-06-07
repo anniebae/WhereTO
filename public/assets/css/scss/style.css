@@ -69,111 +69,6 @@ h6 {
   margin-bottom: 20px;
 }
 
-/* line 34, partials/_page.scss */
-.query-response-wrapper {
-  height: 100vh;
-  position: relative;
-}
-
-/* line 39, partials/_page.scss */
-#query {
-  padding-top: 125px;
-}
-
-/* line 43, partials/_page.scss */
-.query-wrapper {
-  text-align: center;
-}
-
-/* line 47, partials/_page.scss */
-#response {
-  width: 90%;
-  margin: 0 auto;
-  height: 85%;
-  overflow-y: scroll;
-}
-
-/* line 56, partials/_page.scss */
-.tab-title {
-  font-weight: 500;
-  line-height: 1.1;
-  padding-top: 115px;
-  text-align: center;
-}
-
-/* line 63, partials/_page.scss */
-.app-title {
-  font-weight: 100;
-  color: white;
-  font-size: 500%;
-  margin-top: 280px;
-}
-
-/* line 70, partials/_page.scss */
-.yelp {
-  text-align: center;
-}
-
-/* line 74, partials/_page.scss */
-.list-group-row {
-  overflow: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-/* line 78, partials/_page.scss */
-.list-group-row .list-group {
-  padding: 0;
-}
-/* line 80, partials/_page.scss */
-.list-group-row .list-group .list-item-option {
-  position: absolute;
-  top: 35px;
-  right: 7px;
-}
-
-/* line 88, partials/_page.scss */
-.added-results-times {
-  float: right;
-}
-
-/* line 92, partials/_page.scss */
-.added-results-title {
-  text-align: center;
-  color: #231f20;
-}
-
-/* line 97, partials/_page.scss */
-ol.added-results li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 95%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
-/* line 103, partials/_page.scss */
-ol.added-results li:nth-child(even) {
-  background: #fff;
-}
-/* line 106, partials/_page.scss */
-ol.added-results li:nth-child(odd) {
-  background: #ADAD85;
-}
-/* line 109, partials/_page.scss */
-ol.added-results li img.added-results-img {
-  height: 75px;
-  width: 100px;
-}
-/* line 113, partials/_page.scss */
-ol.added-results li ul.added-results-ul {
-  margin-left: -50px;
-}
-/* line 115, partials/_page.scss */
-ol.added-results li ul.added-results-ul li {
-  list-style-type: none;
-  margin: 0;
-  display: inline;
-}
-
 /* line 1, partials/_base.scss */
 body {
   background-color: lightgrey;
@@ -582,4 +477,147 @@ form label {
 .navbar-inverse .menu-items .menu-item .menu-text .caption {
   line-height: 1em;
   color: #231f20;
+}
+
+/* line 1, partials/_search.scss */
+.result-items {
+  padding-left: 0;
+  border-left: 1px solid #c9c8c7;
+  border-right: 1px solid #c9c8c7;
+  border-top: 0;
+}
+/* line 6, partials/_search.scss */
+.result-items .result-item {
+  background-color: #99ffcc;
+  list-style-type: none;
+  border-bottom: 1px solid #c9c8c7;
+}
+/* line 10, partials/_search.scss */
+.result-items .result-item .result-inner-container {
+  padding: 15px;
+  height: 160px;
+  width: 100%;
+  display: inline-block;
+}
+/* line 16, partials/_search.scss */
+.result-items .result-item .result-info {
+  width: 40%;
+  display: inline;
+}
+/* line 20, partials/_search.scss */
+.result-items .result-item .result-img {
+  width: 30%;
+  display: inline;
+}
+/* line 23, partials/_search.scss */
+.result-items .result-item .result-img img {
+  display: inline;
+  border-radius: 2px;
+  padding-top: 10px;
+}
+/* line 29, partials/_search.scss */
+.result-items .result-item .result-btns {
+  width: 30%;
+  text-align: right;
+}
+/* line 32, partials/_search.scss */
+.result-items .result-item .result-btns form {
+  display: inline-block;
+}
+/* line 35, partials/_search.scss */
+.result-items .result-item .result-btns .result-btn {
+  padding: 15px;
+  margin-left: 10px;
+  display: inline;
+  height: 48px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* line 47, partials/_search.scss */
+.query-response-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+/* line 52, partials/_search.scss */
+#query {
+  padding-top: 125px;
+}
+
+/* line 56, partials/_search.scss */
+.query-wrapper {
+  text-align: center;
+}
+
+/* line 60, partials/_search.scss */
+#response {
+  width: 90%;
+  margin: 0 auto;
+  height: 85%;
+  overflow-y: scroll;
+}
+
+/* line 69, partials/_search.scss */
+.tab-title {
+  font-weight: 500;
+  line-height: 1.1;
+  padding-top: 115px;
+  text-align: center;
+}
+
+/* line 76, partials/_search.scss */
+.app-title {
+  font-weight: 100;
+  color: white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+/* line 83, partials/_search.scss */
+.yelp {
+  text-align: center;
+}
+
+/* line 88, partials/_search.scss */
+.added-results-times {
+  float: right;
+}
+
+/* line 92, partials/_search.scss */
+.added-results-title {
+  text-align: center;
+  color: #231f20;
+}
+
+/* line 97, partials/_search.scss */
+ol.added-results li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+/* line 103, partials/_search.scss */
+ol.added-results li:nth-child(even) {
+  background: #fff;
+}
+/* line 106, partials/_search.scss */
+ol.added-results li:nth-child(odd) {
+  background: #ADAD85;
+}
+/* line 109, partials/_search.scss */
+ol.added-results li img.added-results-img {
+  height: 75px;
+  width: 100px;
+}
+/* line 113, partials/_search.scss */
+ol.added-results li ul.added-results-ul {
+  margin-left: -50px;
+}
+/* line 115, partials/_search.scss */
+ol.added-results li ul.added-results-ul li {
+  list-style-type: none;
+  margin: 0;
+  display: inline;
 }

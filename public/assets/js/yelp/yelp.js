@@ -35,7 +35,7 @@ function sendRequest() {
 				var yelpData = new YelpData(model);
 				$('.list-group-loader').empty();
 				var view	= new Response({model: yelpData});
-  			$('.list-group').append(view.el);
+  			$('.result-items').append(view.el);
 				view.render();
 				$('.input-location-query').val('');
 				$('.input-term-query').val('');

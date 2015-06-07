@@ -1,0 +1,121 @@
+.result-items {
+  padding-left: 0;
+  border-left: 1px solid $primarygray;
+  border-right: 1px solid $primarygray;
+  border-top: 0;
+  .result-item {
+    background-color: $mint;
+    list-style-type: none;
+    border-bottom: 1px solid $primarygray;
+  .result-inner-container {
+    padding: 15px;
+    height: 160px;
+    width: 100%;
+    display: inline-block;
+  }
+    .result-info {
+      width: 40%;
+      display: inline;
+    }
+    .result-img {
+      width: 30%;
+      display: inline;
+      img {
+        display: inline;
+        border-radius: 2px;
+        padding-top: 10px;
+      }
+    }
+    .result-btns {
+      width: 30%;
+      text-align: right;
+      form {
+        display: inline-block;
+      }
+      .result-btn {
+        padding: 15px;
+        margin-left: 10px;
+        display: inline;
+        height: 48px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.query-response-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+#query {
+  padding-top: 125px;
+}
+
+.query-wrapper {
+  text-align: center;
+}
+
+#response {
+  width: 90%;
+  margin: 0 auto;
+  height: 85%;
+  overflow-y: scroll;
+}
+
+
+
+.tab-title {
+  font-weight: 500;
+  line-height: 1.1;
+  padding-top: 115px;
+  text-align: center;
+}
+
+.app-title {
+  font-weight: 100;
+  color: $white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+.yelp {
+  text-align: center;
+}
+
+
+.added-results-times {
+  float: right;
+}
+
+.added-results-title {
+  text-align: center;
+  color: $black;
+}
+
+ol.added-results li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  &:nth-child(even) {
+    background: #fff;
+  }
+  &:nth-child(odd) {
+    background: #ADAD85;
+  }
+  img.added-results-img {
+    height: 75px;
+    width: 100px;
+  }
+  ul.added-results-ul {
+    margin-left: -50px;
+    li {
+      list-style-type: none;
+      margin: 0;
+      display: inline;    
+    }
+  }
+}
