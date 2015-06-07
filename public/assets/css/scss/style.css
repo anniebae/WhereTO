@@ -339,7 +339,7 @@ form label {
 
 /* line 1, partials/_query.scss */
 .main-view {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 /* line 5, partials/_query.scss */
@@ -512,54 +512,59 @@ ol.user-items li ul.added-results-ul li {
 .navbar-inverse .navbar-brand .navbar-img {
   width: 25px;
 }
-/* line 14, partials/_navbar.scss */
+/* line 13, partials/_navbar.scss */
+.navbar-inverse .no-collapse {
+  padding-right: 30px;
+}
+/* line 18, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item {
   padding: 15px 0 0 0;
 }
-/* line 18, partials/_navbar.scss */
+/* line 22, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item:hover .menu-text .caption {
   color: #99ffcc;
 }
-/* line 23, partials/_navbar.scss */
+/* line 27, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon {
   text-align: center;
 }
-/* line 25, partials/_navbar.scss */
+/* line 29, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a {
+  text-decoration: none;
   text-align: center;
   color: white;
 }
-/* line 28, partials/_navbar.scss */
+/* line 33, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a .nav-user-img {
   display: inline;
   width: 32px;
   border-radius: 50%;
 }
-/* line 33, partials/_navbar.scss */
+/* line 38, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a .fa {
   font-size: 2em;
   color: white;
 }
-/* line 37, partials/_navbar.scss */
+/* line 42, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover {
   color: #99ffcc;
 }
-/* line 39, partials/_navbar.scss */
+/* line 44, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover .nav-user-img {
   opacity: 0.6;
 }
-/* line 42, partials/_navbar.scss */
+/* line 47, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover .fa {
   color: #99ffcc;
 }
-/* line 49, partials/_navbar.scss */
+/* line 54, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-text {
   text-align: center;
   padding-top: 5px;
-  height: 40px;
+  height: 20px;
   width: 70px;
 }
-/* line 54, partials/_navbar.scss */
+/* line 59, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-text .caption {
   line-height: 1em;
   color: #231f20;

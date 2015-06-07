@@ -10,6 +10,10 @@
     }
   }
 
+.no-collapse {
+  padding-right: 30px;
+}
+
   .menu-items {
     .menu-item {
       padding: 15px 0 0 0;
@@ -23,6 +27,7 @@
       .menu-icon {
         text-align: center;
         a {
+          text-decoration: none;
           text-align: center;
           color: $white;
           .nav-user-img {
@@ -49,7 +54,7 @@
       .menu-text {
         text-align: center;
         padding-top: 5px;
-        height: 40px;
+        height: 20px;
         width: 70px;
         .caption {
           line-height: 1em;
