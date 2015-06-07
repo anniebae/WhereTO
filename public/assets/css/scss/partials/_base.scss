@@ -82,6 +82,8 @@ button:hover {
   padding: 6%;
   border-radius: 2%;
   z-index: 99999;
+  position: absolute;
+  top: 51px;
   h2 {
     color: $black;
   }
