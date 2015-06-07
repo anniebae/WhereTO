@@ -338,42 +338,128 @@ form label {
 }
 
 /* line 1, partials/_query.scss */
-.sections-wrapper {
+.main-view {
+  padding-top: 40px;
+}
+
+/* line 5, partials/_query.scss */
+.user-items-wrapper {
   position: relative;
   background-color: #99ffcc;
   height: 100vh;
   width: 100%;
   top: 51px;
 }
-/* line 7, partials/_query.scss */
-.sections-wrapper .section-tab {
+/* line 11, partials/_query.scss */
+.user-items-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 12, partials/_query.scss */
-.sections-wrapper ul.nav-tabs li {
+/* line 16, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li {
   display: inline-block;
 }
-/* line 16, partials/_query.scss */
-.sections-wrapper #food {
+/* line 20, partials/_query.scss */
+.user-items-wrapper #food {
   height: 625px;
 }
-/* line 20, partials/_query.scss */
-.sections-wrapper #drinks {
+/* line 24, partials/_query.scss */
+.user-items-wrapper #drinks {
   background-color: purple;
   height: 625px;
   display: none;
 }
-/* line 25, partials/_query.scss */
-.sections-wrapper #attractions {
+/* line 29, partials/_query.scss */
+.user-items-wrapper #attractions {
   background-color: green;
   height: 625px;
   display: none;
 }
 
-/* line 32, partials/_query.scss */
+/* line 36, partials/_query.scss */
 .sections-tab {
   cursor: pointer;
+}
+
+/* line 42, partials/_query.scss */
+.tab-title {
+  font-weight: 500;
+  line-height: 1.1;
+  padding-top: 115px;
+  text-align: center;
+}
+
+/* line 49, partials/_query.scss */
+.app-title {
+  font-weight: 100;
+  color: white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+/* line 56, partials/_query.scss */
+.yelp {
+  text-align: center;
+}
+
+/* line 60, partials/_query.scss */
+.user-item {
+  height: 100px;
+}
+/* line 62, partials/_query.scss */
+.user-item .user-item-icon {
+  float: right;
+  width: 30%;
+  display: inline;
+  text-align: right;
+}
+/* line 68, partials/_query.scss */
+.user-item .user-item-info {
+  float: left;
+  width: 40%;
+  display: inline;
+}
+
+/* line 76, partials/_query.scss */
+.user-items-header {
+  text-align: center;
+  color: #231f20;
+}
+
+/* line 81, partials/_query.scss */
+ol.user-items li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+/* line 87, partials/_query.scss */
+ol.user-items li:nth-child(even) {
+  background: #fff;
+}
+/* line 90, partials/_query.scss */
+ol.user-items li:nth-child(odd) {
+  background: #ADAD85;
+}
+/* line 93, partials/_query.scss */
+ol.user-items li .user-item-img {
+  width: 30%;
+  display: inline;
+}
+/* line 96, partials/_query.scss */
+ol.user-items li .user-item-img img {
+  width: 150px;
+}
+/* line 100, partials/_query.scss */
+ol.user-items li ul.added-results-ul {
+  margin-left: -50px;
+}
+/* line 102, partials/_query.scss */
+ol.user-items li ul.added-results-ul li {
+  list-style-type: none;
+  margin: 0;
+  display: inline;
 }
 
 /* line 1, partials/_users.scss */
@@ -532,92 +618,4 @@ form label {
   height: 48px;
   width: 50px;
   border-radius: 50%;
-}
-
-/* line 47, partials/_search.scss */
-.query-response-wrapper {
-  height: 100vh;
-  position: relative;
-}
-
-/* line 52, partials/_search.scss */
-#query {
-  padding-top: 125px;
-}
-
-/* line 56, partials/_search.scss */
-.query-wrapper {
-  text-align: center;
-}
-
-/* line 60, partials/_search.scss */
-#response {
-  width: 90%;
-  margin: 0 auto;
-  height: 85%;
-  overflow-y: scroll;
-}
-
-/* line 69, partials/_search.scss */
-.tab-title {
-  font-weight: 500;
-  line-height: 1.1;
-  padding-top: 115px;
-  text-align: center;
-}
-
-/* line 76, partials/_search.scss */
-.app-title {
-  font-weight: 100;
-  color: white;
-  font-size: 500%;
-  margin-top: 280px;
-}
-
-/* line 83, partials/_search.scss */
-.yelp {
-  text-align: center;
-}
-
-/* line 88, partials/_search.scss */
-.added-results-times {
-  float: right;
-}
-
-/* line 92, partials/_search.scss */
-.added-results-title {
-  text-align: center;
-  color: #231f20;
-}
-
-/* line 97, partials/_search.scss */
-ol.added-results li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 95%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
-/* line 103, partials/_search.scss */
-ol.added-results li:nth-child(even) {
-  background: #fff;
-}
-/* line 106, partials/_search.scss */
-ol.added-results li:nth-child(odd) {
-  background: #ADAD85;
-}
-/* line 109, partials/_search.scss */
-ol.added-results li img.added-results-img {
-  height: 75px;
-  width: 100px;
-}
-/* line 113, partials/_search.scss */
-ol.added-results li ul.added-results-ul {
-  margin-left: -50px;
-}
-/* line 115, partials/_search.scss */
-ol.added-results li ul.added-results-ul li {
-  list-style-type: none;
-  margin: 0;
-  display: inline;
 }
