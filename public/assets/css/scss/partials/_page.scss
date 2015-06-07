@@ -51,25 +51,6 @@ h6 { font-size: 14px; }
   overflow-y: scroll;
 }
 
-.navbar-inverse {
-  background-color: $black;
-  .navbar-brand {
-    color: $white;
-    &:hover {
-      color: $mint;
-    }
-    .navbar-img {
-      width: 25px;
-    }
-  }
-
-  .navbar-nav > li > a {
-    color: $white;
-    &:hover {
-      color: $mint;
-    }
-  }
-}
 
 
 .tab-title {

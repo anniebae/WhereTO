@@ -1,6 +1,6 @@
-var express    = require('express');
-var LocalConfig  = require('../config/passport-local');
-var getAuth    = require('../controllers/auth-ctrl').getAuth;
+var express     = require('express');
+var LocalConfig = require('../config/passport-local');
+var getAuth     = require('../controllers/auth-ctrl').getAuth;
 
 var PlacesCtrl = require('../controllers/places-ctrl'),
     postPlaces = PlacesCtrl.postPlaces;

@@ -1,0 +1,62 @@
+.navbar-inverse {
+  background-color: $black;
+  .navbar-brand {
+    color: $white;
+    &:hover {
+      color: $mint;
+    }
+    .navbar-img {
+      width: 25px;
+    }
+  }
+
+  .menu-items {
+    .menu-item {
+      padding: 15px 0 0 0;
+      &:hover {
+        .menu-text {
+          .caption {
+            color: $mint;
+          }
+        }
+      }
+      .menu-icon {
+        text-align: center;
+        a {
+          text-align: center;
+          color: $white;
+          .nav-user-img {
+            display: inline;
+            width: 32px;
+            border-radius: 50%;
+          }
+          .fa {
+            font-size: 2em;
+            color: $white;
+          }
+          &:hover {
+            color: $mint;
+            .nav-user-img {
+              opacity: 0.6;
+            }
+            .fa {
+              color: $mint;
+            }
+
+          }
+        }
+      }
+      .menu-text {
+        text-align: center;
+        padding-top: 5px;
+        height: 40px;
+        width: 70px;
+        .caption {
+          line-height: 1em;
+          color: $black;
+        }
+      }
+      
+    }
+  }
+}

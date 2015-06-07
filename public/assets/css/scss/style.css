@@ -93,32 +93,7 @@ h6 {
   overflow-y: scroll;
 }
 
-/* line 54, partials/_page.scss */
-.navbar-inverse {
-  background-color: #231f20;
-}
 /* line 56, partials/_page.scss */
-.navbar-inverse .navbar-brand {
-  color: white;
-}
-/* line 58, partials/_page.scss */
-.navbar-inverse .navbar-brand:hover {
-  color: #99ffcc;
-}
-/* line 61, partials/_page.scss */
-.navbar-inverse .navbar-brand .navbar-img {
-  width: 25px;
-}
-/* line 66, partials/_page.scss */
-.navbar-inverse .navbar-nav > li > a {
-  color: white;
-}
-/* line 68, partials/_page.scss */
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #99ffcc;
-}
-
-/* line 75, partials/_page.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -126,7 +101,7 @@ h6 {
   text-align: center;
 }
 
-/* line 82, partials/_page.scss */
+/* line 63, partials/_page.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -134,40 +109,40 @@ h6 {
   margin-top: 280px;
 }
 
-/* line 89, partials/_page.scss */
+/* line 70, partials/_page.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 93, partials/_page.scss */
+/* line 74, partials/_page.scss */
 .list-group-row {
   overflow: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 97, partials/_page.scss */
+/* line 78, partials/_page.scss */
 .list-group-row .list-group {
   padding: 0;
 }
-/* line 99, partials/_page.scss */
+/* line 80, partials/_page.scss */
 .list-group-row .list-group .list-item-option {
   position: absolute;
   top: 35px;
   right: 7px;
 }
 
-/* line 107, partials/_page.scss */
+/* line 88, partials/_page.scss */
 .added-results-times {
   float: right;
 }
 
-/* line 111, partials/_page.scss */
+/* line 92, partials/_page.scss */
 .added-results-title {
   text-align: center;
   color: #231f20;
 }
 
-/* line 116, partials/_page.scss */
+/* line 97, partials/_page.scss */
 ol.added-results li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -175,24 +150,24 @@ ol.added-results li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 122, partials/_page.scss */
+/* line 103, partials/_page.scss */
 ol.added-results li:nth-child(even) {
   background: #fff;
 }
-/* line 125, partials/_page.scss */
+/* line 106, partials/_page.scss */
 ol.added-results li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 128, partials/_page.scss */
+/* line 109, partials/_page.scss */
 ol.added-results li img.added-results-img {
   height: 75px;
   width: 100px;
 }
-/* line 132, partials/_page.scss */
+/* line 113, partials/_page.scss */
 ol.added-results li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 134, partials/_page.scss */
+/* line 115, partials/_page.scss */
 ol.added-results li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -538,4 +513,73 @@ form label {
 /* line 23, partials/_users.scss */
 .container-users .container-user-results .user-result-item .user-result-link {
   text-decoration: none;
+}
+
+/* line 1, partials/_navbar.scss */
+.navbar-inverse {
+  background-color: #231f20;
+}
+/* line 3, partials/_navbar.scss */
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+/* line 5, partials/_navbar.scss */
+.navbar-inverse .navbar-brand:hover {
+  color: #99ffcc;
+}
+/* line 8, partials/_navbar.scss */
+.navbar-inverse .navbar-brand .navbar-img {
+  width: 25px;
+}
+/* line 14, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item {
+  padding: 15px 0 0 0;
+}
+/* line 18, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item:hover .menu-text .caption {
+  color: #99ffcc;
+}
+/* line 23, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon {
+  text-align: center;
+}
+/* line 25, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a {
+  text-align: center;
+  color: white;
+}
+/* line 28, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a .nav-user-img {
+  display: inline;
+  width: 32px;
+  border-radius: 50%;
+}
+/* line 33, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a .fa {
+  font-size: 2em;
+  color: white;
+}
+/* line 37, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a:hover {
+  color: #99ffcc;
+}
+/* line 39, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a:hover .nav-user-img {
+  opacity: 0.6;
+}
+/* line 42, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-icon a:hover .fa {
+  color: #99ffcc;
+}
+/* line 49, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-text {
+  text-align: center;
+  padding-top: 5px;
+  height: 40px;
+  width: 70px;
+}
+/* line 54, partials/_navbar.scss */
+.navbar-inverse .menu-items .menu-item .menu-text .caption {
+  line-height: 1em;
+  color: #231f20;
 }
