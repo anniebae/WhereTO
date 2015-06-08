@@ -6,7 +6,7 @@ exports.User = function() {
     password    : {type: String, required: true},
     email       : {type: String, required: true, unique: true},
     username    : {type: String, required: true, unique: true},
-    places      : []
+    places      : [placeSchema]
   });
 }
 
@@ -20,3 +20,5 @@ exports.Place = function() {
     category    : {type: String}
   });
 }
+
+var placeSchema = this.Place();

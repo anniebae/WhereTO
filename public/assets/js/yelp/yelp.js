@@ -8,8 +8,8 @@ $(function() {
 	$(document).on('keypress', '.input-term-query', function(e) {
 		if (e.which === 13) {
 			e.preventDefault();
- 			sendRequest();
- 		}
+			sendRequest();
+		}
 	});
 
 });
@@ -27,15 +27,17 @@ function sendRequest() {
 			location: location,
 			term: term
 		},
-		success: function(data){
+		success: function(data) {
 			console.log(data);
-			var businesses = data.businesses; 
+			var businesses = data.businesses;
 			for (var i = 0; i < businesses.length; i++) {
 				var model = businesses[i];
 				var yelpData = new YelpData(model);
 				$('.list-group-loader').empty();
-				var view	= new Response({model: yelpData});
-  			$('.result-items').append(view.el);
+				var view = new Response({
+					model: yelpData
+				});
+				$('.result-items').append(view.el);
 				view.render();
 				$('.input-location-query').val('');
 				$('.input-term-query').val('');
