@@ -1,5 +1,6 @@
 var express = require('express');
 var Place = require('../models/place');
+var User = require('../models/user');
 
 exports.postPlaces = function(req, res) {
   var currentUser = req.user;
@@ -8,7 +9,8 @@ exports.postPlaces = function(req, res) {
     yelpId     : req.body.yelpId,
     city       : req.body.city,
     zipcode    : req.body.zipcode,
-    category   : req.body.category
+    category   : req.body.category,
+    imageUrl   : req.body.image_url
   });
   
   currentUser.places.push(place);
@@ -18,4 +20,18 @@ exports.postPlaces = function(req, res) {
     console.log('Me just saved: ', place);
     res.redirect('/users/' + currentUser.username);
   });
+}
+
+
+exports.deletePlace = function(req, res) {
+  var user = req.user;
+  var id = req.body.placeId;
+
+  var place = user.places.id(id).remove();
+
+  user.save(function(err) {
+    if (err) return console.log(err);
+    console.log('Should be removed');
+  })
+  
 }

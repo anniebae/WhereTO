@@ -29,11 +29,11 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 list-total pull-right">
 							<h5 class="list-item-total">{{this.category}}</h5>
 
-						<form action="/users/michaeljordan/places/{{this._id}}" method="POST">
+						<form action="/places/{{this._id}}" method="POST">
         			<div class="form-group">
           			<input type="hidden" name="_method" value="DELETE">
-          			<input type="hidden" name="id" value="{{this._id}}" >
-								<a type="submit"><i class="fa fa-times"></i></a>
+          			<input type="hidden" name="placeId" value="{{this._id}}" >
+								<button type="submit"><i class="fa fa-times"></i></button>
         			</div>
       			</form>
 							<a href="#"><i class="fa fa-gear"></i></a>

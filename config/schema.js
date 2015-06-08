@@ -17,7 +17,8 @@ exports.Place = function() {
     city        : {type: String, required: true},
     zipcode     : {type: Number, required: true},
     yelpId      : {type: String, required: true},
-    category    : {type: String}
+    category    : {type: String},
+    imageUrl    : {type: String}
   });
 }
 
