@@ -18,7 +18,7 @@ exports.postPlaces = function(req, res) {
   currentUser.save(function(err) {
     if (err) return console.log(err); 
     console.log('Me just saved: ', place);
-    res.redirect('/users/' + currentUser.username);
+    res.redirect('/');
   });
 }
 
