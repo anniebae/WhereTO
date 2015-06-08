@@ -13,6 +13,7 @@ var mongoose = require('mongoose');
 // User Authentication
 var passport      = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var LocalConfig   = require('./config/passport-local')(passport);
 
 // Database
 var db = require('./config/db')(mongoose);
@@ -22,7 +23,6 @@ var User = require('./models/user');
 
 // Controllers
 var UsersCtrl = require('./controllers/users-ctrl');
-var AuthCtrl  = require('./controllers/auth-ctrl')(passport);
 
 // Routes
 var authRouter   = require('./routes/auth-router');
@@ -31,6 +31,7 @@ var placesRouter = require('./routes/places-router');
 var apiRouter    = require('./routes/api-router');
 
 var app = express();
+
 
 // __dirname (express variable) is head of file (WhereTO) 
 var root = __dirname + '/public';

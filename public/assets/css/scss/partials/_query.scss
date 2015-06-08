@@ -1,4 +1,8 @@
-.sections-wrapper {
+.main-view {
+  padding-top: 100px;
+}
+
+.user-items-wrapper {
   position: relative;
   background-color: $mint;
   height: 100vh;
@@ -31,4 +35,74 @@
 
 .sections-tab {
   cursor: pointer;
+}
+
+
+
+.tab-title {
+  font-weight: 500;
+  line-height: 1.1;
+  padding-top: 115px;
+  text-align: center;
+}
+
+.app-title {
+  font-weight: 100;
+  color: $white;
+  font-size: 500%;
+  margin-top: 280px;
+}
+
+.yelp {
+  text-align: center;
+}
+
+.user-item {
+  height: 100px;
+  .user-item-icon {
+    float: right;
+    width: 30%;
+    display: inline;
+    text-align: right;
+  }
+  .user-item-info {
+    float: left;
+    width: 40%;
+    display: inline;
+  }
+  
+}
+
+.user-items-header {
+  text-align: center;
+  color: $black;
+}
+
+ol.user-items li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  &:nth-child(even) {
+    background: #fff;
+  }
+  &:nth-child(odd) {
+    background: #ADAD85;
+  }
+  .user-item-img {
+    width: 30%;
+    display: inline;
+    img {
+      width: 150px;
+    }
+  }
+  ul.added-results-ul {
+    margin-left: -50px;
+    li {
+      list-style-type: none;
+      margin: 0;
+      display: inline;    
+    }
+  }
 }

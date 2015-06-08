@@ -1,0 +1,68 @@
+<div class="container main-view">
+  <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left search-container">
+      <h3>'splore</h3>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 search-input-container">
+          {{>_search-input}}
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 search-results-container">
+            <div class="text-center list-group-loader"></div>
+            <ul class="result-items">
+
+              <!-- yelp response object -->
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-right user-items-container">
+      <div class="user-items-wrapper">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active food-tab"><a class="sections-tab">Food <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="drinks-tab"><a class="sections-tab">Drinks <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="attractions-tab"><a class="sections-tab">Attractions <i class="fa fa-times"></i></a></li>
+          <li role="presentation" class="add-tab"><a class="sections-tab"><i class="fa fa-plus"></i></a></li>
+        </ul>
+      
+        <div class="row" id="food">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="user-items-header">@{{ user.username }}'s Places</h2>
+            <ol class="user-items">
+              {{#each user.places}}
+              <li>
+                <div class="user-item">
+                  <div class="user-item-icon">
+                    <i class="fa fa-times"></i>
+                  </div> 
+                  <div class="user-item-info">
+                    <h4><a href="#" target="_blank">{{this.venue}}</a></h4>
+                    <h5>{{this.city}}</h5>
+                  </div>
+                  <div class="user-item-img">
+                    <a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="img-responsive"></a>
+                  </div>
+                </div>
+              </li>
+              {{/each}}
+            </ol>
+          </div>
+        </div>
+        <div id="drinks">
+          <h2 class="added-results-title">DRINKS</h2>
+        </div>
+        <div id="attractions">
+          <h2 class="added-results-title">ATTRACTIONS</h2>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+

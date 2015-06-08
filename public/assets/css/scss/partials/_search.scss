@@ -1,0 +1,45 @@
+.result-items {
+  padding-left: 0;
+  border-left: 1px solid $primarygray;
+  border-right: 1px solid $primarygray;
+  border-top: 0;
+  .result-item {
+    background-color: $mint;
+    list-style-type: none;
+    border-bottom: 1px solid $primarygray;
+  .result-inner-container {
+    padding: 15px;
+    height: 160px;
+    width: 100%;
+    display: inline-block;
+  }
+    .result-info {
+      width: 40%;
+      display: inline;
+    }
+    .result-img {
+      width: 30%;
+      display: inline;
+      img {
+        display: inline;
+        border-radius: 2px;
+        padding-top: 10px;
+      }
+    }
+    .result-btns {
+      width: 30%;
+      text-align: right;
+      form {
+        display: inline-block;
+      }
+      .result-btn {
+        padding: 15px;
+        margin-left: 10px;
+        display: inline;
+        height: 48px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
