@@ -24,9 +24,5 @@ $(function(){
     $('#attractions').show();
   });
 
-  $('.authenticate').on('click', function() {
-    $('.form-welcome').slideToggle("fast");
-  });
-
 
 });
