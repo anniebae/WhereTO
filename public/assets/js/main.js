@@ -28,5 +28,4 @@ $(function(){
     $('.form-welcome').slideToggle("fast");
   });
 
-
 });
