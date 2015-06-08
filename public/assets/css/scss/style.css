@@ -469,7 +469,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 3, partials/_users.scss */
 .container-users .img-user-result {
-  background: url("http://evturn.com/assets/img/ev-winter-yellow-200.jpg");
+  background: url("../../images/avatar.jpg");
   width: 80px;
   height: 80px;
   background-size: cover;
