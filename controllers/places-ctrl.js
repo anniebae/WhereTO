@@ -31,7 +31,7 @@ exports.deletePlace = function(req, res) {
 
   user.save(function(err) {
     if (err) return console.log(err);
-    console.log('Should be removed');
-  })
+    res.redirect('/users/' + user.username);
+  });
   
 }
