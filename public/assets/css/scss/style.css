@@ -355,13 +355,14 @@ form label {
   height: 100%;
   color: #c9c8c7;
   display: inline-block;
+  text-align: right;
 }
-/* line 63, partials/_profile.scss */
+/* line 64, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total .list-item-total {
   float: left;
   line-height: 2.5em;
 }
-/* line 67, partials/_profile.scss */
+/* line 68, partials/_profile.scss */
 .page-content .user-list .row.list-item .list-total i.fa {
   float: right;
   font-size: 1.8em;
