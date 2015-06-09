@@ -9,7 +9,7 @@
       <p>rating: <%= rating %>/5</p>
     </div>
     <div class="result-img">
-      <a href="<%= image_url %>" data-lightbox="response" data-title="<%= name %>">
+      <a href="#" data-lightbox="response" data-title="<%= name %>">
         <img class="img-responsive" src="<%= image_url %>">
       </a>
     </div>
@@ -20,6 +20,7 @@
       <form action="/places" method="post">   
         <input type="hidden" name="venue" value="<%= name %>">
         <input type="hidden" name="yelpId" value="<%= id %>">
+        <input type="hidden" name="imageUrl" value="<%= image_url %>">
         <input type="hidden" name="city" value="<%= location.city %>">
         <input type="hidden" name="zipcode" value="<%= location.postal_code %>">
         <button type="submit" class="btn btn-info result-btn" id="search-create"><i class="fa fa-plus"></i></button>

@@ -32,14 +32,17 @@
         <div class="row" id="food">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2 class="user-items-header">@{{ user.username }}'s Places</h2>
-            <p>{{message}}</p>
             <ol class="user-items">
               {{#each user.places}}
               <li>
                 <div class="user-item">
-                  <div data-id="{{ this._id }}" class="user-item-icon">
-                    <i class="fa fa-times"></i>
-                  </div> 
+                  <div class="user-item-icon">
+                    <form action="/places/{{ this._id }}" method="POST">
+                      <input type="hidden" name="_method" value="DELETE">
+                      <input type="hidden" name="placeId" value="{{ this._id }}" >
+                      <button data-id="{{ this._id }}%>" type="submit" id="search-remove"><i class="fa fa-times"></i></button>      
+                    </form>
+                  </div>  
                   <div class="user-item-info">
                     <h4><a href="#" target="_blank">{{ this.venue }}</a></h4>
                     <h5>{{ this.city }}</h5>
