@@ -24,12 +24,9 @@ $(function(){
     $('#attractions').show();
   });
 
-  $('.btn-login-form').on('click', function() {
+  $('.authenticate').on('click', function() {
     $('.form-welcome').slideToggle("fast");
   });
 
-  $('.btn-register-form').on('click', function() {
-    $('.form-welcome').slideToggle("fast");
-  });
 
 });
