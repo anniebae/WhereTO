@@ -11,6 +11,17 @@
   color: white;
 }
 
+/* line 48, partials/_globals.scss */
+.no-btn,
+.no-btn:hover,
+.no-btn:focus {
+  background: none;
+  background-image: none;
+  background-color: none;
+  border: none;
+  border-color: none;
+}
+
 /* line 1, partials/_page.scss */
 h1 {
   font-size: 110px;
@@ -427,28 +438,45 @@ form label {
 /* line 60, partials/_query.scss */
 .user-item {
   height: 100px;
+  position: relative;
 }
-/* line 62, partials/_query.scss */
+/* line 63, partials/_query.scss */
 .user-item .user-item-icon {
-  float: right;
-  width: 30%;
-  display: inline;
+  display: inline-block;
   text-align: right;
+  right: 0;
+  position: absolute;
 }
 /* line 68, partials/_query.scss */
+.user-item .user-item-icon .fa {
+  font-size: 2em;
+}
+/* line 72, partials/_query.scss */
 .user-item .user-item-info {
-  float: left;
   width: 40%;
   display: inline;
 }
-
 /* line 76, partials/_query.scss */
+.user-item .user-item-img {
+  width: 100px;
+  float: left;
+  display: inline;
+  margin-bottom: 15px;
+  margin-right: 30px;
+}
+/* line 82, partials/_query.scss */
+.user-item .user-item-img img {
+  width: 100px;
+  border-radius: 3px;
+}
+
+/* line 90, partials/_query.scss */
 .user-items-header {
   text-align: center;
   color: #231f20;
 }
 
-/* line 81, partials/_query.scss */
+/* line 95, partials/_query.scss */
 ol.user-items li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -456,28 +484,19 @@ ol.user-items li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 87, partials/_query.scss */
+/* line 101, partials/_query.scss */
 ol.user-items li:nth-child(even) {
   background: #fff;
 }
-/* line 90, partials/_query.scss */
+/* line 104, partials/_query.scss */
 ol.user-items li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 93, partials/_query.scss */
-ol.user-items li .user-item-img {
-  width: 30%;
-  display: inline;
-}
-/* line 96, partials/_query.scss */
-ol.user-items li .user-item-img img {
-  width: 150px;
-}
-/* line 100, partials/_query.scss */
+/* line 108, partials/_query.scss */
 ol.user-items li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 102, partials/_query.scss */
+/* line 110, partials/_query.scss */
 ol.user-items li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;

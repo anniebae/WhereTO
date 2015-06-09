@@ -42,3 +42,13 @@ $navgray: #231F20;
 		color: $white;
 	}
 }
+
+.no-btn,
+.no-btn:hover,
+.no-btn:focus {
+  background: none;
+  background-image: none;
+  background-color: none;
+  border: none;
+  border-color: none;
+}
