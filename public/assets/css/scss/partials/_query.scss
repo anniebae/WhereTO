@@ -2,6 +2,11 @@
   padding-top: 100px;
 }
 
+.query-wrapper {
+  @extend .user-items-wrapper;
+  border-left: 1px solid $primarygray;
+  border-right: 1px solid $primarygray;
+}
 .user-items-wrapper {
   position: relative;
   background-color: $mint;
@@ -15,6 +20,28 @@
 	
 	ul.nav-tabs li {
 		display: inline-block;
+    width: 150px;
+    .fa {
+      float: right;
+    }
+    &.add-tab {
+      float: right;
+      padding-right: 47px;
+      .sections-tab {
+        margin-top: -4px;
+        height: 42px;
+        &:hover {
+          background-color: $mint;
+          border: none;
+          cursor: default;
+        }
+      .fa {
+        color: $white;
+        cursor: pointer;
+        font-size: 2em;
+      }
+      }
+    }
 	}
 
 	#food {
@@ -90,6 +117,12 @@
 .user-items-header {
   text-align: left;
   color: $black;
+  & a {
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 ol.user-items li {

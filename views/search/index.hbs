@@ -6,22 +6,17 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 search-input-container">
           {{>_search-input}}
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12 search-results-container">
-            <div class="text-center list-group-loader"></div>
-            <ul class="result-items">
+          <ul class="result-items">
 
-              <!-- yelp response object -->
+            <!-- yelp response object -->
 
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-right user-items-container">
-      <h4 class="user-items-header">@{{ user.username }}'s Places</h4>
+      <h4 class="user-items-header"><a href="/users/{{ user.username }}">@{{ user.username }}</a>'s Places</h4>
       <div class="user-items-wrapper">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active food-tab"><a class="sections-tab">Food <i class="fa fa-times"></i></a></li>

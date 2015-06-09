@@ -1,5 +1,13 @@
 .search-container {
-  padding-left: 25px;
+  .search-input-container {
+    text-align: center;
+    .form-inline {
+      input, button {
+        height: 42px;
+      }
+
+    }
+  }
 }
 
 .result-items {
@@ -11,8 +19,11 @@
     background-color: $mint;
     list-style-type: none;
     border-bottom: 1px solid $primarygray;
+    &:first-child {
+      border-top: 1px solid $primarygray;
+    }
   .result-inner-container {
-    padding: 15px;
+    padding: 20px;
     height: 160px;
     width: 100%;
     display: inline-block;
@@ -20,6 +31,10 @@
     .result-info {
       width: 40%;
       display: inline;
+      text-align: left;
+      & p {
+        line-height: 0.5em;
+      }
     }
     .result-img {
       width: 30%;
@@ -37,6 +52,7 @@
         display: inline-block;
       }
       .fa {
+        color: $black5;
         font-size: 2em;
       }
     }

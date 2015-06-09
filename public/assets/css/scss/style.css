@@ -1,17 +1,17 @@
-/* line 35, partials/_globals.scss */
+/* line 36, partials/_globals.scss */
 .btn-primarylight {
   background: #00b2e2;
   color: white;
   height: 30px;
   width: 100px;
 }
-/* line 40, partials/_globals.scss */
+/* line 41, partials/_globals.scss */
 .btn-primarylight:hover {
   background: #15365d;
   color: white;
 }
 
-/* line 48, partials/_globals.scss */
+/* line 49, partials/_globals.scss */
 .no-btn,
 .no-btn:hover,
 .no-btn:focus {
@@ -376,45 +376,78 @@ form label {
 }
 
 /* line 5, partials/_query.scss */
-.user-items-wrapper {
+.query-wrapper {
+  border-left: 1px solid #c9c8c7;
+  border-right: 1px solid #c9c8c7;
+}
+
+/* line 10, partials/_query.scss */
+.user-items-wrapper, .query-wrapper {
   position: relative;
   background-color: #99ffcc;
   height: 100%;
   min-height: 100px;
   width: 100%;
 }
-/* line 11, partials/_query.scss */
-.user-items-wrapper .section-tab {
+/* line 16, partials/_query.scss */
+.user-items-wrapper .section-tab, .query-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 16, partials/_query.scss */
-.user-items-wrapper ul.nav-tabs li {
+/* line 21, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li, .query-wrapper ul.nav-tabs li {
   display: inline-block;
-}
-/* line 20, partials/_query.scss */
-.user-items-wrapper #food {
-  height: 625px;
+  width: 150px;
 }
 /* line 24, partials/_query.scss */
-.user-items-wrapper #drinks {
+.user-items-wrapper ul.nav-tabs li .fa, .query-wrapper ul.nav-tabs li .fa {
+  float: right;
+}
+/* line 27, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li.add-tab, .query-wrapper ul.nav-tabs li.add-tab {
+  float: right;
+  padding-right: 47px;
+}
+/* line 30, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li.add-tab .sections-tab, .query-wrapper ul.nav-tabs li.add-tab .sections-tab {
+  margin-top: -4px;
+  height: 42px;
+}
+/* line 33, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li.add-tab .sections-tab:hover, .query-wrapper ul.nav-tabs li.add-tab .sections-tab:hover {
+  background-color: #99ffcc;
+  border: none;
+  cursor: default;
+}
+/* line 38, partials/_query.scss */
+.user-items-wrapper ul.nav-tabs li.add-tab .sections-tab .fa, .query-wrapper ul.nav-tabs li.add-tab .sections-tab .fa {
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+}
+/* line 47, partials/_query.scss */
+.user-items-wrapper #food, .query-wrapper #food {
+  height: 625px;
+}
+/* line 51, partials/_query.scss */
+.user-items-wrapper #drinks, .query-wrapper #drinks {
   background-color: purple;
   height: 625px;
   display: none;
 }
-/* line 29, partials/_query.scss */
-.user-items-wrapper #attractions {
+/* line 56, partials/_query.scss */
+.user-items-wrapper #attractions, .query-wrapper #attractions {
   background-color: green;
   height: 625px;
   display: none;
 }
 
-/* line 36, partials/_query.scss */
+/* line 63, partials/_query.scss */
 .sections-tab {
   cursor: pointer;
 }
 
-/* line 42, partials/_query.scss */
+/* line 69, partials/_query.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -422,7 +455,7 @@ form label {
   text-align: center;
 }
 
-/* line 49, partials/_query.scss */
+/* line 76, partials/_query.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -430,33 +463,33 @@ form label {
   margin-top: 280px;
 }
 
-/* line 56, partials/_query.scss */
+/* line 83, partials/_query.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 60, partials/_query.scss */
+/* line 87, partials/_query.scss */
 .user-item {
   height: 100px;
   position: relative;
 }
-/* line 63, partials/_query.scss */
+/* line 90, partials/_query.scss */
 .user-item .user-item-icon {
   display: inline-block;
   text-align: right;
   right: 0;
   position: absolute;
 }
-/* line 68, partials/_query.scss */
+/* line 95, partials/_query.scss */
 .user-item .user-item-icon .fa {
   font-size: 2em;
 }
-/* line 72, partials/_query.scss */
+/* line 99, partials/_query.scss */
 .user-item .user-item-info {
   width: 40%;
   display: inline;
 }
-/* line 76, partials/_query.scss */
+/* line 103, partials/_query.scss */
 .user-item .user-item-img {
   width: 100px;
   float: left;
@@ -464,19 +497,27 @@ form label {
   margin-bottom: 15px;
   margin-right: 30px;
 }
-/* line 82, partials/_query.scss */
+/* line 109, partials/_query.scss */
 .user-item .user-item-img img {
   width: 100px;
   border-radius: 3px;
 }
 
-/* line 90, partials/_query.scss */
+/* line 117, partials/_query.scss */
 .user-items-header {
   text-align: left;
   color: #231f20;
 }
+/* line 120, partials/_query.scss */
+.user-items-header a {
+  text-decoration: none;
+}
+/* line 122, partials/_query.scss */
+.user-items-header a:hover {
+  color: white;
+}
 
-/* line 95, partials/_query.scss */
+/* line 128, partials/_query.scss */
 ol.user-items li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -484,28 +525,28 @@ ol.user-items li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 101, partials/_query.scss */
+/* line 134, partials/_query.scss */
 ol.user-items li:nth-child(even) {
   background: white;
 }
-/* line 104, partials/_query.scss */
+/* line 137, partials/_query.scss */
 ol.user-items li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 107, partials/_query.scss */
+/* line 140, partials/_query.scss */
 ol.user-items li:nth-child(odd) .user-item-info,
 ol.user-items li:nth-child(odd) .user-item-info a {
   color: white;
 }
-/* line 110, partials/_query.scss */
+/* line 143, partials/_query.scss */
 ol.user-items li:nth-child(odd) .user-item-info h5 {
   color: #231f20;
 }
-/* line 115, partials/_query.scss */
+/* line 148, partials/_query.scss */
 ol.user-items li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 117, partials/_query.scss */
+/* line 150, partials/_query.scss */
 ol.user-items li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
@@ -622,57 +663,71 @@ ol.user-items li ul.added-results-ul li {
   color: #231f20;
 }
 
-/* line 1, partials/_results.scss */
-.search-container {
-  padding-left: 25px;
+/* line 2, partials/_results.scss */
+.search-container .search-input-container {
+  text-align: center;
+}
+/* line 5, partials/_results.scss */
+.search-container .search-input-container .form-inline input, .search-container .search-input-container .form-inline button {
+  height: 42px;
 }
 
-/* line 5, partials/_results.scss */
+/* line 13, partials/_results.scss */
 .result-items {
   padding-left: 0;
   border-left: 1px solid #c9c8c7;
   border-right: 1px solid #c9c8c7;
   border-top: 0;
 }
-/* line 10, partials/_results.scss */
+/* line 18, partials/_results.scss */
 .result-items .result-item {
   background-color: #99ffcc;
   list-style-type: none;
   border-bottom: 1px solid #c9c8c7;
 }
-/* line 14, partials/_results.scss */
+/* line 22, partials/_results.scss */
+.result-items .result-item:first-child {
+  border-top: 1px solid #c9c8c7;
+}
+/* line 25, partials/_results.scss */
 .result-items .result-item .result-inner-container {
-  padding: 15px;
+  padding: 20px;
   height: 160px;
   width: 100%;
   display: inline-block;
 }
-/* line 20, partials/_results.scss */
+/* line 31, partials/_results.scss */
 .result-items .result-item .result-info {
   width: 40%;
   display: inline;
+  text-align: left;
 }
-/* line 24, partials/_results.scss */
+/* line 35, partials/_results.scss */
+.result-items .result-item .result-info p {
+  line-height: 0.5em;
+}
+/* line 39, partials/_results.scss */
 .result-items .result-item .result-img {
   width: 30%;
   display: inline;
 }
-/* line 27, partials/_results.scss */
+/* line 42, partials/_results.scss */
 .result-items .result-item .result-img img {
   display: inline;
   border-radius: 2px;
   padding-top: 10px;
 }
-/* line 33, partials/_results.scss */
+/* line 48, partials/_results.scss */
 .result-items .result-item .result-btns {
   width: 30%;
   text-align: right;
 }
-/* line 36, partials/_results.scss */
+/* line 51, partials/_results.scss */
 .result-items .result-item .result-btns form {
   display: inline-block;
 }
-/* line 39, partials/_results.scss */
+/* line 54, partials/_results.scss */
 .result-items .result-item .result-btns .fa {
+  color: #f1f1f2;
   font-size: 2em;
 }
