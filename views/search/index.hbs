@@ -36,12 +36,12 @@
               {{#each user.places}}
               <li>
                 <div class="user-item">
-                  <div class="user-item-icon">
+                  <div data-id="{{ this._id }}" class="user-item-icon">
                     <i class="fa fa-times"></i>
                   </div> 
                   <div class="user-item-info">
-                    <h4><a href="#" target="_blank">{{this.venue}}</a></h4>
-                    <h5>{{this.city}}</h5>
+                    <h4><a href="#" target="_blank">{{ this.venue }}</a></h4>
+                    <h5>{{ this.city }}</h5>
                   </div>
                   <div class="user-item-img">
                     <a href="../assets/images/tuna_tartare.jpg" data-lightbox="added-img"><img src="../assets/images/tuna_tartare.jpg" class="img-responsive"></a>

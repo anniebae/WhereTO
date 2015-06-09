@@ -10,3 +10,9 @@ var Response = Backbone.View.extend({
 		return this;
 	}
 });
+
+$(function() {
+	$(document).on('click', '.user-item', function() {
+		console.log($(this));
+	});
+});
