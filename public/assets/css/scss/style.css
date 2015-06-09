@@ -659,11 +659,6 @@ ol.user-items li ul.added-results-ul li {
   display: inline-block;
 }
 /* line 35, partials/_search.scss */
-.result-items .result-item .result-btns .result-btn {
-  padding: 15px;
-  margin-left: 10px;
-  display: inline;
-  height: 48px;
-  width: 50px;
-  border-radius: 50%;
+.result-items .result-item .result-btns .fa {
+  font-size: 2em;
 }

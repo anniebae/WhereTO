@@ -14,7 +14,7 @@
       </a>
     </div>
     <div class="result-btns pull-right">
-      <a class="btn btn-info result-btn" href="<%= url %>" target="_blank">
+      <a class="no-btn" href="<%= url %>" target="_blank">
         <i class="fa fa-yelp"></i>
       </a>
       <form action="/places" method="post">   
@@ -23,7 +23,7 @@
         <input type="hidden" name="imageUrl" value="<%= image_url %>">
         <input type="hidden" name="city" value="<%= location.city %>">
         <input type="hidden" name="zipcode" value="<%= location.postal_code %>">
-        <button type="submit" class="btn btn-info result-btn" id="search-create"><i class="fa fa-plus"></i></button>
+        <button type="submit" class="no-btn" id="search-create"><i class="fa fa-plus"></i></button>
       </form>
     </div>
   </div>
