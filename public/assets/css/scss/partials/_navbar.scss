@@ -17,6 +17,8 @@
   .menu-items {
     .menu-item {
       padding: 15px 0 0 0;
+      display: inline-block;
+      float: right;
       &:hover {
         .menu-text {
           .caption {
@@ -55,7 +57,7 @@
         text-align: center;
         padding-top: 5px;
         height: 20px;
-        width: 70px;
+        width: 55px;
         .caption {
           line-height: 1em;
           color: $black;

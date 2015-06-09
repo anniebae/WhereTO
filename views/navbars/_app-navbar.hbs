@@ -4,22 +4,14 @@
       <img src="../assets/images/footprint.png" class="img-responsive navbar-img" onmouseover="this.src='../assets/images/pawprint.png'" onmouseout="this.src='../assets/images/footprint.png'">
     </a>
 
-    <div class="no-collapse">
-      <ul class="nav navbar-nav navbar-right menu-items">
+    <div >
+      <ul class="menu-items">
         <li class="menu-item">
           <div class="menu-icon">
-            <a href="/" id="food-tab"><i class="fa fa-search"></i></a>
+            <a href="/users/{{ user.username }}"><img id="nav-user-img" class="img-responsive nav-user-img" src="../assets/images/avatar.jpg"> {{ user.name }}</a>
           </div>
           <div class="menu-text">
-            <p class="caption">Search</p>
-          </div>
-        </li>
-        <li class="menu-item">
-          <div class="menu-icon">
-            <a href="/users"><i class="fa fa-users"></i></a>
-          </div>
-          <div class="menu-text">
-            <p class="caption">People</p>
+            <p class="caption"></p>
           </div>
         </li>
         <li class="menu-item">
@@ -32,10 +24,18 @@
         </li>
         <li class="menu-item">
           <div class="menu-icon">
-            <a href="/users/{{ user.username }}"><img id="nav-user-img" class="img-responsive nav-user-img" src="../assets/images/avatar.jpg"> {{ user.name }}</a>
+            <a href="/users"><i class="fa fa-users"></i></a>
           </div>
           <div class="menu-text">
-            <p class="caption"></p>
+            <p class="caption">People</p>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-icon">
+            <a href="/" id="food-tab"><i class="fa fa-search"></i></a>
+          </div>
+          <div class="menu-text">
+            <p class="caption">Search</p>
           </div>
         </li>
       </ul>
