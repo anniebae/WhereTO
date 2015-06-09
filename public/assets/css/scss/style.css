@@ -97,6 +97,11 @@ h6 {
   }
 
   /* line 45, partials/_page.scss */
+  .form-inline .form-group {
+    background-color: #99ffcc;
+  }
+
+  /* line 48, partials/_page.scss */
   #form-register .form-group {
     background-color: #99ffcc;
     margin-bottom: 0px;
