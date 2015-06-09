@@ -622,52 +622,57 @@ ol.user-items li ul.added-results-ul li {
   color: #231f20;
 }
 
-/* line 1, partials/_search.scss */
+/* line 1, partials/_results.scss */
+.search-container {
+  padding-left: 25px;
+}
+
+/* line 5, partials/_results.scss */
 .result-items {
   padding-left: 0;
   border-left: 1px solid #c9c8c7;
   border-right: 1px solid #c9c8c7;
   border-top: 0;
 }
-/* line 6, partials/_search.scss */
+/* line 10, partials/_results.scss */
 .result-items .result-item {
   background-color: #99ffcc;
   list-style-type: none;
   border-bottom: 1px solid #c9c8c7;
 }
-/* line 10, partials/_search.scss */
+/* line 14, partials/_results.scss */
 .result-items .result-item .result-inner-container {
   padding: 15px;
   height: 160px;
   width: 100%;
   display: inline-block;
 }
-/* line 16, partials/_search.scss */
+/* line 20, partials/_results.scss */
 .result-items .result-item .result-info {
   width: 40%;
   display: inline;
 }
-/* line 20, partials/_search.scss */
+/* line 24, partials/_results.scss */
 .result-items .result-item .result-img {
   width: 30%;
   display: inline;
 }
-/* line 23, partials/_search.scss */
+/* line 27, partials/_results.scss */
 .result-items .result-item .result-img img {
   display: inline;
   border-radius: 2px;
   padding-top: 10px;
 }
-/* line 29, partials/_search.scss */
+/* line 33, partials/_results.scss */
 .result-items .result-item .result-btns {
   width: 30%;
   text-align: right;
 }
-/* line 32, partials/_search.scss */
+/* line 36, partials/_results.scss */
 .result-items .result-item .result-btns form {
   display: inline-block;
 }
-/* line 35, partials/_search.scss */
+/* line 39, partials/_results.scss */
 .result-items .result-item .result-btns .fa {
   font-size: 2em;
 }
