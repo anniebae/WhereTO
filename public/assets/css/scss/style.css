@@ -50,7 +50,7 @@ h6 {
 /* line 14, partials/_page.scss */
 .form-welcome {
   position: absolute;
-  top: 66px;
+  top: 50px;
   right: 0;
   height: 50px;
   display: block;
@@ -72,6 +72,19 @@ h6 {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 37, partials/_page.scss */
+  .form-welcome {
+    height: 132px;
+    width: 345px;
+  }
+
+  /* line 41, partials/_page.scss */
+  .form-group {
+    padding: 6%;
+    border-radius: 5%;
+  }
+}
 /* line 1, partials/_base.scss */
 body {
   background-color: lightgrey;
