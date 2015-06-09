@@ -49,7 +49,9 @@ h6 {
 
 /* line 14, partials/_page.scss */
 .form-welcome {
-  float: right;
+  position: absolute;
+  top: 66px;
+  right: 0;
   height: 50px;
   display: block;
   border-radius: 5px;
@@ -58,12 +60,12 @@ h6 {
   background-color: #231f20;
 }
 
-/* line 24, partials/_page.scss */
+/* line 26, partials/_page.scss */
 .form-inputs {
   padding-top: 1.5%;
 }
 
-/* line 28, partials/_page.scss */
+/* line 30, partials/_page.scss */
 .section-title {
   color: white;
   margin-top: 20px;

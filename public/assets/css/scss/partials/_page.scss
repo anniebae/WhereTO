@@ -12,7 +12,9 @@ h6 { font-size: 14px; }
 }
 
 .form-welcome {
-  float: right;
+  position: absolute;
+  top: 66px;
+  right: 0;
   height: 50px;
   display: block;
   border-radius: 5px;
