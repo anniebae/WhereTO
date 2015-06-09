@@ -379,9 +379,9 @@ form label {
 .user-items-wrapper {
   position: relative;
   background-color: #99ffcc;
-  height: 100vh;
+  height: 100%;
+  min-height: 100px;
   width: 100%;
-  top: 51px;
 }
 /* line 11, partials/_query.scss */
 .user-items-wrapper .section-tab {
@@ -472,7 +472,7 @@ form label {
 
 /* line 90, partials/_query.scss */
 .user-items-header {
-  text-align: center;
+  text-align: left;
   color: #231f20;
 }
 
@@ -486,17 +486,26 @@ ol.user-items li {
 }
 /* line 101, partials/_query.scss */
 ol.user-items li:nth-child(even) {
-  background: #fff;
+  background: white;
 }
 /* line 104, partials/_query.scss */
 ol.user-items li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 108, partials/_query.scss */
+/* line 107, partials/_query.scss */
+ol.user-items li:nth-child(odd) .user-item-info,
+ol.user-items li:nth-child(odd) .user-item-info a {
+  color: white;
+}
+/* line 110, partials/_query.scss */
+ol.user-items li:nth-child(odd) .user-item-info h5 {
+  color: #231f20;
+}
+/* line 115, partials/_query.scss */
 ol.user-items li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 110, partials/_query.scss */
+/* line 117, partials/_query.scss */
 ol.user-items li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;

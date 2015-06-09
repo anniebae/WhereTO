@@ -5,9 +5,9 @@
 .user-items-wrapper {
   position: relative;
   background-color: $mint;
-  height: 100vh;
+  height: 100%;
+  min-height: 100px;
   width: 100%;
-  top: 51px;
 	.section-tab {
 	  position: absolute;
 	  height: 100%;
@@ -88,7 +88,7 @@
 }
 
 .user-items-header {
-  text-align: center;
+  text-align: left;
   color: $black;
 }
 
@@ -99,10 +99,17 @@ ol.user-items li {
   padding-left: 1.5%;
   padding-right: 1.5%;
   &:nth-child(even) {
-    background: #fff;
+    background: $white;
   }
   &:nth-child(odd) {
     background: #ADAD85;
+    .user-item-info,
+    .user-item-info a {
+      color: $white;
+    }
+    .user-item-info h5 {
+      color: $black;
+    }
   }
   
   ul.added-results-ul {
