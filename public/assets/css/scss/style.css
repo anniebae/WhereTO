@@ -84,6 +84,12 @@ h6 {
     padding: 6%;
     border-radius: 5%;
   }
+
+  /* line 45, partials/_page.scss */
+  #form-register .form-group {
+    background-color: #99ffcc;
+    margin-bottom: 0px;
+  }
 }
 /* line 1, partials/_base.scss */
 body {
