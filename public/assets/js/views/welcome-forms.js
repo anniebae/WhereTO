@@ -10,11 +10,11 @@ var Welcome = Backbone.View.extend({
 		'click .btn-register-form' : 'registerForm'
 	},
 	registerForm: function() {
-		$('.form-welcome').html(this.registerTemplate());
+		$('.form-register').html(this.registerTemplate());
 		return this;
 	},
 	loginForm: function() {
-		$('.form-welcome').html(this.loginTemplate());
+		$('.form-login').html(this.loginTemplate());
 		return this;
 	}
 });

@@ -58,8 +58,13 @@ h6 {
   height: 100vh;
 }
 
-/* line 14, partials/_page.scss */
-.form-welcome {
+/* line 15, partials/_page.scss */
+.form-inline .form-control {
+  border-radius: 5%;
+}
+
+/* line 20, partials/_page.scss */
+.form-login {
   position: absolute;
   top: 50px;
   right: 0;
@@ -71,12 +76,12 @@ h6 {
   background-color: #231f20;
 }
 
-/* line 26, partials/_page.scss */
+/* line 32, partials/_page.scss */
 .form-inputs {
   padding-top: 1.5%;
 }
 
-/* line 30, partials/_page.scss */
+/* line 36, partials/_page.scss */
 .section-title {
   color: white;
   margin-top: 20px;
@@ -84,24 +89,24 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 37, partials/_page.scss */
-  .form-welcome {
+  /* line 43, partials/_page.scss */
+  .form-login {
     height: 132px;
     width: 345px;
   }
 
-  /* line 41, partials/_page.scss */
+  /* line 47, partials/_page.scss */
   .form-group {
     padding: 6%;
     border-radius: 5%;
   }
 
-  /* line 45, partials/_page.scss */
+  /* line 51, partials/_page.scss */
   .form-inline .form-group {
     background-color: #a7d3bd;
   }
 
-  /* line 48, partials/_page.scss */
+  /* line 54, partials/_page.scss */
   #form-register .form-group {
     background-color: #a7d3bd;
     margin-bottom: 0px;
