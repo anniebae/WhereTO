@@ -98,12 +98,12 @@ h6 {
 
   /* line 45, partials/_page.scss */
   .form-inline .form-group {
-    background-color: #99ffcc;
+    background-color: #a7d3bd;
   }
 
   /* line 48, partials/_page.scss */
   #form-register .form-group {
-    background-color: #99ffcc;
+    background-color: #a7d3bd;
     margin-bottom: 0px;
   }
 }
@@ -117,7 +117,7 @@ body {
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
 }
 
 /* line 12, partials/_base.scss */
@@ -201,7 +201,7 @@ button:hover {
 
 /* line 80, partials/_base.scss */
 #form-register {
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
   padding: 6%;
   border-radius: 2%;
   z-index: 99999;
@@ -220,7 +220,7 @@ button:hover {
 /* line 95, partials/_base.scss */
 .btn-register {
   background-color: #231f20;
-  color: #99ffcc;
+  color: #a7d3bd;
 }
 
 /* line 100, partials/_base.scss */
@@ -233,7 +233,7 @@ form label {
 .btn-login {
   border-radius: 0px;
   height: 34px;
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
   color: #000;
 }
 
@@ -390,7 +390,7 @@ form label {
 /* line 10, partials/_query.scss */
 .user-items-wrapper, .query-wrapper {
   position: relative;
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
   height: 100%;
   min-height: 100px;
   width: 100%;
@@ -421,7 +421,7 @@ form label {
 }
 /* line 33, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li.add-tab .sections-tab:hover, .query-wrapper ul.nav-tabs li.add-tab .sections-tab:hover {
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
   border: none;
   cursor: default;
 }
@@ -603,7 +603,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 5, partials/_navbar.scss */
 .navbar-inverse .navbar-brand:hover {
-  color: #99ffcc;
+  color: #a7d3bd;
 }
 /* line 8, partials/_navbar.scss */
 .navbar-inverse .navbar-brand .navbar-img {
@@ -621,7 +621,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 24, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item:hover .menu-text .caption {
-  color: #99ffcc;
+  color: #a7d3bd;
 }
 /* line 29, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon {
@@ -646,7 +646,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 44, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover {
-  color: #99ffcc;
+  color: #a7d3bd;
 }
 /* line 46, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover .nav-user-img {
@@ -654,7 +654,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 49, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-icon a:hover .fa {
-  color: #99ffcc;
+  color: #a7d3bd;
 }
 /* line 56, partials/_navbar.scss */
 .navbar-inverse .menu-items .menu-item .menu-text {
@@ -687,7 +687,7 @@ ol.user-items li ul.added-results-ul li {
 }
 /* line 18, partials/_results.scss */
 .result-items .result-item {
-  background-color: #99ffcc;
+  background-color: #a7d3bd;
   list-style-type: none;
   border-bottom: 1px solid #c9c8c7;
 }
