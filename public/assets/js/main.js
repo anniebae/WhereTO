@@ -29,9 +29,10 @@ $(function(){
   });
 
   $('.btn-register-form').on('click', function() {
-    var registerSize = $('.form-register').width();
-        zoomSize     = registerSize + 5;
-    $('.form-register').animate(zoomSize);
+    // var registerSize = $('.form-register').width();
+    //     zoomSize     = registerSize + 5;
+    // $('.form-register').animate(zoomSize);
+    $('.form-register').show("slow");
   });
 
 
