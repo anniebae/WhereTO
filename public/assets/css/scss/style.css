@@ -212,29 +212,33 @@ button:hover {
   z-index: 99999;
   position: absolute;
   top: 51px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 100px;
 }
-/* line 87, partials/_base.scss */
+/* line 91, partials/_base.scss */
 #form-register h2 {
   color: #231f20;
 }
-/* line 90, partials/_base.scss */
+/* line 94, partials/_base.scss */
 #form-register label {
   color: #231f20;
 }
 
-/* line 95, partials/_base.scss */
+/* line 99, partials/_base.scss */
 .btn-register {
   background-color: #231f20;
   color: #a7d3bd;
 }
 
-/* line 100, partials/_base.scss */
+/* line 104, partials/_base.scss */
 form label {
   color: white;
   float: left;
 }
 
-/* line 105, partials/_base.scss */
+/* line 109, partials/_base.scss */
 .btn-login {
   border-radius: 0px;
   height: 34px;
@@ -242,47 +246,47 @@ form label {
   color: #000;
 }
 
-/* line 112, partials/_base.scss */
+/* line 116, partials/_base.scss */
 #caretDropdown {
   border-color: transparent;
   background-color: transparent;
 }
 
-/* line 117, partials/_base.scss */
+/* line 121, partials/_base.scss */
 .caretAdd {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 123, partials/_base.scss */
+  /* line 127, partials/_base.scss */
   .btn-default {
     width: 100%;
   }
 
-  /* line 126, partials/_base.scss */
+  /* line 130, partials/_base.scss */
   .query-wrapper {
     width: 85%;
     margin: 0 auto;
   }
 
-  /* line 130, partials/_base.scss */
+  /* line 134, partials/_base.scss */
   .form-login {
     width: 302px;
     height: 120px;
   }
 
-  /* line 134, partials/_base.scss */
+  /* line 138, partials/_base.scss */
   .form-inputs {
     padding-top: 4.5%;
   }
 
-  /* line 137, partials/_base.scss */
+  /* line 141, partials/_base.scss */
   .form-group {
     background-color: #231f20;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 143, partials/_base.scss */
+  /* line 147, partials/_base.scss */
   .query-wrapper {
     width: 75%;
   }
