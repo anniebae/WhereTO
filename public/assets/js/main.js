@@ -26,13 +26,16 @@ $(function(){
 
   $('.btn-login-form').on('click', function() {
     $('.form-login').slideToggle("fast");
+    $('.form-register').hide();
   });
 
-  $('.btn-register-form').on('click', function() {
+  $('.btn-register-form').on('click', function(e) {
+    e.preventDefault();
     // var registerSize = $('.form-register').width();
     //     zoomSize     = registerSize + 5;
     // $('.form-register').animate(zoomSize);
     $('.form-register').show("slow");
+    $('.form-login').hide();
   });
 
 
