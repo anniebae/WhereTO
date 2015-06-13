@@ -39,7 +39,7 @@ $(function(){
     $('.form-register').hide();
   });
 
-  $('#form-register').click(function(e){
+  $('.form-register').click(function(e){
     e.stopPropagation();
   })
 
