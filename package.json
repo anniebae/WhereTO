@@ -12,12 +12,7 @@
     "url": "https://github.com/anniebae/WhereTO.git"
   },
   "author": {
-    "Evan Turner",
-    "url": "http://evturn.com",
-    "github": "http://github.com/evturn"
-  },
-    "author": {
-    "Annie Bae",
+    "name": "Annie Bae",
     "url": "http://anniebae.com",
     "github": "http://github.com/anniebae"
   },
@@ -53,6 +48,7 @@
     "yelp": "^0.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.5"
   }
 }
