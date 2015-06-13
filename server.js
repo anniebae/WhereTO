@@ -1,22 +1,15 @@
-// Node modules
-var express        = require('express');
-var methodOverride = require('method-override');
-var path           = require('path');
-var favicon        = require('serve-favicon');
-var logger         = require('morgan');
-var bodyParser     = require('body-parser');
-var cookieParser   = require('cookie-parser');
-
-// Schema
-var mongoose = require('mongoose');
-
-// User Authentication
-var passport      = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
-var LocalConfig   = require('./config/passport-local')(passport);
-
-// Database
-var db = require('./config/db')(mongoose);
+var express = require('express'),
+    methodOverride = require('method-override'),
+    path = require('path'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    bodyParser = require('body-parser'),
+    cookieParser = require('cookie-parser'),
+    mongoose = require('mongoose'),
+    passport      = require('passport'),
+    LocalStrategy = require('passport-local').Strategy,
+    LocalConfig   = require('./config/passport-local')(passport),
+    db = require('./config/db')(mongoose);
 
 // Models
 var User = require('./models/user');
