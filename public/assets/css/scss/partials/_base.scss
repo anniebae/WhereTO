@@ -141,6 +141,9 @@ form label {
   .form-group {
     background-color: $navgray;
   }
+  form label {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 510px) {

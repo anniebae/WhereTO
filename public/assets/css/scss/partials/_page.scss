@@ -45,14 +45,17 @@ h6 { font-size: 14px; }
     width: 345px;
   }
   .form-group {
-    padding: 6%;
+    padding: 3%;
     border-radius: 5%;
-  }
-  .form-inline .form-group {
-    background-color: $mint;
   }
   #form-register .form-group {
     background-color: $mint;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .form-group {
+    padding: 9%;
   }
 }
