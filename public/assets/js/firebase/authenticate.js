@@ -13,7 +13,7 @@ function loginWithPassword(email, password) {
 	    $('.form-error').html("Login Failed!", error);
 	  } else {
 	    $('.form-error').html("Authenticated successfully with payload: " + authData);
-	    window.location = '/dashboard'
+	    window.location = '/dashboard';
 	  }
 	});
 }

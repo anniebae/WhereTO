@@ -15,7 +15,7 @@ function createUserAuth(email, password) {
 	  if (error) {
 	    switch (error.code) {
 	      case "EMAIL_TAKEN":
-	        $('.form-error').html('The new user account cannot be created because the email is already in use.')
+	        $('.form-error').html('The new user account cannot be created because the email is already in use.');
 	        break;
 	      case "INVALID_EMAIL":
 	        $('.form-error').html('The specified email is not a valid email.');

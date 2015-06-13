@@ -33,6 +33,6 @@ var Response = Backbone.View.extend({
 				var place = new PlaceSearch({model: placeModel});
 				place.add();
 			}
-		})
+		});
 	},
 });
