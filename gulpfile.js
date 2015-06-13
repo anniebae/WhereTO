@@ -2,13 +2,9 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
     sass   = require('gulp-sass'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
     sourcemaps = require('gulp-sourcemaps');
-
-// gulp.task('default', function() {
-//   return gutil.log('We gulping');
-// });
-
-gulp.task('default', ['watcherz', 'compileSass']);
 
 gulp.task('jshint', function() {
   return gulp.src('public/assets/js/**/*.js')
@@ -21,11 +17,17 @@ gulp.task('compileSass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('public/assets/css'));
+  .pipe(gulp.dest('public/assets/css'))
+  .pipe(reload({stream: true}));
 });
 
+gulp.task('serve', ['compileSass'], function() {
+  browserSync({
+    server: {
+      baseDir: 'server'
+    }
+  });
 
-gulp.task('watcherz', function() {
   gulp.watch('public/assets/js/**/*.js', ['jshint']);
   gulp.watch('public/assets/css/scss/**/*.scss', ['compileSass']);
 });
