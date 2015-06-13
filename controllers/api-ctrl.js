@@ -2,7 +2,7 @@ var request    = require('request');
 var yelp = require('../config/yelp');
 
 exports.getYelpData = function(req, res) {
-  if (!req.body) return res.sendStatus(400)
+  if (!req.body) return res.sendStatus(400);
   var request = req.body;
   var location = request.location.split(' ').join('+');
   var term = request.term;
@@ -11,4 +11,4 @@ exports.getYelpData = function(req, res) {
     console.log(data);
     res.json(data);
   });
-}
+};

@@ -12,19 +12,19 @@ exports.getAuth = function(req, res, next) {
   res.render('welcome/index', {
     layout: 'welcome'
   });
-}
+};
 
 exports.getRoot = function(req, res) {
   res.render('search/index', {
     layout: 'main',
     user: req.user
   });
-}
+};
 
 exports.login = function(req, res, next) {
   passport.authenticate('local', function(err, user, info) {
     if (err) {
-      return next(err)
+      return next(err);
     }
     if (!user) {
       return res.redirect('/welcome');
@@ -36,9 +36,9 @@ exports.login = function(req, res, next) {
       return res.redirect('/');
     });
   })(req, res, next);
-}
+};
 
 exports.logout = function(req, res) {
   req.logout();
   res.redirect('/');
-}
+};

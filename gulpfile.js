@@ -1,15 +1,21 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     sass   = require('gulp-sass'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
     sourcemaps = require('gulp-sourcemaps');
 
+
+gulp.task('default', ['serve', 'jshint'], function() {
+  return gutil.log('We be gulping');
+});
+
 gulp.task('jshint', function() {
-  return gulp.src('public/assets/js/**/*.js')
+  return gulp.src(['./controllers/**/*.js', './congif/**/*.js', './models/**/*.js', './routes/**/*.js'])
     .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'));
+    .pipe(jshint.reporter(stylish));
 });
 
 gulp.task('compileSass', function() {
@@ -21,13 +27,8 @@ gulp.task('compileSass', function() {
   .pipe(reload({stream: true}));
 });
 
-gulp.task('serve', ['compileSass'], function() {
-  browserSync({
-    server: {
-      baseDir: 'server'
-    }
-  });
-
-  gulp.watch('public/assets/js/**/*.js', ['jshint']);
-  gulp.watch('public/assets/css/scss/**/*.scss', ['compileSass']);
+gulp.task('serve', ['compileSass', 'jshint'], function() {
+  gulp.watch('public/assets/css/scss/**/*.scss', ['compileSass'])
+  gulp.watch('public/assets/js/**/*.js', ['jshint'])
+  gulp.watch(['./controllers/**/*.js', './congif/**/*.js', './models/**/*.js', './routes/**/*.js'], ['jshint']);
 });

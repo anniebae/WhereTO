@@ -21,7 +21,7 @@ exports.postPlaces = function(req, res) {
     console.log('Me just saved: ', place);
     res.send({message: 'Place Added!'});
   });
-}
+};
 
 
 exports.deletePlace = function(req, res) {
@@ -36,4 +36,4 @@ exports.deletePlace = function(req, res) {
     res.redirect('/');
   });
   
-}
+};
