@@ -6,6 +6,9 @@
   @extend .user-items-wrapper;
   border-left: 1px solid $primarygray;
   border-right: 1px solid $primarygray;
+  .form-group {
+    width: 35%;
+  }
 }
 .user-items-wrapper {
   position: relative;

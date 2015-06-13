@@ -401,8 +401,12 @@ form label {
   border-left: 1px solid #c9c8c7;
   border-right: 1px solid #c9c8c7;
 }
+/* line 9, partials/_query.scss */
+.query-wrapper .form-group {
+  width: 35%;
+}
 
-/* line 10, partials/_query.scss */
+/* line 13, partials/_query.scss */
 .user-items-wrapper, .query-wrapper {
   position: relative;
   background-color: #a7d3bd;
@@ -410,65 +414,65 @@ form label {
   min-height: 100px;
   width: 100%;
 }
-/* line 16, partials/_query.scss */
+/* line 19, partials/_query.scss */
 .user-items-wrapper .section-tab, .query-wrapper .section-tab {
   position: absolute;
   height: 100%;
 }
-/* line 21, partials/_query.scss */
+/* line 24, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li, .query-wrapper ul.nav-tabs li {
   display: inline-block;
   width: 150px;
 }
-/* line 24, partials/_query.scss */
+/* line 27, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li .fa, .query-wrapper ul.nav-tabs li .fa {
   float: right;
 }
-/* line 27, partials/_query.scss */
+/* line 30, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li.add-tab, .query-wrapper ul.nav-tabs li.add-tab {
   float: right;
   padding-right: 47px;
 }
-/* line 30, partials/_query.scss */
+/* line 33, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li.add-tab .sections-tab, .query-wrapper ul.nav-tabs li.add-tab .sections-tab {
   margin-top: -4px;
   height: 42px;
 }
-/* line 33, partials/_query.scss */
+/* line 36, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li.add-tab .sections-tab:hover, .query-wrapper ul.nav-tabs li.add-tab .sections-tab:hover {
   background-color: #a7d3bd;
   border: none;
   cursor: default;
 }
-/* line 38, partials/_query.scss */
+/* line 41, partials/_query.scss */
 .user-items-wrapper ul.nav-tabs li.add-tab .sections-tab .fa, .query-wrapper ul.nav-tabs li.add-tab .sections-tab .fa {
   color: white;
   cursor: pointer;
   font-size: 2em;
 }
-/* line 47, partials/_query.scss */
+/* line 50, partials/_query.scss */
 .user-items-wrapper #food, .query-wrapper #food {
   height: 625px;
 }
-/* line 51, partials/_query.scss */
+/* line 54, partials/_query.scss */
 .user-items-wrapper #drinks, .query-wrapper #drinks {
   background-color: purple;
   height: 625px;
   display: none;
 }
-/* line 56, partials/_query.scss */
+/* line 59, partials/_query.scss */
 .user-items-wrapper #attractions, .query-wrapper #attractions {
   background-color: green;
   height: 625px;
   display: none;
 }
 
-/* line 63, partials/_query.scss */
+/* line 66, partials/_query.scss */
 .sections-tab {
   cursor: pointer;
 }
 
-/* line 69, partials/_query.scss */
+/* line 72, partials/_query.scss */
 .tab-title {
   font-weight: 500;
   line-height: 1.1;
@@ -476,7 +480,7 @@ form label {
   text-align: center;
 }
 
-/* line 76, partials/_query.scss */
+/* line 79, partials/_query.scss */
 .app-title {
   font-weight: 100;
   color: white;
@@ -484,33 +488,33 @@ form label {
   margin-top: 280px;
 }
 
-/* line 83, partials/_query.scss */
+/* line 86, partials/_query.scss */
 .yelp {
   text-align: center;
 }
 
-/* line 87, partials/_query.scss */
+/* line 90, partials/_query.scss */
 .user-item {
   height: 100px;
   position: relative;
 }
-/* line 90, partials/_query.scss */
+/* line 93, partials/_query.scss */
 .user-item .user-item-icon {
   display: inline-block;
   text-align: right;
   right: 0;
   position: absolute;
 }
-/* line 95, partials/_query.scss */
+/* line 98, partials/_query.scss */
 .user-item .user-item-icon .fa {
   font-size: 2em;
 }
-/* line 99, partials/_query.scss */
+/* line 102, partials/_query.scss */
 .user-item .user-item-info {
   width: 40%;
   display: inline;
 }
-/* line 103, partials/_query.scss */
+/* line 106, partials/_query.scss */
 .user-item .user-item-img {
   width: 100px;
   float: left;
@@ -518,27 +522,27 @@ form label {
   margin-bottom: 15px;
   margin-right: 30px;
 }
-/* line 109, partials/_query.scss */
+/* line 112, partials/_query.scss */
 .user-item .user-item-img img {
   width: 100px;
   border-radius: 3px;
 }
 
-/* line 117, partials/_query.scss */
+/* line 120, partials/_query.scss */
 .user-items-header {
   text-align: left;
   color: #231f20;
 }
-/* line 120, partials/_query.scss */
+/* line 123, partials/_query.scss */
 .user-items-header a {
   text-decoration: none;
 }
-/* line 122, partials/_query.scss */
+/* line 125, partials/_query.scss */
 .user-items-header a:hover {
   color: white;
 }
 
-/* line 128, partials/_query.scss */
+/* line 131, partials/_query.scss */
 ol.user-items li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -546,28 +550,28 @@ ol.user-items li {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
-/* line 134, partials/_query.scss */
+/* line 137, partials/_query.scss */
 ol.user-items li:nth-child(even) {
   background: white;
 }
-/* line 137, partials/_query.scss */
+/* line 140, partials/_query.scss */
 ol.user-items li:nth-child(odd) {
   background: #ADAD85;
 }
-/* line 140, partials/_query.scss */
+/* line 143, partials/_query.scss */
 ol.user-items li:nth-child(odd) .user-item-info,
 ol.user-items li:nth-child(odd) .user-item-info a {
   color: white;
 }
-/* line 143, partials/_query.scss */
+/* line 146, partials/_query.scss */
 ol.user-items li:nth-child(odd) .user-item-info h5 {
   color: #231f20;
 }
-/* line 148, partials/_query.scss */
+/* line 151, partials/_query.scss */
 ol.user-items li ul.added-results-ul {
   margin-left: -50px;
 }
-/* line 150, partials/_query.scss */
+/* line 153, partials/_query.scss */
 ol.user-items li ul.added-results-ul li {
   list-style-type: none;
   margin: 0;
