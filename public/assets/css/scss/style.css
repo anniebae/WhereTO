@@ -97,7 +97,7 @@ h6 {
 
   /* line 47, partials/_page.scss */
   .form-group {
-    padding: 6%;
+    padding: 3%;
     border-radius: 5%;
   }
 
@@ -105,6 +105,12 @@ h6 {
   #form-register .form-group {
     background-color: #a7d3bd;
     margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 436px) {
+  /* line 58, partials/_page.scss */
+  .form-group {
+    padding: 9%;
   }
 }
 /* line 1, partials/_base.scss */
