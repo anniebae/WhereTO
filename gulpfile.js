@@ -9,16 +9,11 @@ var gulp = require('gulp'),
 
 var jsFiles = 
   [
-    'public/assets/js/**/*.js',
-    'controllers/**/*.js',
-    'congif/**/*.js',
-    'models/**/*.js',
-    'routes/**/*.js'
+    './**/*.js',
+    '!./node_modules/**/*',
+    '!./public/vendor/**/*'
   ];
-var sassFiles =
-  [
-    'public/assets/css/scss/**/*.scss'
-  ]
+var sassFiles = ['public/assets/css/scss/**/*.scss'];
 
 gulp.task('default', ['serve', 'compileSass', 'jshint'], function() {
   return gutil.log('And we gulping.');
@@ -40,6 +35,6 @@ gulp.task('compileSass', function() {
 });
 
 gulp.task('serve', ['compileSass', 'jshint'], function() {
-  gulp.watch(sassFiles, ['compileSass'])
+  gulp.watch(sassFiles, ['compileSass']);
   gulp.watch(jsFiles, ['jshint']);
 });
