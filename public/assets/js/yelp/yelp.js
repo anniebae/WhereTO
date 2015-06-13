@@ -41,7 +41,7 @@ function sendRequest() {
 				view.render();
 				$('.input-location-query').val('');
 				$('.input-term-query').val('');
-			};
+			}
 		}
 	});
 }
