@@ -41,6 +41,6 @@ $(function(){
 
   $('.form-register').click(function(e){
     e.stopPropagation();
-  })
+  });
 
 });
