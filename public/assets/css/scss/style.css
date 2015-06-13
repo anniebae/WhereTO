@@ -102,11 +102,6 @@ h6 {
   }
 
   /* line 51, partials/_page.scss */
-  .form-inline .form-group {
-    background-color: #a7d3bd;
-  }
-
-  /* line 54, partials/_page.scss */
   #form-register .form-group {
     background-color: #a7d3bd;
     margin-bottom: 0px;
@@ -284,9 +279,14 @@ form label {
   .form-group {
     background-color: #231f20;
   }
+
+  /* line 144, partials/_base.scss */
+  form label {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 510px) {
-  /* line 147, partials/_base.scss */
+  /* line 150, partials/_base.scss */
   .query-wrapper {
     width: 75%;
   }
