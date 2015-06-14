@@ -11,13 +11,11 @@ var express = require('express'),
     LocalConfig   = require('./config/passport-local')(passport),
     db = require('./config/db')(mongoose);
 
-// Models
+
 var User = require('./models/user');
 
-// Controllers
 var UsersCtrl = require('./controllers/users-ctrl');
 
-// Routes
 var authRouter   = require('./routes/auth-router');
 var usersRouter  = require('./routes/users-router');
 var placesRouter = require('./routes/places-router');
@@ -25,8 +23,6 @@ var apiRouter    = require('./routes/api-router');
 
 var app = express();
 
-
-// __dirname (express variable) is head of file (WhereTO) 
 var root = __dirname + '/public';
 
 // Handlebars
