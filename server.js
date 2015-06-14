@@ -1,5 +1,6 @@
 var express = require('express'),
     methodOverride = require('method-override'),
+    methodConfig = require('./config/method-override'),
     path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
@@ -9,19 +10,16 @@ var express = require('express'),
     passport      = require('passport'),
     LocalStrategy = require('passport-local').Strategy,
     LocalConfig   = require('./config/passport-local')(passport),
-    db = require('./config/db')(mongoose);
-
-
-var authRouter   = require('./routes/auth-router');
-var usersRouter  = require('./routes/users-router');
-var placesRouter = require('./routes/places-router');
-var apiRouter    = require('./routes/api-router');
+    db = require('./config/db')(mongoose),
+    authRouter   = require('./routes/auth-router'),
+    usersRouter  = require('./routes/users-router'),
+    placesRouter = require('./routes/places-router'),
+    apiRouter    = require('./routes/api-router'),
+    hbs = require('./config/handlebars'),
+    root = __dirname + '/public';
 
 var app = module.exports = express();
 
-var root = __dirname + '/public';
-
-var hbs = require('./config/handlebars');
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.engine('hbs', hbs.engine);
@@ -34,13 +32,7 @@ app.use(require('express-session')({
   resave: false,
   saveUninitialized: false
 }));
-app.use(methodOverride(function(req, res){
-  if (req.body && typeof req.body === 'object' && '_method' in req.body) {
-    var method = req.body._method;
-    delete req.body._method;
-    return method;
-  }
-}));
+app.use(methodOverride(methodConfig));
 app.use(express.static(root));
 app.use(logger('dev'));
 app.use(passport.initialize());
@@ -49,6 +41,5 @@ app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/places', placesRouter);
-
 
 var listeningOn = require('./index');
