@@ -8,7 +8,7 @@ exports.User = function() {
     username    : {type: String, required: true, unique: true},
     places      : [placeSchema]
   });
-}
+};
 
 
 exports.Place = function() {
@@ -20,6 +20,6 @@ exports.Place = function() {
     category    : {type: String},
     imageUrl    : {type: String}
   });
-}
+};
 
 var placeSchema = this.Place();

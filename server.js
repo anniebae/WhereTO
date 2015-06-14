@@ -1,5 +1,6 @@
 var express = require('express'),
     methodOverride = require('method-override'),
+    methodConfig = require('./config/method-override'),
     path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
@@ -9,34 +10,19 @@ var express = require('express'),
     passport      = require('passport'),
     LocalStrategy = require('passport-local').Strategy,
     LocalConfig   = require('./config/passport-local')(passport),
-    db = require('./config/db')(mongoose);
+    db = require('./config/db')(mongoose),
+    authRouter   = require('./routes/auth-router'),
+    usersRouter  = require('./routes/users-router'),
+    placesRouter = require('./routes/places-router'),
+    apiRouter    = require('./routes/api-router'),
+    hbs = require('./config/handlebars'),
+    root = __dirname + '/public';
 
-// Models
-var User = require('./models/user');
+var app = module.exports = express();
 
-// Controllers
-var UsersCtrl = require('./controllers/users-ctrl');
-
-// Routes
-var authRouter   = require('./routes/auth-router');
-var usersRouter  = require('./routes/users-router');
-var placesRouter = require('./routes/places-router');
-var apiRouter    = require('./routes/api-router');
-
-var app = express();
-
-
-// __dirname (express variable) is head of file (WhereTO) 
-var root = __dirname + '/public';
-
-// Handlebars
-var hbs = require('./config/handlebars');
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.engine('hbs', hbs.engine);
-
-// Express Configuration
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -45,30 +31,14 @@ app.use(require('express-session')({
   resave: false,
   saveUninitialized: false
 }));
-app.use(methodOverride(function(req, res){
-  if (req.body && typeof req.body === 'object' && '_method' in req.body) {
-    var method = req.body._method
-    delete req.body._method
-    return method
-  }
-}));
+app.use(methodOverride(methodConfig));
 app.use(express.static(root));
-
-// Authentication Initialization
+app.use(logger('dev'));
 app.use(passport.initialize());
 app.use(passport.session());
-
-// Routes
 app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/places', placesRouter);
 
-// Authentication Configuration
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-
-app.listen(8000, function(){
-    console.log("WhereTO running");
-});
+var listeningOn = require('./index');

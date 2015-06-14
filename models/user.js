@@ -3,7 +3,6 @@ var userSchema = require('../config/schema').User();
 var passportLocalMongoose = require('passport-local-mongoose');
 var bcrypt = require('bcrypt');
 
-
 userSchema.pre('save', function(next) {
 	var user = this;
 	if (!user.isModified('password')) return next();

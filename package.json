@@ -48,8 +48,10 @@
     "yelp": "^0.2.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.7.10",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.0",
+    "gulp-livereload": "^3.8.0",
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.5",
