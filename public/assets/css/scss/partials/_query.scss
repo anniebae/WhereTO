@@ -6,6 +6,7 @@
   @extend .user-items-wrapper;
   border-left: 1px solid $primarygray;
   border-right: 1px solid $primarygray;
+  padding: 5%;
   .form-group {
     width: 35%;
   }
@@ -14,7 +15,6 @@
   position: relative;
   background-color: $mint;
   height: 100%;
-  min-height: 100px;
   width: 100%;
 	.section-tab {
 	  position: absolute;
