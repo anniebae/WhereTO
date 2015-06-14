@@ -23,7 +23,6 @@ var app = module.exports = express();
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.engine('hbs', hbs.engine);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
