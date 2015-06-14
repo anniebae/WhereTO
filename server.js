@@ -13,7 +13,6 @@ var express = require('express'),
 
 
 var User = require('./models/user');
-var UsersCtrl = require('./controllers/users-ctrl');
 
 var authRouter   = require('./routes/auth-router');
 var usersRouter  = require('./routes/users-router');
@@ -53,8 +52,6 @@ app.use('/', authRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 app.use('/places', placesRouter);
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+
 
 var listeningOn = require('./index');
