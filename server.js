@@ -12,8 +12,6 @@ var express = require('express'),
     db = require('./config/db')(mongoose);
 
 
-var User = require('./models/user');
-
 var authRouter   = require('./routes/auth-router');
 var usersRouter  = require('./routes/users-router');
 var placesRouter = require('./routes/places-router');
@@ -23,13 +21,11 @@ var app = module.exports = express();
 
 var root = __dirname + '/public';
 
-// Handlebars
 var hbs = require('./config/handlebars');
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.engine('hbs', hbs.engine);
 
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -46,6 +42,7 @@ app.use(methodOverride(function(req, res){
   }
 }));
 app.use(express.static(root));
+app.use(logger('dev'));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use('/', authRouter);
