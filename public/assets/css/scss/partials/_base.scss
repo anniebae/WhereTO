@@ -99,6 +99,10 @@ button:hover {
 .btn-register {
   background-color: $black;
   color: $mint;
+  &:hover {
+    color: $mint;
+    background-color: $white;
+  }
 }
 
 form label {
