@@ -41,8 +41,11 @@ h6 { font-size: 14px; }
 
 @media screen and (max-width: 767px) {
   .form-login {
-    height: 132px;
-    width: 345px;
+    width: 302px;
+    height: 190px;
+  }
+  .form-inputs {
+    padding-top: 4.5%;
   }
   .form-group {
     padding: 3%;
@@ -52,10 +55,20 @@ h6 { font-size: 14px; }
     background-color: $mint;
     margin-bottom: 0px;
   }
+  .query-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .query-wrapper .form-group {
+    background-color: $mint;
+  }
+  form label {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 436px) {
-  // .form-group {
-  //   padding: 9%;
-  // }
+@media screen and (max-width: 510px) {
+  .query-wrapper {
+    width: 75%;
+  }
 }

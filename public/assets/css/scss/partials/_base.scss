@@ -127,27 +127,4 @@ form label {
   .btn-default {
     width: 100%;
   }
-  .query-wrapper {
-    width: 85%;
-    margin: 0 auto;
-  }
-  .form-login {
-    width: 302px;
-    height: 120px;
-  }
-  .form-inputs {
-    padding-top: 4.5%;
-  }
-  .query-wrapper .form-group {
-    background-color: $mint;
-  }
-  form label {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .query-wrapper {
-    width: 75%;
-  }
 }
