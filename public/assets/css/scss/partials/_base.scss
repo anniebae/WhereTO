@@ -78,7 +78,7 @@ button:hover {
 }
 
 #form-register {
-  background-color: $mint;
+  background-color: $white;
   padding: 6%;
   border-radius: 2%;
   z-index: 99999;
@@ -89,19 +89,19 @@ button:hover {
   right: 0;
   margin: 100px;
   h2 {
-    color: $black;
+    color: $mint;
   }
   label {
-    color: $black
+    color: $mint
   }
 }
 
 .btn-register {
-  background-color: $black;
-  color: $mint;
+  background-color: $mint;
+  color: $white;
   &:hover {
     color: $mint;
-    background-color: $white;
+    background-color: $black;
   }
 }
 
