@@ -22,9 +22,9 @@
   .result-item {
     background-color: $mint;
     list-style-type: none;
-    border-bottom: 1px solid $primarygray;
+    border-bottom: 1px solid $black;
     &:first-child {
-      border-top: 1px solid $primarygray;
+      border-top: 1px solid $black;
     }
   .result-inner-container {
     padding: 20px;
