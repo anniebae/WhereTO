@@ -3,13 +3,13 @@
     text-align: center;
     .form-inline {
       input, button {
-        color: $black;
+        color: $mint;
         width: 100%;
         margin-bottom: 1%;
       }
       button {
+        font-family: helvetica;
         background-color: $black;
-        color: $mint;
         &:hover {
           background-color: $mint;
           color: $black;
