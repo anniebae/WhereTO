@@ -10,7 +10,7 @@
 }
 .user-items-wrapper {
   position: relative;
-  background-color: $mint;
+  background-color: $white;
   height: 100%;
   width: 100%;
 	.section-tab {
@@ -135,7 +135,7 @@ ol.user-items li {
     background: $white;
   }
   &:nth-child(odd) {
-    background: #ADAD85;
+    background: $mint;
     .user-item-info,
     .user-item-info a {
       color: $white;

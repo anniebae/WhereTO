@@ -7,6 +7,14 @@
         width: 100%;
         margin-bottom: 1%;
       }
+      button {
+        background-color: $black;
+        color: $mint;
+        &:hover {
+          background-color: $mint;
+          color: $black;
+        }
+      }
     }
   }
 }
@@ -22,9 +30,9 @@
   .result-item {
     background-color: $mint;
     list-style-type: none;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $white;
     &:first-child {
-      border-top: 1px solid $black;
+      border-top: 1px solid $white;
     }
   .result-inner-container {
     padding: 20px;
