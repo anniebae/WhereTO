@@ -1,6 +1,6 @@
 <script type="text/template" id="response-template">
-  <div class=" row result-inner-container wow slideInLeft">
-    <div class="col-md-4 result-info pull-left">
+  <div class="row result-inner-container wow slideInLeft">
+    <div class="col-md-4 col-sm-12 result-info pull-left">
       <h5><%= name %></h5>
       <% var address = location.display_address %>
       <% for (var i = 0; i < address.length; i++) { %>
@@ -8,12 +8,12 @@
       <% } %>
       <p>rating: <%= rating %>/5</p>
     </div>
-    <div class="col-md-4 result-img">
+    <div class="col-md-4 col-sm-12 result-img">
       <a href="#" data-lightbox="response" data-title="<%= name %>">
         <img class="img-responsive" src="<%= image_url %>">
       </a>
     </div>
-    <div class="col-md-4 result-btns pull-right">
+    <div class="col-md-4 col-sm-12 result-btns pull-right">
       <a class="no-btn" href="<%= url %>" target="_blank">
         <i class="fa fa-yelp"></i>
       </a>
