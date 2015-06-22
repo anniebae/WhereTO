@@ -27,6 +27,16 @@
 	}
 }
 
-// .user-items-container {
-// 	display: none;
-// }
+.user-items-container {
+	display: none;
+}
+
+.fa-list .fa {
+	 position: absolute;
+  top: 84px;
+  right: -5px;
+  font-size: 2em;
+  background-color: white;
+  padding: .75%;
+  border-radius: 5px;
+}

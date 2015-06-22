@@ -43,4 +43,8 @@ $(function(){
     e.stopPropagation();
   });
 
+  $('.fa-list').click(function() {
+    $('.user-items-container').show();
+  });
+
 });
