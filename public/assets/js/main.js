@@ -43,8 +43,25 @@ $(function(){
     e.stopPropagation();
   });
 
-  $('.fa-list').click(function() {
-    $('.user-items-container').show();
-  });
+  // $('.fa-list').click(function() {
+  //   $('.user-items-container').slideToggle();
+  // });
+
+
+$(".fa-list").click(function () {
+
+    // Set the effect type
+    var effect = 'slide';
+
+    // Set the options for the effect type chosen
+    var options = { direction: $('.fa-list').val() };
+
+    // Set the duration (default: 400 milliseconds)
+    var duration = 500;
+
+    $('.user-items-container').toggle(effect, options, duration);
+});
+
+
 
 });
