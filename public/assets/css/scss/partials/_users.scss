@@ -29,6 +29,10 @@
 
 .user-items-container {
 	display: none;
+	position: absolute;
+  top: 100px;
+  right: 0;
+  width: 75%;
 }
 
 .fa-list .fa {
