@@ -50,6 +50,9 @@ $(function(){
     $('.user-items-container').toggle(effect, options, duration);
   });
 
+  $('.user-items-container').click(function(e) {
+    e.preventDefault();
+  })
 
 
 });
