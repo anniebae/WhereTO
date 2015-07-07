@@ -54,5 +54,8 @@ $(function(){
     e.preventDefault();
   })
 
+  // $('body').click(function() {
+  //   $('.user-items-container').hide();  
+  // });
 
 });
