@@ -52,10 +52,6 @@ $(function(){
 
   $('.user-items-container').click(function(e) {
     e.preventDefault();
-  })
-
-  // $('body').click(function() {
-  //   $('.user-items-container').hide();  
-  // });
+  });
 
 });
