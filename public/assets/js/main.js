@@ -47,7 +47,8 @@ $(function(){
     var effect = 'slide';
     var options = { direction: $('.fa-list').val() };
     var duration = 500;
-    $('.user-items-container').toggle(effect, options, duration);
+    $('.user-items-container').fadeIn();
+    // $('.user-items-container').toggle(effect, options, duration);
   });
 
   $('.user-items-container').click(function(e) {
