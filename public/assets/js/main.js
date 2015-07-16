@@ -44,6 +44,7 @@ $(function(){
   });
 
   $(".fa-list").click(function () {
+    alert("happy birthday dudeman!");
     var effect = 'slide';
     var options = { direction: $('.fa-list').val() };
     var duration = 500;
